@@ -1,0 +1,3469 @@
+fileFormatVersion: 2
+guid: f3bafb30798b137459fd0bbedff53b6c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5147508019965046492
+    second: TX Tileset Wall_0
+  - first:
+      213: 5477656027105347801
+    second: TX Tileset Wall_1
+  - first:
+      213: 353647096840035182
+    second: TX Tileset Wall_2
+  - first:
+      213: 4846651360183018852
+    second: TX Tileset Wall_3
+  - first:
+      213: 2564647030637401187
+    second: TX Tileset Wall_4
+  - first:
+      213: 6938695145806089749
+    second: TX Tileset Wall_5
+  - first:
+      213: 368961394075438538
+    second: TX Tileset Wall_6
+  - first:
+      213: 7912916137099393263
+    second: TX Tileset Wall_7
+  - first:
+      213: 5941470382691894023
+    second: TX Tileset Wall_8
+  - first:
+      213: 3453803159821833858
+    second: TX Tileset Wall_9
+  - first:
+      213: 4070449746238267469
+    second: TX Tileset Wall_10
+  - first:
+      213: 7726534121868252709
+    second: TX Tileset Wall_11
+  - first:
+      213: 7214082796517731383
+    second: TX Tileset Wall_12
+  - first:
+      213: 8744482383728939334
+    second: TX Tileset Wall_13
+  - first:
+      213: 1289432635559570735
+    second: TX Tileset Wall_14
+  - first:
+      213: 2099688211977634001
+    second: TX Tileset Wall_15
+  - first:
+      213: 4806392196407628443
+    second: TX Tileset Wall_16
+  - first:
+      213: 999327596343149651
+    second: TX Tileset Wall_17
+  - first:
+      213: 1001978221749982202
+    second: TX Tileset Wall_18
+  - first:
+      213: 464815023567409790
+    second: TX Tileset Wall_19
+  - first:
+      213: 1198756286947275132
+    second: TX Tileset Wall_20
+  - first:
+      213: 6407694491795990325
+    second: TX Tileset Wall_21
+  - first:
+      213: 5530316756929620151
+    second: TX Tileset Wall_22
+  - first:
+      213: 2158039964867889809
+    second: TX Tileset Wall_23
+  - first:
+      213: 6884371715864826933
+    second: TX Tileset Wall_24
+  - first:
+      213: 8379000970830490721
+    second: TX Tileset Wall_25
+  - first:
+      213: 4761849044962423102
+    second: TX Tileset Wall_26
+  - first:
+      213: 5662686149826107558
+    second: TX Tileset Wall_27
+  - first:
+      213: 311784310921269705
+    second: TX Tileset Wall_28
+  - first:
+      213: 1882822631330149437
+    second: TX Tileset Wall_29
+  - first:
+      213: 3788801063835987615
+    second: TX Tileset Wall_30
+  - first:
+      213: 7894590493071021425
+    second: TX Tileset Wall_31
+  - first:
+      213: 3225843371263975621
+    second: TX Tileset Wall_32
+  - first:
+      213: 8713415433045994802
+    second: TX Tileset Wall_33
+  - first:
+      213: 2441063123503867459
+    second: TX Tileset Wall_34
+  - first:
+      213: 275211763508293871
+    second: TX Tileset Wall_35
+  - first:
+      213: 6126402644520090132
+    second: TX Tileset Wall_36
+  - first:
+      213: 7234629374543388091
+    second: TX Tileset Wall_37
+  - first:
+      213: 6075595684393622622
+    second: TX Tileset Wall_38
+  - first:
+      213: 4712184272067616236
+    second: TX Tileset Wall_39
+  - first:
+      213: 6838616153458674582
+    second: TX Tileset Wall_40
+  - first:
+      213: 7647035372893635102
+    second: TX Tileset Wall_41
+  - first:
+      213: 3222898510850965979
+    second: TX Tileset Wall_42
+  - first:
+      213: 7585534695578494957
+    second: TX Tileset Wall_43
+  - first:
+      213: 6289432386711584339
+    second: TX Tileset Wall_44
+  - first:
+      213: 7228617336687971357
+    second: TX Tileset Wall_45
+  - first:
+      213: 2781658460221638778
+    second: TX Tileset Wall_46
+  - first:
+      213: 571391091496710172
+    second: TX Tileset Wall_47
+  - first:
+      213: 6497708268056733286
+    second: TX Tileset Wall_48
+  - first:
+      213: 7227344898791055207
+    second: TX Tileset Wall_49
+  - first:
+      213: 6016652473453252803
+    second: TX Tileset Wall_50
+  - first:
+      213: 6908060283391291153
+    second: TX Tileset Wall_51
+  - first:
+      213: 7249719304731839755
+    second: TX Tileset Wall_52
+  - first:
+      213: 5657236847757963972
+    second: TX Tileset Wall_53
+  - first:
+      213: 245830529089052984
+    second: TX Tileset Wall_54
+  - first:
+      213: 5702142047669111642
+    second: TX Tileset Wall_55
+  - first:
+      213: 7116553855329752849
+    second: TX Tileset Wall_56
+  - first:
+      213: 6880146911126565781
+    second: TX Tileset Wall_57
+  - first:
+      213: 6052162031737317132
+    second: TX Tileset Wall_58
+  - first:
+      213: 2651640390429092335
+    second: TX Tileset Wall_59
+  - first:
+      213: 8544934200951831476
+    second: TX Tileset Wall_60
+  - first:
+      213: 3837107235422360844
+    second: TX Tileset Wall_61
+  - first:
+      213: 2147974506883945431
+    second: TX Tileset Wall_62
+  - first:
+      213: 5285325428458503732
+    second: TX Tileset Wall_63
+  - first:
+      213: 9191805429671385623
+    second: TX Tileset Wall_64
+  - first:
+      213: 2709972381079964225
+    second: TX Tileset Wall_65
+  - first:
+      213: 297124830211018594
+    second: TX Tileset Wall_66
+  - first:
+      213: 5185803955649229716
+    second: TX Tileset Wall_67
+  - first:
+      213: 2435792376836409007
+    second: TX Tileset Wall_68
+  - first:
+      213: 8995312498658255879
+    second: TX Tileset Wall_69
+  - first:
+      213: 7433714209500412424
+    second: TX Tileset Wall_70
+  - first:
+      213: 7363691067702508864
+    second: TX Tileset Wall_71
+  - first:
+      213: 295763123264957812
+    second: TX Tileset Wall_72
+  - first:
+      213: 4399753331602622105
+    second: TX Tileset Wall_73
+  - first:
+      213: 5789474622409055317
+    second: TX Tileset Wall_74
+  - first:
+      213: 8450203665695064968
+    second: TX Tileset Wall_75
+  - first:
+      213: 1429324370359548640
+    second: TX Tileset Wall_76
+  - first:
+      213: 3064602952866580607
+    second: TX Tileset Wall_77
+  - first:
+      213: 8041389184507838043
+    second: TX Tileset Wall_78
+  - first:
+      213: 2388862983146914084
+    second: TX Tileset Wall_79
+  - first:
+      213: 2517605895223588209
+    second: TX Tileset Wall_80
+  - first:
+      213: 6584400859203431391
+    second: TX Tileset Wall_81
+  - first:
+      213: 5653531991156814129
+    second: TX Tileset Wall_82
+  - first:
+      213: 505187456759536839
+    second: TX Tileset Wall_83
+  - first:
+      213: 2393890442484637550
+    second: TX Tileset Wall_84
+  - first:
+      213: 5868029299865158260
+    second: TX Tileset Wall_85
+  - first:
+      213: 1405196278232943518
+    second: TX Tileset Wall_86
+  - first:
+      213: 3347933592196327981
+    second: TX Tileset Wall_87
+  - first:
+      213: 6099864773977205165
+    second: TX Tileset Wall_88
+  - first:
+      213: 4621552341736433617
+    second: TX Tileset Wall_89
+  - first:
+      213: 519059488770958100
+    second: TX Tileset Wall_90
+  - first:
+      213: 6819854324070848703
+    second: TX Tileset Wall_91
+  - first:
+      213: 8135817892069313645
+    second: TX Tileset Wall_92
+  - first:
+      213: 5569177011619115282
+    second: TX Tileset Wall_93
+  - first:
+      213: 1190213984073524054
+    second: TX Tileset Wall_94
+  - first:
+      213: 7158204371898984109
+    second: TX Tileset Wall_95
+  - first:
+      213: 5558011558029892325
+    second: TX Tileset Wall_96
+  - first:
+      213: 7049120857934321156
+    second: TX Tileset Wall_97
+  - first:
+      213: 7558402415495470564
+    second: TX Tileset Wall_98
+  - first:
+      213: 6133067696870963980
+    second: TX Tileset Wall_99
+  - first:
+      213: 290638061032839739
+    second: TX Tileset Wall_100
+  - first:
+      213: 4464138230826999528
+    second: TX Tileset Wall_101
+  - first:
+      213: 7853059506980955252
+    second: TX Tileset Wall_102
+  - first:
+      213: 7453963446932980344
+    second: TX Tileset Wall_103
+  - first:
+      213: 7206129975664416833
+    second: TX Tileset Wall_104
+  - first:
+      213: 4350593251269263428
+    second: TX Tileset Wall_105
+  - first:
+      213: 5530348369972577166
+    second: TX Tileset Wall_106
+  - first:
+      213: 5631606955925943129
+    second: TX Tileset Wall_107
+  - first:
+      213: 3492866812021217264
+    second: TX Tileset Wall_108
+  - first:
+      213: 6094589423739255696
+    second: TX Tileset Wall_109
+  - first:
+      213: 2473180826938568858
+    second: TX Tileset Wall_110
+  - first:
+      213: 5511579199713318327
+    second: TX Tileset Wall_111
+  - first:
+      213: 5929842860182377919
+    second: TX Tileset Wall_112
+  - first:
+      213: 797229232347366016
+    second: TX Tileset Wall_113
+  - first:
+      213: 2091116422993839924
+    second: TX Tileset Wall_114
+  - first:
+      213: 7440443987497236983
+    second: TX Tileset Wall_115
+  - first:
+      213: 7094950129916636870
+    second: TX Tileset Wall_116
+  - first:
+      213: 2131628406130539587
+    second: TX Tileset Wall_117
+  - first:
+      213: 2324109332155553709
+    second: TX Tileset Wall_118
+  - first:
+      213: 1632207734091054804
+    second: TX Tileset Wall_119
+  - first:
+      213: 5757696128488864005
+    second: TX Tileset Wall_120
+  - first:
+      213: 6433102171535657646
+    second: TX Tileset Wall_121
+  - first:
+      213: 1168565248380634004
+    second: TX Tileset Wall_122
+  - first:
+      213: 2492365150987336015
+    second: TX Tileset Wall_123
+  - first:
+      213: 1817635715041831052
+    second: TX Tileset Wall_124
+  - first:
+      213: 2630569673307760613
+    second: TX Tileset Wall_125
+  - first:
+      213: 4301620865942937268
+    second: TX Tileset Wall_126
+  - first:
+      213: 4505084011893919728
+    second: TX Tileset Wall_127
+  - first:
+      213: 4259142961942300988
+    second: TX Tileset Wall_128
+  - first:
+      213: 5532355165452283196
+    second: TX Tileset Wall_129
+  - first:
+      213: 7807372372592405100
+    second: TX Tileset Wall_130
+  - first:
+      213: 3498358236580881860
+    second: TX Tileset Wall_131
+  - first:
+      213: 7210696387890012406
+    second: TX Tileset Wall_132
+  - first:
+      213: 5728384584539485597
+    second: TX Tileset Wall_133
+  - first:
+      213: 453395619239144242
+    second: TX Tileset Wall_134
+  - first:
+      213: 9216954739782955180
+    second: TX Tileset Wall_135
+  - first:
+      213: 3799983081604394632
+    second: TX Tileset Wall_136
+  - first:
+      213: 5729615510365419537
+    second: TX Tileset Wall_137
+  - first:
+      213: 9216974758446428308
+    second: TX Tileset Wall_138
+  - first:
+      213: 433171006329474256
+    second: TX Tileset Wall_139
+  - first:
+      213: 6631999625160447816
+    second: TX Tileset Wall_140
+  - first:
+      213: 6519622848561750449
+    second: TX Tileset Wall_141
+  - first:
+      213: 5885295044328698908
+    second: TX Tileset Wall_142
+  - first:
+      213: 7713953301035898506
+    second: TX Tileset Wall_143
+  - first:
+      213: 5249784317010935491
+    second: TX Tileset Wall_144
+  - first:
+      213: 4518506302479492428
+    second: TX Tileset Wall_145
+  - first:
+      213: 3779569541717768179
+    second: TX Tileset Wall_146
+  - first:
+      213: 2932146246113386341
+    second: TX Tileset Wall_147
+  - first:
+      213: 649961267751445904
+    second: TX Tileset Wall_148
+  - first:
+      213: 7422866918497230777
+    second: TX Tileset Wall_149
+  - first:
+      213: 8781191865775824941
+    second: TX Tileset Wall_150
+  - first:
+      213: 8090630660961664205
+    second: TX Tileset Wall_151
+  - first:
+      213: 3649192106781711867
+    second: TX Tileset Wall_152
+  - first:
+      213: 6902112667507195968
+    second: TX Tileset Wall_153
+  - first:
+      213: 8304738097489999149
+    second: TX Tileset Wall_154
+  - first:
+      213: 6003197244602793737
+    second: TX Tileset Wall_155
+  - first:
+      213: 3557875248255192794
+    second: TX Tileset Wall_156
+  - first:
+      213: 5033043791353100074
+    second: TX Tileset Wall_157
+  - first:
+      213: 7581458179747959290
+    second: TX Tileset Wall_158
+  - first:
+      213: 137753111448076498
+    second: TX Tileset Wall_159
+  - first:
+      213: 5749947663184061496
+    second: TX Tileset Wall_160
+  - first:
+      213: 4256551166653810993
+    second: TX Tileset Wall_161
+  - first:
+      213: 2183574959900267667
+    second: TX Tileset Wall_162
+  - first:
+      213: 3713333796149974714
+    second: TX Tileset Wall_163
+  - first:
+      213: 5177867042270653543
+    second: TX Tileset Wall_164
+  - first:
+      213: 1332341020909963153
+    second: TX Tileset Wall_165
+  - first:
+      213: 8915249681369664908
+    second: TX Tileset Wall_166
+  - first:
+      213: 5913738625167529337
+    second: TX Tileset Wall_167
+  - first:
+      213: 540097610325718121
+    second: TX Tileset Wall_168
+  - first:
+      213: 4400451245601833420
+    second: TX Tileset Wall_169
+  - first:
+      213: 4982770738464097534
+    second: TX Tileset Wall_170
+  - first:
+      213: 4658101872240363379
+    second: TX Tileset Wall_171
+  - first:
+      213: 8617605142181660701
+    second: TX Tileset Wall_172
+  - first:
+      213: 2102967339041534321
+    second: TX Tileset Wall_173
+  - first:
+      213: 3621707429163423743
+    second: TX Tileset Wall_174
+  - first:
+      213: 27356688405236624
+    second: TX Tileset Wall_175
+  - first:
+      213: 4786541545696870613
+    second: TX Tileset Wall_176
+  - first:
+      213: 8929959101854502397
+    second: TX Tileset Wall_177
+  - first:
+      213: 4265195947649933970
+    second: TX Tileset Wall_178
+  - first:
+      213: 6036710793088664107
+    second: TX Tileset Wall_179
+  - first:
+      213: 4889656650739410756
+    second: TX Tileset Wall_180
+  - first:
+      213: 5545662999271560910
+    second: TX Tileset Wall_181
+  - first:
+      213: 8295304002925867143
+    second: TX Tileset Wall_182
+  - first:
+      213: 5575760738238641339
+    second: TX Tileset Wall_183
+  - first:
+      213: 4868487836818646422
+    second: TX Tileset Wall_184
+  - first:
+      213: 503775479466363411
+    second: TX Tileset Wall_185
+  - first:
+      213: 2811304804281079984
+    second: TX Tileset Wall_186
+  - first:
+      213: 6184904194710953920
+    second: TX Tileset Wall_187
+  - first:
+      213: 824888412805883086
+    second: TX Tileset Wall_188
+  - first:
+      213: 8022276561005120738
+    second: TX Tileset Wall_189
+  - first:
+      213: 2681318498655440783
+    second: TX Tileset Wall_190
+  - first:
+      213: 265252836078339868
+    second: TX Tileset Wall_191
+  - first:
+      213: 278286652433648271
+    second: TX Tileset Wall_192
+  - first:
+      213: 3257649898408794464
+    second: TX Tileset Wall_193
+  - first:
+      213: 4850251121884028400
+    second: TX Tileset Wall_194
+  - first:
+      213: 2296150844515004093
+    second: TX Tileset Wall_195
+  - first:
+      213: 6673960041102782698
+    second: TX Tileset Wall_196
+  - first:
+      213: 1445615259466893087
+    second: TX Tileset Wall_197
+  - first:
+      213: 7818261687002269431
+    second: TX Tileset Wall_198
+  - first:
+      213: 7073517411279842613
+    second: TX Tileset Wall_199
+  - first:
+      213: 1055910049916053832
+    second: TX Tileset Wall_200
+  - first:
+      213: 3106327192912759504
+    second: TX Tileset Wall_201
+  - first:
+      213: 1834734249944891903
+    second: TX Tileset Wall_202
+  - first:
+      213: 2461732430259815987
+    second: TX Tileset Wall_203
+  - first:
+      213: 7694700354516211731
+    second: TX Tileset Wall_204
+  - first:
+      213: 1108421115113632443
+    second: TX Tileset Wall_205
+  - first:
+      213: 5802377148837232547
+    second: TX Tileset Wall_206
+  - first:
+      213: 3072655600872327420
+    second: TX Tileset Wall_207
+  - first:
+      213: 7987226823400746382
+    second: TX Tileset Wall_208
+  - first:
+      213: 8403888706712424259
+    second: TX Tileset Wall_209
+  - first:
+      213: 3243365305236811754
+    second: TX Tileset Wall_210
+  - first:
+      213: 673789928220748634
+    second: TX Tileset Wall_211
+  - first:
+      213: 5276815098600346865
+    second: TX Tileset Wall_212
+  - first:
+      213: 230096662263915214
+    second: TX Tileset Wall_213
+  - first:
+      213: 3201032920155216394
+    second: TX Tileset Wall_214
+  - first:
+      213: 4270091096488347903
+    second: TX Tileset Wall_215
+  - first:
+      213: 6464817026382865327
+    second: TX Tileset Wall_216
+  - first:
+      213: 1608219319786017729
+    second: TX Tileset Wall_217
+  - first:
+      213: 7419724748369484752
+    second: TX Tileset Wall_218
+  - first:
+      213: 1693967171062420321
+    second: TX Tileset Wall_219
+  - first:
+      213: 6607127918267162619
+    second: TX Tileset Wall_220
+  - first:
+      213: 2300184562951128021
+    second: TX Tileset Wall_221
+  - first:
+      213: 1019731022134040111
+    second: TX Tileset Wall_222
+  - first:
+      213: 5769272174763486206
+    second: TX Tileset Wall_223
+  - first:
+      213: 5336062461655477150
+    second: TX Tileset Wall_224
+  - first:
+      213: 196836572843994860
+    second: TX Tileset Wall_225
+  - first:
+      213: 347028858462791008
+    second: TX Tileset Wall_226
+  - first:
+      213: 2497408073316899866
+    second: TX Tileset Wall_227
+  - first:
+      213: 7914640377643709265
+    second: TX Tileset Wall_228
+  - first:
+      213: 7323805007022496665
+    second: TX Tileset Wall_229
+  - first:
+      213: 5867514752615823110
+    second: TX Tileset Wall_230
+  - first:
+      213: 8581515263669311814
+    second: TX Tileset Wall_231
+  - first:
+      213: 5713933095622768890
+    second: TX Tileset Wall_232
+  - first:
+      213: 7443603995503268056
+    second: TX Tileset Wall_233
+  - first:
+      213: 3933771968221816960
+    second: TX Tileset Wall_234
+  - first:
+      213: 4947796118663118570
+    second: TX Tileset Wall_235
+  - first:
+      213: 3655901612667108058
+    second: TX Tileset Wall_236
+  - first:
+      213: 6710117581278657406
+    second: TX Tileset Wall_237
+  - first:
+      213: 2114954598854870889
+    second: TX Tileset Wall_238
+  - first:
+      213: 3127269232837107669
+    second: TX Tileset Wall_239
+  - first:
+      213: 6781423578033963636
+    second: TX Tileset Wall_240
+  - first:
+      213: 8104742150549921420
+    second: TX Tileset Wall_241
+  - first:
+      213: 1045058877458539768
+    second: TX Tileset Wall_242
+  - first:
+      213: 7567676755410602420
+    second: TX Tileset Wall_243
+  - first:
+      213: 4500240404350922122
+    second: TX Tileset Wall_244
+  - first:
+      213: 591966651571969702
+    second: TX Tileset Wall_245
+  - first:
+      213: 1471281987566003083
+    second: TX Tileset Wall_246
+  - first:
+      213: 5950804465590600845
+    second: TX Tileset Wall_247
+  - first:
+      213: 2886499517029933334
+    second: TX Tileset Wall_248
+  - first:
+      213: 2918591399098210481
+    second: TX Tileset Wall_249
+  - first:
+      213: 5868083331381511803
+    second: TX Tileset Wall_250
+  - first:
+      213: 3098505455667634261
+    second: TX Tileset Wall_251
+  - first:
+      213: 1084037385549859442
+    second: TX Tileset Wall_252
+  - first:
+      213: 7352651260158489717
+    second: TX Tileset Wall_253
+  - first:
+      213: 3629741916728922706
+    second: TX Tileset Wall_254
+  - first:
+      213: 1601987065508988238
+    second: TX Tileset Wall_255
+  - first:
+      213: 2570985827299677864
+    second: TX Tileset Wall_256
+  - first:
+      213: 4707071332889453827
+    second: TX Tileset Wall_257
+  - first:
+      213: 540137799436084650
+    second: TX Tileset Wall_258
+  - first:
+      213: 8443975053834055512
+    second: TX Tileset Wall_259
+  - first:
+      213: 6154919288583230695
+    second: TX Tileset Wall_260
+  - first:
+      213: 5819034078381118285
+    second: TX Tileset Wall_261
+  - first:
+      213: 4867225676358605319
+    second: TX Tileset Wall_262
+  - first:
+      213: 3711006382665790438
+    second: TX Tileset Wall_263
+  - first:
+      213: 6280253955131359604
+    second: TX Tileset Wall_264
+  - first:
+      213: 389349772298033570
+    second: TX Tileset Wall_265
+  - first:
+      213: 1024947981302746178
+    second: TX Tileset Wall_266
+  - first:
+      213: 6717545244981731480
+    second: TX Tileset Wall_267
+  - first:
+      213: 537913210025056678
+    second: TX Tileset Wall_268
+  - first:
+      213: 5412159559459668954
+    second: TX Tileset Wall_269
+  - first:
+      213: 7808277769278042362
+    second: TX Tileset Wall_270
+  - first:
+      213: 1442976505950853217
+    second: TX Tileset Wall_271
+  - first:
+      213: 3200204108516081565
+    second: TX Tileset Wall_272
+  - first:
+      213: 6155936258991386363
+    second: TX Tileset Wall_273
+  - first:
+      213: 1990707941619808192
+    second: TX Tileset Wall_274
+  - first:
+      213: 5436598071888301022
+    second: TX Tileset Wall_275
+  - first:
+      213: 3384925111493640931
+    second: TX Tileset Wall_276
+  - first:
+      213: 1303529212966401360
+    second: TX Tileset Wall_277
+  - first:
+      213: 3236844367413972410
+    second: TX Tileset Wall_278
+  - first:
+      213: 5181070076231530078
+    second: TX Tileset Wall_279
+  - first:
+      213: 6973948215900657477
+    second: TX Tileset Wall_280
+  - first:
+      213: 5643779185299993778
+    second: TX Tileset Wall_281
+  - first:
+      213: 3701019465838063959
+    second: TX Tileset Wall_282
+  - first:
+      213: 1185990209782275705
+    second: TX Tileset Wall_283
+  - first:
+      213: 8313401423471564345
+    second: TX Tileset Wall_284
+  - first:
+      213: 321310141760180185
+    second: TX Tileset Wall_285
+  - first:
+      213: 5099737687422057923
+    second: TX Tileset Wall_286
+  - first:
+      213: 4874454735213449408
+    second: TX Tileset Wall_287
+  - first:
+      213: 3524559701358183846
+    second: TX Tileset Wall_288
+  - first:
+      213: 2134068431135436996
+    second: TX Tileset Wall_289
+  - first:
+      213: 7597130077748785971
+    second: TX Tileset Wall_290
+  - first:
+      213: 4572140015331975377
+    second: TX Tileset Wall_291
+  - first:
+      213: 6778555403354537783
+    second: TX Tileset Wall_292
+  - first:
+      213: 590571384676285541
+    second: TX Tileset Wall_293
+  - first:
+      213: 3968651264553647438
+    second: TX Tileset Wall_294
+  - first:
+      213: 5692777412082462273
+    second: TX Tileset Wall_295
+  - first:
+      213: 3243223554889510427
+    second: TX Tileset Wall_296
+  - first:
+      213: 431794294982085848
+    second: TX Tileset Wall_297
+  - first:
+      213: 6575315506266716161
+    second: TX Tileset Wall_298
+  - first:
+      213: 708437151610129994
+    second: TX Tileset Wall_299
+  - first:
+      213: 8384896766626911387
+    second: TX Tileset Wall_300
+  - first:
+      213: 8282142103625161949
+    second: TX Tileset Wall_301
+  - first:
+      213: 169599287919093629
+    second: TX Tileset Wall_302
+  - first:
+      213: 4538482480728113034
+    second: TX Tileset Wall_303
+  - first:
+      213: 4948973205267357937
+    second: TX Tileset Wall_304
+  - first:
+      213: 3497491193412843667
+    second: TX Tileset Wall_305
+  - first:
+      213: 71234010973182637
+    second: TX Tileset Wall_306
+  - first:
+      213: 4537908137220257923
+    second: TX Tileset Wall_307
+  - first:
+      213: 3886665255373590100
+    second: TX Tileset Wall_308
+  - first:
+      213: 6393012425555745360
+    second: TX Tileset Wall_309
+  - first:
+      213: 8619882347242645892
+    second: TX Tileset Wall_310
+  - first:
+      213: 3236952067411174892
+    second: TX Tileset Wall_311
+  - first:
+      213: 5695022009803403667
+    second: TX Tileset Wall_312
+  - first:
+      213: 185479109014512927
+    second: TX Tileset Wall_313
+  - first:
+      213: 5565880132216523916
+    second: TX Tileset Wall_314
+  - first:
+      213: 16162504879124449
+    second: TX Tileset Wall_315
+  - first:
+      213: 3265316828257125945
+    second: TX Tileset Wall_316
+  - first:
+      213: 1976501141420367445
+    second: TX Tileset Wall_317
+  - first:
+      213: 3871542700557892295
+    second: TX Tileset Wall_318
+  - first:
+      213: 888743744792879700
+    second: TX Tileset Wall_319
+  - first:
+      213: 196748906482276385
+    second: TX Tileset Wall_320
+  - first:
+      213: 4307777697404787448
+    second: TX Tileset Wall_321
+  - first:
+      213: 110604073188438980
+    second: TX Tileset Wall_322
+  - first:
+      213: 7969739260881873875
+    second: TX Tileset Wall_323
+  - first:
+      213: 3264898762960521959
+    second: TX Tileset Wall_324
+  - first:
+      213: 7407945401715219095
+    second: TX Tileset Wall_325
+  - first:
+      213: 5680804816008075328
+    second: TX Tileset Wall_326
+  - first:
+      213: 9117265639620097921
+    second: TX Tileset Wall_327
+  - first:
+      213: 2970726801456124243
+    second: TX Tileset Wall_328
+  - first:
+      213: 1924890710157878937
+    second: TX Tileset Wall_329
+  - first:
+      213: 2349066878609821612
+    second: TX Tileset Wall_330
+  - first:
+      213: 5466297796816370831
+    second: TX Tileset Wall_331
+  - first:
+      213: 8321712916991805396
+    second: TX Tileset Wall_332
+  - first:
+      213: 8690230538315190094
+    second: TX Tileset Wall_333
+  - first:
+      213: 3439331569696082259
+    second: TX Tileset Wall_334
+  - first:
+      213: 3886599643352295361
+    second: TX Tileset Wall_335
+  - first:
+      213: 4796503055935554454
+    second: TX Tileset Wall_336
+  - first:
+      213: 2894470553900170822
+    second: TX Tileset Wall_337
+  - first:
+      213: 1317114160295301447
+    second: TX Tileset Wall_338
+  - first:
+      213: 1410950949819560777
+    second: TX Tileset Wall_339
+  - first:
+      213: 5857255929527183618
+    second: TX Tileset Wall_340
+  - first:
+      213: 661198982162888056
+    second: TX Tileset Wall_341
+  - first:
+      213: 4679119018105299734
+    second: TX Tileset Wall_342
+  - first:
+      213: 6023269783979814764
+    second: TX Tileset Wall_343
+  - first:
+      213: 4734252031329091089
+    second: TX Tileset Wall_344
+  - first:
+      213: 5722347733506679328
+    second: TX Tileset Wall_345
+  - first:
+      213: 3145154990509904620
+    second: TX Tileset Wall_346
+  - first:
+      213: 835475787709671396
+    second: TX Tileset Wall_347
+  - first:
+      213: 4070024862809644930
+    second: TX Tileset Wall_348
+  - first:
+      213: 5765155306636452856
+    second: TX Tileset Wall_349
+  - first:
+      213: 618327673739030135
+    second: TX Tileset Wall_350
+  - first:
+      213: 5770779783869060076
+    second: TX Tileset Wall_351
+  - first:
+      213: 8924084725642434641
+    second: TX Tileset Wall_352
+  - first:
+      213: 1362878966855485585
+    second: TX Tileset Wall_353
+  - first:
+      213: 293833146549269461
+    second: TX Tileset Wall_354
+  - first:
+      213: 4107400032003047170
+    second: TX Tileset Wall_355
+  - first:
+      213: 1864284862671793364
+    second: TX Tileset Wall_356
+  - first:
+      213: 1005347521152691168
+    second: TX Tileset Wall_357
+  - first:
+      213: 6426315521409861027
+    second: TX Tileset Wall_358
+  - first:
+      213: 7331485969932045576
+    second: TX Tileset Wall_359
+  - first:
+      213: 2952086402267069795
+    second: TX Tileset Wall_360
+  - first:
+      213: 7396375256682050749
+    second: TX Tileset Wall_361
+  - first:
+      213: 3353021828593852641
+    second: TX Tileset Wall_362
+  - first:
+      213: 8122867570025699486
+    second: TX Tileset Wall_363
+  - first:
+      213: 3384013174158650980
+    second: TX Tileset Wall_364
+  - first:
+      213: 7755750493517968431
+    second: TX Tileset Wall_365
+  - first:
+      213: 2756769329081201458
+    second: TX Tileset Wall_366
+  - first:
+      213: 7399536730126446570
+    second: TX Tileset Wall_367
+  - first:
+      213: 8198452850621825600
+    second: TX Tileset Wall_368
+  - first:
+      213: 7926984700552644057
+    second: TX Tileset Wall_369
+  - first:
+      213: 992255711983971685
+    second: TX Tileset Wall_370
+  - first:
+      213: 6580025575437598591
+    second: TX Tileset Wall_371
+  - first:
+      213: 466380819418372142
+    second: TX Tileset Wall_372
+  - first:
+      213: 4566120620568500150
+    second: TX Tileset Wall_373
+  - first:
+      213: 6551376627927061107
+    second: TX Tileset Wall_374
+  - first:
+      213: 4688244508471315048
+    second: TX Tileset Wall_375
+  - first:
+      213: 2266544098614971080
+    second: TX Tileset Wall_376
+  - first:
+      213: 1351697593765187831
+    second: TX Tileset Wall_377
+  - first:
+      213: 472239723195392270
+    second: TX Tileset Wall_378
+  - first:
+      213: 5122499748825541069
+    second: TX Tileset Wall_379
+  - first:
+      213: 5569898678496565540
+    second: TX Tileset Wall_380
+  - first:
+      213: 113707255531914557
+    second: TX Tileset Wall_381
+  - first:
+      213: 4087129010921223092
+    second: TX Tileset Wall_382
+  - first:
+      213: 5199003575007856888
+    second: TX Tileset Wall_383
+  - first:
+      213: 7862845045847216055
+    second: TX Tileset Wall_384
+  - first:
+      213: 8048286521115591534
+    second: TX Tileset Wall_385
+  - first:
+      213: 3098215989841887604
+    second: TX Tileset Wall_386
+  - first:
+      213: 5426969921984912046
+    second: TX Tileset Wall_387
+  - first:
+      213: 403881600750191301
+    second: TX Tileset Wall_388
+  - first:
+      213: 142099404457277366
+    second: TX Tileset Wall_389
+  - first:
+      213: 7002855213989667357
+    second: TX Tileset Wall_390
+  - first:
+      213: 4492814903023640995
+    second: TX Tileset Wall_391
+  - first:
+      213: 9044635855437273142
+    second: TX Tileset Wall_392
+  - first:
+      213: 4139580535828420113
+    second: TX Tileset Wall_393
+  - first:
+      213: 2433536503828908205
+    second: TX Tileset Wall_394
+  - first:
+      213: 5733403710518840594
+    second: TX Tileset Wall_395
+  - first:
+      213: 8058241104129579089
+    second: TX Tileset Wall_396
+  - first:
+      213: 4906263393131904896
+    second: TX Tileset Wall_397
+  - first:
+      213: 7781994736750734752
+    second: TX Tileset Wall_398
+  - first:
+      213: 8437414223175893190
+    second: TX Tileset Wall_399
+  - first:
+      213: 3495422236815830327
+    second: TX Tileset Wall_400
+  - first:
+      213: 4244927281904254397
+    second: TX Tileset Wall_401
+  - first:
+      213: 4032634253616356431
+    second: TX Tileset Wall_402
+  - first:
+      213: 221168064213363508
+    second: TX Tileset Wall_403
+  - first:
+      213: 3611207702850723340
+    second: TX Tileset Wall_404
+  - first:
+      213: 3854836861656359785
+    second: TX Tileset Wall_405
+  - first:
+      213: 459116609237406598
+    second: TX Tileset Wall_406
+  - first:
+      213: 8756664192737851905
+    second: TX Tileset Wall_407
+  - first:
+      213: 7532749130037006369
+    second: TX Tileset Wall_408
+  - first:
+      213: 6783468347125322223
+    second: TX Tileset Wall_409
+  - first:
+      213: 8339270304070838103
+    second: TX Tileset Wall_410
+  - first:
+      213: 2989732647194525140
+    second: TX Tileset Wall_411
+  - first:
+      213: 4181099703232303619
+    second: TX Tileset Wall_412
+  - first:
+      213: 52029351827368290
+    second: TX Tileset Wall_413
+  - first:
+      213: 5480847023469294276
+    second: TX Tileset Wall_414
+  - first:
+      213: 6030933855430916387
+    second: TX Tileset Wall_415
+  - first:
+      213: 4556138618812787636
+    second: TX Tileset Wall_416
+  - first:
+      213: 8690897793103076441
+    second: TX Tileset Wall_417
+  - first:
+      213: 988424286092034093
+    second: TX Tileset Wall_418
+  - first:
+      213: 521741473439938144
+    second: TX Tileset Wall_419
+  - first:
+      213: 7079424592584564553
+    second: TX Tileset Wall_420
+  - first:
+      213: 9079430457382281090
+    second: TX Tileset Wall_421
+  - first:
+      213: 8253287540029521734
+    second: TX Tileset Wall_422
+  - first:
+      213: 576386772663865039
+    second: TX Tileset Wall_423
+  - first:
+      213: 8104714406728724194
+    second: TX Tileset Wall_424
+  - first:
+      213: 1307095739654827590
+    second: TX Tileset Wall_425
+  - first:
+      213: 8718673092249371698
+    second: TX Tileset Wall_426
+  - first:
+      213: 2871877955663251263
+    second: TX Tileset Wall_427
+  - first:
+      213: 4471284998752389570
+    second: TX Tileset Wall_428
+  - first:
+      213: 7146005645317664262
+    second: TX Tileset Wall_429
+  - first:
+      213: 5138354601623869061
+    second: TX Tileset Wall_430
+  - first:
+      213: 7604307210904825705
+    second: TX Tileset Wall_431
+  - first:
+      213: 1775075771873061519
+    second: TX Tileset Wall_432
+  - first:
+      213: 1107711592582892310
+    second: TX Tileset Wall_433
+  - first:
+      213: 4376357273876030678
+    second: TX Tileset Wall_434
+  - first:
+      213: 8832334882726288618
+    second: TX Tileset Wall_435
+  - first:
+      213: 6441137642640231426
+    second: TX Tileset Wall_436
+  - first:
+      213: 8610361167690219955
+    second: TX Tileset Wall_437
+  - first:
+      213: 2154229053972991267
+    second: TX Tileset Wall_438
+  - first:
+      213: 3045315562041006902
+    second: TX Tileset Wall_439
+  - first:
+      213: 6166864052332303255
+    second: TX Tileset Wall_440
+  - first:
+      213: 5349409040574755332
+    second: TX Tileset Wall_441
+  - first:
+      213: 6109555214422434893
+    second: TX Tileset Wall_442
+  - first:
+      213: 8087400599928632736
+    second: TX Tileset Wall_443
+  - first:
+      213: 2096206689622017253
+    second: TX Tileset Wall_444
+  - first:
+      213: 827793712358779910
+    second: TX Tileset Wall_445
+  - first:
+      213: 922817524197615382
+    second: TX Tileset Wall_446
+  - first:
+      213: 4350568313474389512
+    second: TX Tileset Wall_447
+  - first:
+      213: 6682573952062026526
+    second: TX Tileset Wall_448
+  - first:
+      213: 2950428419904824540
+    second: TX Tileset Wall_449
+  - first:
+      213: 7033208764198743992
+    second: TX Tileset Wall_450
+  - first:
+      213: 5489177713268674369
+    second: TX Tileset Wall_451
+  - first:
+      213: 7634391591601594773
+    second: TX Tileset Wall_452
+  - first:
+      213: 4176913243441348666
+    second: TX Tileset Wall_453
+  - first:
+      213: 4329114010870393943
+    second: TX Tileset Wall_454
+  - first:
+      213: 8148125039257522935
+    second: TX Tileset Wall_455
+  - first:
+      213: 2194245271449876685
+    second: TX Tileset Wall_456
+  - first:
+      213: 964153688131990960
+    second: TX Tileset Wall_457
+  - first:
+      213: 8353844637758146155
+    second: TX Tileset Wall_458
+  - first:
+      213: 4600304988470171776
+    second: TX Tileset Wall_459
+  - first:
+      213: 3429958744917894661
+    second: TX Tileset Wall_460
+  - first:
+      213: 2453224464399182357
+    second: TX Tileset Wall_461
+  - first:
+      213: 6396179238139678736
+    second: TX Tileset Wall_462
+  - first:
+      213: 6788011471217203435
+    second: TX Tileset Wall_463
+  - first:
+      213: 4285721202398429583
+    second: TX Tileset Wall_464
+  - first:
+      213: 1842898485316756239
+    second: TX Tileset Wall_465
+  - first:
+      213: 1950020045501601648
+    second: TX Tileset Wall_466
+  - first:
+      213: 4363953534399867667
+    second: TX Tileset Wall_467
+  - first:
+      213: 68980471710770802
+    second: TX Tileset Wall_468
+  - first:
+      213: 6075017675892999170
+    second: TX Tileset Wall_469
+  - first:
+      213: 7348832496323941052
+    second: TX Tileset Wall_470
+  - first:
+      213: 2240836323071709066
+    second: TX Tileset Wall_471
+  - first:
+      213: 7767331330635909659
+    second: TX Tileset Wall_472
+  - first:
+      213: 2103458251817802913
+    second: TX Tileset Wall_473
+  - first:
+      213: 6675819636060844067
+    second: TX Tileset Wall_474
+  - first:
+      213: 4942198695246097455
+    second: TX Tileset Wall_475
+  - first:
+      213: 6625756376413625196
+    second: TX Tileset Wall_476
+  - first:
+      213: 3149671750245679758
+    second: TX Tileset Wall_477
+  - first:
+      213: 676285258485227604
+    second: TX Tileset Wall_478
+  - first:
+      213: 9563751861263789
+    second: TX Tileset Wall_479
+  - first:
+      213: 7089279452153034796
+    second: TX Tileset Wall_480
+  - first:
+      213: 8669924871353260428
+    second: TX Tileset Wall_481
+  - first:
+      213: 6796538158291226614
+    second: TX Tileset Wall_482
+  - first:
+      213: 2295571013853159341
+    second: TX Tileset Wall_483
+  - first:
+      213: 5802181888021721595
+    second: TX Tileset Wall_484
+  - first:
+      213: 1415232736621214983
+    second: TX Tileset Wall_485
+  - first:
+      213: 4245659939493192895
+    second: TX Tileset Wall_486
+  - first:
+      213: 993119722037651217
+    second: TX Tileset Wall_487
+  - first:
+      213: 4966565583618319981
+    second: TX Tileset Wall_488
+  - first:
+      213: 6449438857996642668
+    second: TX Tileset Wall_489
+  - first:
+      213: 5266444619178235999
+    second: TX Tileset Wall_490
+  - first:
+      213: 6774057628395322487
+    second: TX Tileset Wall_491
+  - first:
+      213: 5717231077868032108
+    second: TX Tileset Wall_492
+  - first:
+      213: 7527105126273057827
+    second: TX Tileset Wall_493
+  - first:
+      213: 511391113543530283
+    second: TX Tileset Wall_494
+  - first:
+      213: 6668375701273744264
+    second: TX Tileset Wall_495
+  - first:
+      213: 6344697607923246548
+    second: TX Tileset Wall_496
+  - first:
+      213: 8501922658761788532
+    second: TX Tileset Wall_497
+  - first:
+      213: 2468291860817905088
+    second: TX Tileset Wall_498
+  - first:
+      213: 46267607744507482
+    second: TX Tileset Wall_499
+  - first:
+      213: 1580221334628192498
+    second: TX Tileset Wall_500
+  - first:
+      213: 7119347592465528960
+    second: TX Tileset Wall_501
+  - first:
+      213: 4756601092480473823
+    second: TX Tileset Wall_502
+  - first:
+      213: 5724371762728091988
+    second: TX Tileset Wall_503
+  - first:
+      213: 1699808859476046967
+    second: TX Tileset Wall_504
+  - first:
+      213: 2933265120447929853
+    second: TX Tileset Wall_505
+  - first:
+      213: 6556540034206436566
+    second: TX Tileset Wall_506
+  - first:
+      213: 4772943503424524682
+    second: TX Tileset Wall_507
+  - first:
+      213: 6237849108046906554
+    second: TX Tileset Wall_508
+  - first:
+      213: 1659282746199077945
+    second: TX Tileset Wall_509
+  - first:
+      213: 5121377994869462017
+    second: TX Tileset Wall_510
+  - first:
+      213: 3444946134982044950
+    second: TX Tileset Wall_511
+  - first:
+      213: 1001174476316482790
+    second: TX Tileset Wall_512
+  - first:
+      213: 2385038510822976212
+    second: TX Tileset Wall_513
+  - first:
+      213: 3183871582341442835
+    second: TX Tileset Wall_514
+  - first:
+      213: 8351172678882294791
+    second: TX Tileset Wall_515
+  - first:
+      213: 3665767847525542525
+    second: TX Tileset Wall_516
+  - first:
+      213: 3347754474649671797
+    second: TX Tileset Wall_517
+  - first:
+      213: 3019546443946020383
+    second: TX Tileset Wall_518
+  - first:
+      213: 7778575319456456047
+    second: TX Tileset Wall_519
+  - first:
+      213: 2138269489878533163
+    second: TX Tileset Wall_520
+  - first:
+      213: 4866233966307447972
+    second: TX Tileset Wall_521
+  - first:
+      213: 2767376796630876007
+    second: TX Tileset Wall_522
+  - first:
+      213: 7086684983886128594
+    second: TX Tileset Wall_523
+  - first:
+      213: 6397757677585124609
+    second: TX Tileset Wall_524
+  - first:
+      213: 970439742960183486
+    second: TX Tileset Wall_525
+  - first:
+      213: 7917089547635932210
+    second: TX Tileset Wall_526
+  - first:
+      213: 8979827852999504759
+    second: TX Tileset Wall_527
+  - first:
+      213: 7644786609544644922
+    second: TX Tileset Wall_528
+  - first:
+      213: 7335098057607881467
+    second: TX Tileset Wall_529
+  - first:
+      213: 193118962135648718
+    second: TX Tileset Wall_530
+  - first:
+      213: 4095896594290654061
+    second: TX Tileset Wall_531
+  - first:
+      213: 2963549964832695406
+    second: TX Tileset Wall_532
+  - first:
+      213: 7421525993136468013
+    second: TX Tileset Wall_533
+  - first:
+      213: 8426014958641223967
+    second: TX Tileset Wall_534
+  - first:
+      213: 89874092797339354
+    second: TX Tileset Wall_535
+  - first:
+      213: 8733596327481834944
+    second: TX Tileset Wall_536
+  - first:
+      213: 3930642302672440679
+    second: TX Tileset Wall_537
+  - first:
+      213: 4332968361436341934
+    second: TX Tileset Wall_538
+  - first:
+      213: 2940801974704566088
+    second: TX Tileset Wall_539
+  - first:
+      213: 5425735680926840546
+    second: TX Tileset Wall_540
+  - first:
+      213: 6322278907781790226
+    second: TX Tileset Wall_541
+  - first:
+      213: 1994715031172767493
+    second: TX Tileset Wall_542
+  - first:
+      213: 7377154812608662021
+    second: TX Tileset Wall_543
+  - first:
+      213: 7596216863747575190
+    second: TX Tileset Wall_544
+  - first:
+      213: 3496551541818292314
+    second: TX Tileset Wall_545
+  - first:
+      213: 3991421097993650515
+    second: TX Tileset Wall_546
+  - first:
+      213: 6251026725509709372
+    second: TX Tileset Wall_547
+  - first:
+      213: 8432388313903726907
+    second: TX Tileset Wall_548
+  - first:
+      213: 4685431344859912653
+    second: TX Tileset Wall_549
+  - first:
+      213: 810137120615899277
+    second: TX Tileset Wall_550
+  - first:
+      213: 824645751763784471
+    second: TX Tileset Wall_551
+  - first:
+      213: 4334535262428834011
+    second: TX Tileset Wall_552
+  - first:
+      213: 6401555276148357240
+    second: TX Tileset Wall_553
+  - first:
+      213: 553366836559115694
+    second: TX Tileset Wall_554
+  - first:
+      213: 8290066705733442122
+    second: TX Tileset Wall_555
+  - first:
+      213: 5848375343710844865
+    second: TX Tileset Wall_556
+  - first:
+      213: 2155062636656029196
+    second: TX Tileset Wall_557
+  - first:
+      213: 2857113844418379506
+    second: TX Tileset Wall_558
+  - first:
+      213: 8019719737170338897
+    second: TX Tileset Wall_559
+  - first:
+      213: 3611164661823651856
+    second: TX Tileset Wall_560
+  - first:
+      213: 6613863029739409210
+    second: TX Tileset Wall_561
+  - first:
+      213: 1036984174474281009
+    second: TX Tileset Wall_562
+  - first:
+      213: 5144723638165817432
+    second: TX Tileset Wall_563
+  - first:
+      213: 3687896163280841271
+    second: TX Tileset Wall_564
+  - first:
+      213: 5738332361279632877
+    second: TX Tileset Wall_565
+  - first:
+      213: 1280144552332136087
+    second: TX Tileset Wall_566
+  - first:
+      213: 3455782698013586711
+    second: TX Tileset Wall_567
+  - first:
+      213: 885925411340388042
+    second: TX Tileset Wall_568
+  - first:
+      213: 1995240637076240332
+    second: TX Tileset Wall_569
+  - first:
+      213: 3096490874083672334
+    second: TX Tileset Wall_570
+  - first:
+      213: 1786253530955462828
+    second: TX Tileset Wall_571
+  - first:
+      213: 1961597240371032442
+    second: TX Tileset Wall_572
+  - first:
+      213: 3973321424124922341
+    second: TX Tileset Wall_573
+  - first:
+      213: 1324251401250984192
+    second: TX Tileset Wall_574
+  - first:
+      213: 7488085144289332281
+    second: TX Tileset Wall_575
+  - first:
+      213: 365246866962840441
+    second: TX Tileset Wall_576
+  - first:
+      213: 1605363027856584767
+    second: TX Tileset Wall_577
+  - first:
+      213: 1609563079468809296
+    second: TX Tileset Wall_578
+  - first:
+      213: 4169949145230933319
+    second: TX Tileset Wall_579
+  - first:
+      213: 6534413568246794899
+    second: TX Tileset Wall_580
+  - first:
+      213: 4315763727013549957
+    second: TX Tileset Wall_581
+  - first:
+      213: 4587203015825845221
+    second: TX Tileset Wall_582
+  - first:
+      213: 4869702009759631332
+    second: TX Tileset Wall_583
+  - first:
+      213: 7340466265427829410
+    second: TX Tileset Wall_584
+  - first:
+      213: 8329400244760778140
+    second: TX Tileset Wall_585
+  - first:
+      213: 9195966208132327237
+    second: TX Tileset Wall_586
+  - first:
+      213: 1402880632748024194
+    second: TX Tileset Wall_587
+  - first:
+      213: 6435407088288387710
+    second: TX Tileset Wall_588
+  - first:
+      213: 3293738224260544243
+    second: TX Tileset Wall_589
+  - first:
+      213: 7972670095430493481
+    second: TX Tileset Wall_590
+  - first:
+      213: 200280477734757384
+    second: TX Tileset Wall_591
+  - first:
+      213: 5656557447634909389
+    second: TX Tileset Wall_592
+  - first:
+      213: 1856910383431346678
+    second: TX Tileset Wall_593
+  - first:
+      213: 8165377280979431540
+    second: TX Tileset Wall_594
+  - first:
+      213: 8984215064340652575
+    second: TX Tileset Wall_595
+  - first:
+      213: 6907543699039761266
+    second: TX Tileset Wall_596
+  - first:
+      213: 1294009177637717875
+    second: TX Tileset Wall_597
+  - first:
+      213: 2573684755416304107
+    second: TX Tileset Wall_598
+  - first:
+      213: 1305524398326758179
+    second: TX Tileset Wall_599
+  - first:
+      213: 1206998534048405330
+    second: TX Tileset Wall_600
+  - first:
+      213: 7332277640136494219
+    second: TX Tileset Wall_601
+  - first:
+      213: 1891187001707415600
+    second: TX Tileset Wall_602
+  - first:
+      213: 742667832766952568
+    second: TX Tileset Wall_603
+  - first:
+      213: 4461687483803284201
+    second: TX Tileset Wall_604
+  - first:
+      213: 5998898589265195835
+    second: TX Tileset Wall_605
+  - first:
+      213: 4904262326170340534
+    second: TX Tileset Wall_606
+  - first:
+      213: 4613929368374184477
+    second: TX Tileset Wall_607
+  - first:
+      213: 3424672579240478935
+    second: TX Tileset Wall_608
+  - first:
+      213: 5463598152162164472
+    second: TX Tileset Wall_609
+  - first:
+      213: 1855588639994465813
+    second: TX Tileset Wall_610
+  - first:
+      213: 6187662532117901316
+    second: TX Tileset Wall_611
+  - first:
+      213: 1198176495364517563
+    second: TX Tileset Wall_612
+  - first:
+      213: 7151823427872390636
+    second: TX Tileset Wall_613
+  - first:
+      213: 6625447457595184065
+    second: TX Tileset Wall_614
+  - first:
+      213: 917083308141291448
+    second: TX Tileset Wall_615
+  - first:
+      213: 5109199038845010715
+    second: TX Tileset Wall_616
+  - first:
+      213: 5218521945357972114
+    second: TX Tileset Wall_617
+  - first:
+      213: 8033610099563430733
+    second: TX Tileset Wall_618
+  - first:
+      213: 4188160149898088137
+    second: TX Tileset Wall_619
+  - first:
+      213: 7091332896517926029
+    second: TX Tileset Wall_620
+  - first:
+      213: 7865543017421390893
+    second: TX Tileset Wall_621
+  - first:
+      213: 297920055631958132
+    second: TX Tileset Wall_622
+  - first:
+      213: 2234341476903956
+    second: TX Tileset Wall_623
+  - first:
+      213: 4220938563322069414
+    second: TX Tileset Wall_624
+  - first:
+      213: 2043954567357122901
+    second: TX Tileset Wall_625
+  - first:
+      213: 3022858588831772651
+    second: TX Tileset Wall_626
+  - first:
+      213: 3132882022956760919
+    second: TX Tileset Wall_627
+  - first:
+      213: 8788910245328161508
+    second: TX Tileset Wall_628
+  - first:
+      213: 2574430981995091369
+    second: TX Tileset Wall_629
+  - first:
+      213: 942852122779195483
+    second: TX Tileset Wall_630
+  - first:
+      213: 1294734564402585375
+    second: TX Tileset Wall_631
+  - first:
+      213: 1249844153060506363
+    second: TX Tileset Wall_632
+  - first:
+      213: 7981965990072280144
+    second: TX Tileset Wall_633
+  - first:
+      213: 9114469444815384991
+    second: TX Tileset Wall_634
+  - first:
+      213: 8119473209875725484
+    second: TX Tileset Wall_635
+  - first:
+      213: 240524227268682436
+    second: TX Tileset Wall_636
+  - first:
+      213: 2795091388857966891
+    second: TX Tileset Wall_637
+  - first:
+      213: 7318159606752506758
+    second: TX Tileset Wall_638
+  - first:
+      213: 7815182588364183982
+    second: TX Tileset Wall_639
+  - first:
+      213: 4637284186735870911
+    second: TX Tileset Wall_640
+  - first:
+      213: 8932171938571927271
+    second: TX Tileset Wall_641
+  - first:
+      213: 4397715744575979741
+    second: TX Tileset Wall_642
+  - first:
+      213: 1590046030809245247
+    second: TX Tileset Wall_643
+  - first:
+      213: 1197780773711973965
+    second: TX Tileset Wall_644
+  - first:
+      213: 8382531499714459979
+    second: TX Tileset Wall_645
+  - first:
+      213: 466424011484444358
+    second: TX Tileset Wall_646
+  - first:
+      213: 2871322777788261811
+    second: TX Tileset Wall_647
+  - first:
+      213: 2568521882025697316
+    second: TX Tileset Wall_648
+  - first:
+      213: 1564162811884226993
+    second: TX Tileset Wall_649
+  - first:
+      213: 5380078872437584776
+    second: TX Tileset Wall_650
+  - first:
+      213: 6837322351236659308
+    second: TX Tileset Wall_651
+  - first:
+      213: 6925315739868055758
+    second: TX Tileset Wall_652
+  - first:
+      213: 2593202935173870219
+    second: TX Tileset Wall_653
+  - first:
+      213: 8201966534470261537
+    second: TX Tileset Wall_654
+  - first:
+      213: 8095390516364436859
+    second: TX Tileset Wall_655
+  - first:
+      213: 3675177619908275928
+    second: TX Tileset Wall_656
+  - first:
+      213: 3452794453989783728
+    second: TX Tileset Wall_657
+  - first:
+      213: 5496498296652213326
+    second: TX Tileset Wall_658
+  - first:
+      213: 2533207259082558811
+    second: TX Tileset Wall_659
+  - first:
+      213: 6552199529229924349
+    second: TX Tileset Wall_660
+  - first:
+      213: 636710271154289989
+    second: TX Tileset Wall_661
+  - first:
+      213: 7401543208800312060
+    second: TX Tileset Wall_662
+  - first:
+      213: 5845090402128848003
+    second: TX Tileset Wall_663
+  - first:
+      213: 6943811575437157433
+    second: TX Tileset Wall_664
+  - first:
+      213: 5116853448015586064
+    second: TX Tileset Wall_665
+  - first:
+      213: 7488593034077765313
+    second: TX Tileset Wall_666
+  - first:
+      213: 4110215694259728839
+    second: TX Tileset Wall_667
+  - first:
+      213: 3130913728734191165
+    second: TX Tileset Wall_668
+  - first:
+      213: 8470159568686255777
+    second: TX Tileset Wall_669
+  - first:
+      213: 7440492851396698719
+    second: TX Tileset Wall_670
+  - first:
+      213: 3490233584009478505
+    second: TX Tileset Wall_671
+  - first:
+      213: 611396929452559966
+    second: TX Tileset Wall_672
+  - first:
+      213: 5898029740063879780
+    second: TX Tileset Wall_673
+  - first:
+      213: 4039486673670441847
+    second: TX Tileset Wall_674
+  - first:
+      213: 9015540265850506364
+    second: TX Tileset Wall_675
+  - first:
+      213: 1744941358409040587
+    second: TX Tileset Wall_676
+  - first:
+      213: 4858282373639276900
+    second: TX Tileset Wall_677
+  - first:
+      213: 5074073910332443664
+    second: TX Tileset Wall_678
+  - first:
+      213: 8574665728761121477
+    second: TX Tileset Wall_679
+  - first:
+      213: 6298830000002110866
+    second: TX Tileset Wall_680
+  - first:
+      213: 4962302995593814868
+    second: TX Tileset Wall_681
+  - first:
+      213: 2619548752826045338
+    second: TX Tileset Wall_682
+  - first:
+      213: 8123579188554269787
+    second: TX Tileset Wall_683
+  - first:
+      213: 8297794393605581046
+    second: TX Tileset Wall_684
+  - first:
+      213: 801950242802045854
+    second: TX Tileset Wall_685
+  - first:
+      213: 2287914909569021873
+    second: TX Tileset Wall_686
+  - first:
+      213: 2204354225700705638
+    second: TX Tileset Wall_687
+  - first:
+      213: 4053630387366171236
+    second: TX Tileset Wall_688
+  - first:
+      213: 4666472455481290064
+    second: TX Tileset Wall_689
+  - first:
+      213: 4920708736973730372
+    second: TX Tileset Wall_690
+  - first:
+      213: 5123518432308830807
+    second: TX Tileset Wall_691
+  - first:
+      213: 1875442202066653486
+    second: TX Tileset Wall_692
+  - first:
+      213: 864498874367826247
+    second: TX Tileset Wall_693
+  - first:
+      213: 489956951954358816
+    second: TX Tileset Wall_694
+  - first:
+      213: 6876064640442079921
+    second: TX Tileset Wall_695
+  - first:
+      213: 8186498037856236818
+    second: TX Tileset Wall_696
+  - first:
+      213: 6749191238228587389
+    second: TX Tileset Wall_697
+  - first:
+      213: 3919613026368101889
+    second: TX Tileset Wall_698
+  - first:
+      213: 800031334572335540
+    second: TX Tileset Wall_699
+  - first:
+      213: 701963253112865520
+    second: TX Tileset Wall_700
+  - first:
+      213: 8587080205612766225
+    second: TX Tileset Wall_701
+  - first:
+      213: 5132874696272171834
+    second: TX Tileset Wall_702
+  - first:
+      213: 1678332104360460514
+    second: TX Tileset Wall_703
+  - first:
+      213: 9006423794957253276
+    second: TX Tileset Wall_704
+  - first:
+      213: 7270625528704973141
+    second: TX Tileset Wall_705
+  - first:
+      213: 5823452046670342340
+    second: TX Tileset Wall_706
+  - first:
+      213: 5574829837452178053
+    second: TX Tileset Wall_707
+  - first:
+      213: 8212722868416983123
+    second: TX Tileset Wall_708
+  - first:
+      213: 9838593804260862
+    second: TX Tileset Wall_709
+  - first:
+      213: 5387820668950912041
+    second: TX Tileset Wall_710
+  - first:
+      213: 4254727153540219335
+    second: TX Tileset Wall_711
+  - first:
+      213: 7283130497041792632
+    second: TX Tileset Wall_712
+  - first:
+      213: 409230441949024244
+    second: TX Tileset Wall_713
+  - first:
+      213: 1431748900410252079
+    second: TX Tileset Wall_714
+  - first:
+      213: 7070948391539972227
+    second: TX Tileset Wall_715
+  - first:
+      213: 6545502450439308227
+    second: TX Tileset Wall_716
+  - first:
+      213: 2290967869484239439
+    second: TX Tileset Wall_717
+  - first:
+      213: 3441498198856507351
+    second: TX Tileset Wall_718
+  - first:
+      213: 3055929774718145393
+    second: TX Tileset Wall_719
+  - first:
+      213: 4877655233696674214
+    second: TX Tileset Wall_720
+  - first:
+      213: 2937138095849064552
+    second: TX Tileset Wall_721
+  - first:
+      213: 4689581274522130388
+    second: TX Tileset Wall_722
+  - first:
+      213: 8357543863707858206
+    second: TX Tileset Wall_723
+  - first:
+      213: 5994632686349333520
+    second: TX Tileset Wall_724
+  - first:
+      213: 3915565719024239731
+    second: TX Tileset Wall_725
+  - first:
+      213: 7524338639573254016
+    second: TX Tileset Wall_726
+  - first:
+      213: 774978906746763677
+    second: TX Tileset Wall_727
+  - first:
+      213: 1920033398238796622
+    second: TX Tileset Wall_728
+  - first:
+      213: 144021094739617081
+    second: TX Tileset Wall_729
+  - first:
+      213: 2235783635204332816
+    second: TX Tileset Wall_730
+  - first:
+      213: 7793362225754211105
+    second: TX Tileset Wall_731
+  - first:
+      213: 5511558975835064246
+    second: TX Tileset Wall_732
+  - first:
+      213: 3890650308755155267
+    second: TX Tileset Wall_733
+  - first:
+      213: 7569506573000415925
+    second: TX Tileset Wall_734
+  - first:
+      213: 4795579218996091998
+    second: TX Tileset Wall_735
+  - first:
+      213: 8979414640745514490
+    second: TX Tileset Wall_736
+  - first:
+      213: 1223970830745931153
+    second: TX Tileset Wall_737
+  - first:
+      213: 8491535329681884013
+    second: TX Tileset Wall_738
+  - first:
+      213: 5744400578613407892
+    second: TX Tileset Wall_739
+  - first:
+      213: 4307830774344041845
+    second: TX Tileset Wall_740
+  - first:
+      213: 3695628065750003745
+    second: TX Tileset Wall_741
+  - first:
+      213: 4458087932444736460
+    second: TX Tileset Wall_742
+  - first:
+      213: 8610358654052765995
+    second: TX Tileset Wall_743
+  - first:
+      213: 221433866019718086
+    second: TX Tileset Wall_744
+  - first:
+      213: 2380838782899576582
+    second: TX Tileset Wall_745
+  - first:
+      213: 8926590284590739889
+    second: TX Tileset Wall_746
+  - first:
+      213: 3862545216723098223
+    second: TX Tileset Wall_747
+  - first:
+      213: 1659158337848966101
+    second: TX Tileset Wall_748
+  - first:
+      213: 2450225460268997472
+    second: TX Tileset Wall_749
+  - first:
+      213: 4235108343283117402
+    second: TX Tileset Wall_750
+  - first:
+      213: 77637984409720869
+    second: TX Tileset Wall_751
+  - first:
+      213: 7655285765666484500
+    second: TX Tileset Wall_752
+  - first:
+      213: 7842637386549422665
+    second: TX Tileset Wall_753
+  - first:
+      213: 9004116925712454511
+    second: TX Tileset Wall_754
+  - first:
+      213: 4869186794819029966
+    second: TX Tileset Wall_755
+  - first:
+      213: 84288065540654582
+    second: TX Tileset Wall_756
+  - first:
+      213: 9061304213882396410
+    second: TX Tileset Wall_757
+  - first:
+      213: 524752830959740017
+    second: TX Tileset Wall_758
+  - first:
+      213: 8378367901647596375
+    second: TX Tileset Wall_759
+  - first:
+      213: 4682078802185797730
+    second: TX Tileset Wall_760
+  - first:
+      213: 5317438679658841680
+    second: TX Tileset Wall_761
+  - first:
+      213: 197440578287051409
+    second: TX Tileset Wall_762
+  - first:
+      213: 7660489032795542558
+    second: TX Tileset Wall_763
+  - first:
+      213: 6232300715500594594
+    second: TX Tileset Wall_764
+  - first:
+      213: 2087211947607626558
+    second: TX Tileset Wall_765
+  - first:
+      213: 5238434786197143216
+    second: TX Tileset Wall_766
+  - first:
+      213: 721911606746057343
+    second: TX Tileset Wall_767
+  - first:
+      213: 7643197834844943222
+    second: TX Tileset Wall_768
+  - first:
+      213: 7659615776913668822
+    second: TX Tileset Wall_769
+  - first:
+      213: 2966355227160055194
+    second: TX Tileset Wall_770
+  - first:
+      213: 552165235549400897
+    second: TX Tileset Wall_771
+  - first:
+      213: 433300669638082753
+    second: TX Tileset Wall_772
+  - first:
+      213: 231064776748582548
+    second: TX Tileset Wall_773
+  - first:
+      213: 5654276014747349337
+    second: TX Tileset Wall_774
+  - first:
+      213: 4334707864055746053
+    second: TX Tileset Wall_775
+  - first:
+      213: 846847432105581853
+    second: TX Tileset Wall_776
+  - first:
+      213: 259424371096646322
+    second: TX Tileset Wall_777
+  - first:
+      213: 2380207383369769093
+    second: TX Tileset Wall_778
+  - first:
+      213: 2136787288307417138
+    second: TX Tileset Wall_779
+  - first:
+      213: 1340132151686102385
+    second: TX Tileset Wall_780
+  - first:
+      213: 9094595010751787586
+    second: TX Tileset Wall_781
+  - first:
+      213: 6850281826335637748
+    second: TX Tileset Wall_782
+  - first:
+      213: 2343143869700027819
+    second: TX Tileset Wall_783
+  - first:
+      213: 9049140326164867214
+    second: TX Tileset Wall_784
+  - first:
+      213: 7632070139874090081
+    second: TX Tileset Wall_785
+  - first:
+      213: 5358660080154533898
+    second: TX Tileset Wall_786
+  - first:
+      213: 1580610722310102089
+    second: TX Tileset Wall_787
+  - first:
+      213: 8367200736208462621
+    second: TX Tileset Wall_788
+  - first:
+      213: 8770265819512528132
+    second: TX Tileset Wall_789
+  - first:
+      213: 731203181630779549
+    second: TX Tileset Wall_790
+  - first:
+      213: 7399842412879303653
+    second: TX Tileset Wall_791
+  - first:
+      213: 5497063861360473495
+    second: TX Tileset Wall_792
+  - first:
+      213: 1514020784616855469
+    second: TX Tileset Wall_793
+  - first:
+      213: 5727194122354187265
+    second: TX Tileset Wall_794
+  - first:
+      213: 8381416963427951147
+    second: TX Tileset Wall_795
+  - first:
+      213: 5889129306600756294
+    second: TX Tileset Wall_796
+  - first:
+      213: 952295249539650290
+    second: TX Tileset Wall_797
+  - first:
+      213: 8027294109847917736
+    second: TX Tileset Wall_798
+  - first:
+      213: 3613673131480812068
+    second: TX Tileset Wall_799
+  - first:
+      213: 1215726526035306997
+    second: TX Tileset Wall_800
+  - first:
+      213: 5953263759847752376
+    second: TX Tileset Wall_801
+  - first:
+      213: 2213001486763074546
+    second: TX Tileset Wall_802
+  - first:
+      213: 1661171403503097559
+    second: TX Tileset Wall_803
+  - first:
+      213: 4854678172425873119
+    second: TX Tileset Wall_804
+  - first:
+      213: 2854536520112860211
+    second: TX Tileset Wall_805
+  - first:
+      213: 5490972591083757269
+    second: TX Tileset Wall_806
+  - first:
+      213: 1082655225748191210
+    second: TX Tileset Wall_807
+  - first:
+      213: 4688917316364588129
+    second: TX Tileset Wall_808
+  - first:
+      213: 4505135347864387766
+    second: TX Tileset Wall_809
+  - first:
+      213: 8508124561663231257
+    second: TX Tileset Wall_810
+  - first:
+      213: 3220982160430482718
+    second: TX Tileset Wall_811
+  - first:
+      213: 4018301542737331163
+    second: TX Tileset Wall_812
+  - first:
+      213: 8303751603080113929
+    second: TX Tileset Wall_813
+  - first:
+      213: 1724280883870792635
+    second: TX Tileset Wall_814
+  - first:
+      213: 3567022835475869151
+    second: TX Tileset Wall_815
+  - first:
+      213: 5581692254422413796
+    second: TX Tileset Wall_816
+  - first:
+      213: 5231490936556480132
+    second: TX Tileset Wall_817
+  - first:
+      213: 8996704211422861119
+    second: TX Tileset Wall_818
+  - first:
+      213: 8413426414434937708
+    second: TX Tileset Wall_819
+  - first:
+      213: 4106088554255689631
+    second: TX Tileset Wall_820
+  - first:
+      213: 8391857647026654010
+    second: TX Tileset Wall_821
+  - first:
+      213: 4765383603134329708
+    second: TX Tileset Wall_822
+  - first:
+      213: 5153602860051960145
+    second: TX Tileset Wall_823
+  - first:
+      213: 8122715902188100791
+    second: TX Tileset Wall_824
+  - first:
+      213: 7724380469427013101
+    second: TX Tileset Wall_825
+  - first:
+      213: 504983207471200449
+    second: TX Tileset Wall_826
+  - first:
+      213: 5400644189053410242
+    second: TX Tileset Wall_827
+  - first:
+      213: 5580096273200729041
+    second: TX Tileset Wall_828
+  - first:
+      213: 6163072092176881478
+    second: TX Tileset Wall_829
+  - first:
+      213: 6258180188404144638
+    second: TX Tileset Wall_830
+  - first:
+      213: 229548710553122303
+    second: TX Tileset Wall_831
+  - first:
+      213: 322633562472993389
+    second: TX Tileset Wall_832
+  - first:
+      213: 8724071250713084013
+    second: TX Tileset Wall_833
+  - first:
+      213: 58084638729516500
+    second: TX Tileset Wall_834
+  - first:
+      213: 5537377024652439881
+    second: TX Tileset Wall_835
+  - first:
+      213: 7789717534520031799
+    second: TX Tileset Wall_836
+  - first:
+      213: 2993472489532295183
+    second: TX Tileset Wall_837
+  - first:
+      213: 3227707543248642955
+    second: TX Tileset Wall_838
+  - first:
+      213: 3038872280263839129
+    second: TX Tileset Wall_839
+  - first:
+      213: 3228064949850943557
+    second: TX Tileset Wall_840
+  - first:
+      213: 5339376734348762593
+    second: TX Tileset Wall_841
+  - first:
+      213: 6708986258152117058
+    second: TX Tileset Wall_842
+  - first:
+      213: 8530711262781171332
+    second: TX Tileset Wall_843
+  - first:
+      213: 5321876176423604277
+    second: TX Tileset Wall_844
+  - first:
+      213: 1555854524624773251
+    second: TX Tileset Wall_845
+  - first:
+      213: 3526344194174873354
+    second: TX Tileset Wall_846
+  - first:
+      213: 7621086000651377462
+    second: TX Tileset Wall_847
+  - first:
+      213: 2582921364688915650
+    second: TX Tileset Wall_848
+  - first:
+      213: 5106819149719760109
+    second: TX Tileset Wall_849
+  - first:
+      213: 9181769785052600607
+    second: TX Tileset Wall_850
+  - first:
+      213: 5274516175593257923
+    second: TX Tileset Wall_851
+  - first:
+      213: 6913717142618875006
+    second: TX Tileset Wall_852
+  - first:
+      213: 1764481967954125787
+    second: TX Tileset Wall_853
+  - first:
+      213: 8764606608413301515
+    second: TX Tileset Wall_854
+  - first:
+      213: 9219250916507140844
+    second: TX Tileset Wall_855
+  - first:
+      213: 7691089260703753282
+    second: TX Tileset Wall_856
+  - first:
+      213: 3108439433934592986
+    second: TX Tileset Wall_857
+  - first:
+      213: 711188262994337794
+    second: TX Tileset Wall_858
+  - first:
+      213: 4600850042773218355
+    second: TX Tileset Wall_859
+  - first:
+      213: 2885725054884985977
+    second: TX Tileset Wall_860
+  - first:
+      213: 6213669781211915503
+    second: TX Tileset Wall_861
+  - first:
+      213: 1108483402000769349
+    second: TX Tileset Wall_862
+  - first:
+      213: 3451307588235054490
+    second: TX Tileset Wall_863
+  - first:
+      213: 6179894682014077415
+    second: TX Tileset Wall_864
+  - first:
+      213: 2958220128567541118
+    second: TX Tileset Wall_865
+  - first:
+      213: 6758852741212082839
+    second: TX Tileset Wall_866
+  - first:
+      213: 8720857180345567340
+    second: TX Tileset Wall_867
+  - first:
+      213: 1581609223617276207
+    second: TX Tileset Wall_868
+  - first:
+      213: 6659729969455702252
+    second: TX Tileset Wall_869
+  - first:
+      213: 7100684500337321806
+    second: TX Tileset Wall_870
+  - first:
+      213: 8773241413403649244
+    second: TX Tileset Wall_871
+  - first:
+      213: 8688810218402532452
+    second: TX Tileset Wall_872
+  - first:
+      213: 5086166970599200924
+    second: TX Tileset Wall_873
+  - first:
+      213: 2055723016880300099
+    second: TX Tileset Wall_874
+  - first:
+      213: 8400589342017615641
+    second: TX Tileset Wall_875
+  - first:
+      213: 6439546039288505446
+    second: TX Tileset Wall_876
+  - first:
+      213: 1185371106739848168
+    second: TX Tileset Wall_877
+  - first:
+      213: 9147353310255672167
+    second: TX Tileset Wall_878
+  - first:
+      213: 681992796698023324
+    second: TX Tileset Wall_879
+  - first:
+      213: 9141830110380913912
+    second: TX Tileset Wall_880
+  - first:
+      213: 194839358347276624
+    second: TX Tileset Wall_881
+  - first:
+      213: 3944379659279490701
+    second: TX Tileset Wall_882
+  - first:
+      213: 6734138724723145546
+    second: TX Tileset Wall_883
+  - first:
+      213: 4123056113289112365
+    second: TX Tileset Wall_884
+  - first:
+      213: 8237280960832895455
+    second: TX Tileset Wall_885
+  - first:
+      213: 1069302652922856266
+    second: TX Tileset Wall_886
+  - first:
+      213: 8960977522144031623
+    second: TX Tileset Wall_887
+  - first:
+      213: 4571529305458913261
+    second: TX Tileset Wall_888
+  - first:
+      213: 198524202668745133
+    second: TX Tileset Wall_889
+  - first:
+      213: 7058910546913622156
+    second: TX Tileset Wall_890
+  - first:
+      213: 7953373875858946092
+    second: TX Tileset Wall_891
+  - first:
+      213: 1283707418625051171
+    second: TX Tileset Wall_892
+  - first:
+      213: 5943378492173727950
+    second: TX Tileset Wall_893
+  - first:
+      213: 9058615752741579267
+    second: TX Tileset Wall_894
+  - first:
+      213: 3988930161669359457
+    second: TX Tileset Wall_895
+  - first:
+      213: 3904468738946052752
+    second: TX Tileset Wall_896
+  - first:
+      213: 1597001855091758617
+    second: TX Tileset Wall_897
+  - first:
+      213: 6870623242048566508
+    second: TX Tileset Wall_898
+  - first:
+      213: 3656961910063033139
+    second: TX Tileset Wall_899
+  - first:
+      213: 4650937139983310169
+    second: TX Tileset Wall_900
+  - first:
+      213: 7110374730235406324
+    second: TX Tileset Wall_901
+  - first:
+      213: 944645003771867007
+    second: TX Tileset Wall_902
+  - first:
+      213: 4149828259676313718
+    second: TX Tileset Wall_903
+  - first:
+      213: 7478882836235148027
+    second: TX Tileset Wall_904
+  - first:
+      213: 8381605934600090740
+    second: TX Tileset Wall_905
+  - first:
+      213: 228562513523739379
+    second: TX Tileset Wall_906
+  - first:
+      213: 3069358288086874358
+    second: TX Tileset Wall_907
+  - first:
+      213: 6803363765498144026
+    second: TX Tileset Wall_908
+  - first:
+      213: 284796207788451354
+    second: TX Tileset Wall_909
+  - first:
+      213: 2164475432261049741
+    second: TX Tileset Wall_910
+  - first:
+      213: 5451986741821549141
+    second: TX Tileset Wall_911
+  - first:
+      213: 1683009416556697459
+    second: TX Tileset Wall_912
+  - first:
+      213: 8733830789367384090
+    second: TX Tileset Wall_913
+  - first:
+      213: 6150314107343250720
+    second: TX Tileset Wall_914
+  - first:
+      213: 3545167132438228918
+    second: TX Tileset Wall_915
+  - first:
+      213: 1314669202269340524
+    second: TX Tileset Wall_916
+  - first:
+      213: 4711080303171240324
+    second: TX Tileset Wall_917
+  - first:
+      213: 3617736386997716485
+    second: TX Tileset Wall_918
+  - first:
+      213: 7601150021323870509
+    second: TX Tileset Wall_919
+  - first:
+      213: 3465128372827443776
+    second: TX Tileset Wall_920
+  - first:
+      213: 5688847121185865262
+    second: TX Tileset Wall_921
+  - first:
+      213: 5699001184479825359
+    second: TX Tileset Wall_922
+  - first:
+      213: 7644172797420179926
+    second: TX Tileset Wall_923
+  - first:
+      213: 5257994488887884456
+    second: TX Tileset Wall_924
+  - first:
+      213: 2424603412537699880
+    second: TX Tileset Wall_925
+  - first:
+      213: 5444399825300806495
+    second: TX Tileset Wall_926
+  - first:
+      213: 5983575587458562636
+    second: TX Tileset Wall_927
+  - first:
+      213: 1502201085892772060
+    second: TX Tileset Wall_928
+  - first:
+      213: 472224593918662378
+    second: TX Tileset Wall_929
+  - first:
+      213: 7445769376697598649
+    second: TX Tileset Wall_930
+  - first:
+      213: 6163721392437593200
+    second: TX Tileset Wall_931
+  - first:
+      213: 5320051545817071373
+    second: TX Tileset Wall_932
+  - first:
+      213: 3463566572684214851
+    second: TX Tileset Wall_933
+  - first:
+      213: 2086602094728265495
+    second: TX Tileset Wall_934
+  - first:
+      213: 2212296226776328974
+    second: TX Tileset Wall_935
+  - first:
+      213: 1944304221081127459
+    second: TX Tileset Wall_936
+  - first:
+      213: 4429290096046987262
+    second: TX Tileset Wall_937
+  - first:
+      213: 7361976756206454101
+    second: TX Tileset Wall_938
+  - first:
+      213: 3397963685349151127
+    second: TX Tileset Wall_939
+  - first:
+      213: 8492752714088713152
+    second: TX Tileset Wall_940
+  - first:
+      213: 8601331295997576140
+    second: TX Tileset Wall_941
+  - first:
+      213: 6600948619417722375
+    second: TX Tileset Wall_942
+  - first:
+      213: 7180277681407277121
+    second: TX Tileset Wall_943
+  - first:
+      213: 3108028867057331697
+    second: TX Tileset Wall_944
+  - first:
+      213: 483859629681817767
+    second: TX Tileset Wall_945
+  - first:
+      213: 5129393977784152100
+    second: TX Tileset Wall_946
+  - first:
+      213: 6109983266250327339
+    second: TX Tileset Wall_947
+  - first:
+      213: 6179485470243802764
+    second: TX Tileset Wall_948
+  - first:
+      213: 8172689415783172566
+    second: TX Tileset Wall_949
+  - first:
+      213: 7284289739535655507
+    second: TX Tileset Wall_950
+  - first:
+      213: 2994974717062038999
+    second: TX Tileset Wall_951
+  - first:
+      213: 7458946336753727655
+    second: TX Tileset Wall_952
+  - first:
+      213: 5259770557248790297
+    second: TX Tileset Wall_953
+  - first:
+      213: 5378824332625055198
+    second: TX Tileset Wall_954
+  - first:
+      213: 4801151640107653539
+    second: TX Tileset Wall_955
+  - first:
+      213: 8578079664233924708
+    second: TX Tileset Wall_956
+  - first:
+      213: 3189786502515450518
+    second: TX Tileset Wall_957
+  - first:
+      213: 2912485134792904955
+    second: TX Tileset Wall_958
+  - first:
+      213: 1330218482373037634
+    second: TX Tileset Wall_959
+  - first:
+      213: 6638509040379786306
+    second: TX Tileset Wall_960
+  - first:
+      213: 8476812855812155965
+    second: TX Tileset Wall_961
+  - first:
+      213: 3863290728098675563
+    second: TX Tileset Wall_962
+  - first:
+      213: 8119723677466867416
+    second: TX Tileset Wall_963
+  - first:
+      213: 4333442282627847103
+    second: TX Tileset Wall_964
+  - first:
+      213: 8409982563409373675
+    second: TX Tileset Wall_965
+  - first:
+      213: 808178574695737363
+    second: TX Tileset Wall_966
+  - first:
+      213: 7430217698908660000
+    second: TX Tileset Wall_967
+  - first:
+      213: 108982365524690913
+    second: TX Tileset Wall_968
+  - first:
+      213: 3601367311448028001
+    second: TX Tileset Wall_969
+  - first:
+      213: 5818750137161608816
+    second: TX Tileset Wall_970
+  - first:
+      213: 4810845816663362018
+    second: TX Tileset Wall_971
+  - first:
+      213: 3967909231985606453
+    second: TX Tileset Wall_972
+  - first:
+      213: 3561944181741049115
+    second: TX Tileset Wall_973
+  - first:
+      213: 117764661026607847
+    second: TX Tileset Wall_974
+  - first:
+      213: 7094901389316035676
+    second: TX Tileset Wall_975
+  - first:
+      213: 3034397594936107257
+    second: TX Tileset Wall_976
+  - first:
+      213: 6572454767945764221
+    second: TX Tileset Wall_977
+  - first:
+      213: 8009987484391048090
+    second: TX Tileset Wall_978
+  - first:
+      213: 4416237556019206384
+    second: TX Tileset Wall_979
+  - first:
+      213: 9036957421319110156
+    second: TX Tileset Wall_980
+  - first:
+      213: 5706774305594215715
+    second: TX Tileset Wall_981
+  - first:
+      213: 4676661196728377203
+    second: TX Tileset Wall_982
+  - first:
+      213: 7174285416333428047
+    second: TX Tileset Wall_983
+  - first:
+      213: 7664643409716729800
+    second: TX Tileset Wall_984
+  - first:
+      213: 229776655694742894
+    second: TX Tileset Wall_985
+  - first:
+      213: 7572108735789622827
+    second: TX Tileset Wall_986
+  - first:
+      213: 3210823387794865601
+    second: TX Tileset Wall_987
+  - first:
+      213: 5656376849344564171
+    second: TX Tileset Wall_988
+  - first:
+      213: 8808504348133998510
+    second: TX Tileset Wall_989
+  - first:
+      213: 8237277681672995466
+    second: TX Tileset Wall_990
+  - first:
+      213: 208786330258793883
+    second: TX Tileset Wall_991
+  - first:
+      213: 8192628691459613238
+    second: TX Tileset Wall_992
+  - first:
+      213: 2312687454103028777
+    second: TX Tileset Wall_993
+  - first:
+      213: 1459735580597205123
+    second: TX Tileset Wall_994
+  - first:
+      213: 7984588414531182933
+    second: TX Tileset Wall_995
+  - first:
+      213: 2182122256983332043
+    second: TX Tileset Wall_996
+  - first:
+      213: 53263168352890997
+    second: TX Tileset Wall_997
+  - first:
+      213: 2407348711290104995
+    second: TX Tileset Wall_998
+  - first:
+      213: 6479292023909273583
+    second: TX Tileset Wall_999
+  - first:
+      213: 5613602351553786161
+    second: TX Tileset Wall_1000
+  - first:
+      213: 2587554962628867144
+    second: TX Tileset Wall_1001
+  - first:
+      213: 2638221472574985599
+    second: TX Tileset Wall_1002
+  - first:
+      213: 4347975505544397217
+    second: TX Tileset Wall_1003
+  - first:
+      213: 9047584783379755850
+    second: TX Tileset Wall_1004
+  - first:
+      213: 5061133711137884761
+    second: TX Tileset Wall_1005
+  - first:
+      213: 3648321601251899705
+    second: TX Tileset Wall_1006
+  - first:
+      213: 8159442875243899486
+    second: TX Tileset Wall_1007
+  - first:
+      213: 919853010751048714
+    second: TX Tileset Wall_1008
+  - first:
+      213: 56035412060321921
+    second: TX Tileset Wall_1009
+  - first:
+      213: 6838547836435883269
+    second: TX Tileset Wall_1010
+  - first:
+      213: 8301934016489464701
+    second: TX Tileset Wall_1011
+  - first:
+      213: 4552991109423464104
+    second: TX Tileset Wall_1012
+  - first:
+      213: 8651305889132886497
+    second: TX Tileset Wall_1013
+  - first:
+      213: 2463069938267182943
+    second: TX Tileset Wall_1014
+  - first:
+      213: 6857895991630880697
+    second: TX Tileset Wall_1015
+  - first:
+      213: 7281374120454227964
+    second: TX Tileset Wall_1016
+  - first:
+      213: 8368048449862517675
+    second: TX Tileset Wall_1017
+  - first:
+      213: 4741459010662006051
+    second: TX Tileset Wall_1018
+  - first:
+      213: 3915530484266461219
+    second: TX Tileset Wall_1019
+  - first:
+      213: 4632002192733195440
+    second: TX Tileset Wall_1020
+  - first:
+      213: 5237810256295659834
+    second: TX Tileset Wall_1021
+  - first:
+      213: 6290855810178111178
+    second: TX Tileset Wall_1022
+  - first:
+      213: 8551881368401250642
+    second: TX Tileset Wall_1023
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TX Tileset Wall_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 417
+        width: 98
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2451827fba6090b83dfcbf9a13b74666
+      internalID: 5147508019965046492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 416
+        width: 114
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b79b7edd74fbb30492833ba387c786
+      internalID: 5477656027105347801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 10
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9bff2e2968e8047eb3e60557f76ed6
+      internalID: 353647096840035182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_3
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 384
+        width: 8
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9a203e443cbdbc4f2c87bdb6254d9c
+      internalID: 4846651360183018852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 472
+        width: 96
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9deb981c1d8b68dc812fd9b74ba926cc
+      internalID: 2564647030637401187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ce7fea78324b60af7a0683deef878e
+      internalID: 6938695145806089749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0db3dd6ed01e05959ea20088ae0f37
+      internalID: 368961394075438538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff843614d53d06d3aa95ffdf7b7dae3
+      internalID: 7912916137099393263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c3da73d557745252fcc000292c06ae
+      internalID: 5941470382691894023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea9b23e53a011d091131ebc5066e1c0
+      internalID: 3453803159821833858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 353
+        width: 96
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c90280648f8e24c9b8d7ad7b272911
+      internalID: 4070449746238267469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_13
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 372
+        width: 114
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49be346f0322f0a4f96df686829278db
+      internalID: 8744482383728939334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 097c2684a5a5f4647bc42fd49ac0132b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      TX Tileset Wall_0: 5147508019965046492
+      TX Tileset Wall_1: 5477656027105347801
+      TX Tileset Wall_10: 4070449746238267469
+      TX Tileset Wall_11: -1817938538
+      TX Tileset Wall_12: -908139788
+      TX Tileset Wall_13: 8744482383728939334
+      TX Tileset Wall_2: 353647096840035182
+      TX Tileset Wall_3: 4846651360183018852
+      TX Tileset Wall_4: 2564647030637401187
+      TX Tileset Wall_5: 6938695145806089749
+      TX Tileset Wall_6: 368961394075438538
+      TX Tileset Wall_7: 7912916137099393263
+      TX Tileset Wall_8: 5941470382691894023
+      TX Tileset Wall_9: 3453803159821833858
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
