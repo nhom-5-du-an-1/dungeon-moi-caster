@@ -1,0 +1,4168 @@
+fileFormatVersion: 2
+guid: 72e0e68bb5fcea843b727672f4e265ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7516649443750546612
+    second: TX Props_0
+  - first:
+      213: 636022032866729940
+    second: TX Props_1
+  - first:
+      213: 6828190819909516868
+    second: TX Props_2
+  - first:
+      213: 1871179091940605355
+    second: TX Props_3
+  - first:
+      213: 1457054161068303096
+    second: TX Props_4
+  - first:
+      213: 4913801687917150521
+    second: TX Props_5
+  - first:
+      213: 6238060833442958723
+    second: TX Props_6
+  - first:
+      213: 9081719848719110401
+    second: TX Props_7
+  - first:
+      213: 5393411102770638945
+    second: TX Props_8
+  - first:
+      213: 8697702347966342876
+    second: TX Props_9
+  - first:
+      213: 5057554937558052073
+    second: TX Props_10
+  - first:
+      213: 9091556961495669583
+    second: TX Props_11
+  - first:
+      213: 2738142766109366796
+    second: TX Props_12
+  - first:
+      213: 1763991693577452659
+    second: TX Props_13
+  - first:
+      213: 3543982112707064727
+    second: TX Props_14
+  - first:
+      213: 2977633970440220172
+    second: TX Props_15
+  - first:
+      213: 2324920763351880732
+    second: TX Props_16
+  - first:
+      213: 4748603057080098593
+    second: TX Props_17
+  - first:
+      213: 3529357250035782655
+    second: TX Props_18
+  - first:
+      213: 5979993224592746748
+    second: TX Props_19
+  - first:
+      213: 7667970397779977218
+    second: TX Props_20
+  - first:
+      213: 8979452313800024343
+    second: TX Props_21
+  - first:
+      213: 5852656466973017475
+    second: TX Props_22
+  - first:
+      213: 7663792019390927374
+    second: TX Props_23
+  - first:
+      213: 1278089292385762896
+    second: TX Props_24
+  - first:
+      213: 1245721790774718405
+    second: TX Props_25
+  - first:
+      213: 8007895959025026962
+    second: TX Props_26
+  - first:
+      213: 1908201295365411936
+    second: TX Props_27
+  - first:
+      213: 2669765125795276862
+    second: TX Props_28
+  - first:
+      213: 2624554943832739455
+    second: TX Props_29
+  - first:
+      213: 3818764390762725179
+    second: TX Props_30
+  - first:
+      213: 2376249028432405833
+    second: TX Props_31
+  - first:
+      213: 812162274232300567
+    second: TX Props_32
+  - first:
+      213: 7994294166186945087
+    second: TX Props_33
+  - first:
+      213: 4168965311862439907
+    second: TX Props_34
+  - first:
+      213: 1793535148851841560
+    second: TX Props_35
+  - first:
+      213: 6733293073667901125
+    second: TX Props_36
+  - first:
+      213: 7867041798257480849
+    second: TX Props_37
+  - first:
+      213: 1757102013913468036
+    second: TX Props_38
+  - first:
+      213: 1794056122382253994
+    second: TX Props_39
+  - first:
+      213: 6881323755128899905
+    second: TX Props_40
+  - first:
+      213: 2538298740623072824
+    second: TX Props_41
+  - first:
+      213: 1548757809983147655
+    second: TX Props_42
+  - first:
+      213: 1312075726931245205
+    second: TX Props_43
+  - first:
+      213: 4654141781783305136
+    second: TX Props_44
+  - first:
+      213: 1786074647864702581
+    second: TX Props_45
+  - first:
+      213: 6867704830304610594
+    second: TX Props_46
+  - first:
+      213: 6275925965296066855
+    second: TX Props_47
+  - first:
+      213: 2483845661804075583
+    second: TX Props_48
+  - first:
+      213: 5988728670991293258
+    second: TX Props_49
+  - first:
+      213: 4670067406562709460
+    second: TX Props_50
+  - first:
+      213: 8057362342763399050
+    second: TX Props_51
+  - first:
+      213: 8045000210501732236
+    second: TX Props_52
+  - first:
+      213: 6499818146412719642
+    second: TX Props_53
+  - first:
+      213: 5708433017453582434
+    second: TX Props_54
+  - first:
+      213: 8993662496878578015
+    second: TX Props_55
+  - first:
+      213: 2650031602287400030
+    second: TX Props_56
+  - first:
+      213: 1695276254517942865
+    second: TX Props_57
+  - first:
+      213: 6587932678797386670
+    second: TX Props_58
+  - first:
+      213: 1979150455369380565
+    second: TX Props_59
+  - first:
+      213: 621589105077341891
+    second: TX Props_60
+  - first:
+      213: 5623613572828154888
+    second: TX Props_61
+  - first:
+      213: 2669177054780122650
+    second: TX Props_62
+  - first:
+      213: 5713638670140852733
+    second: TX Props_63
+  - first:
+      213: 548625947818377776
+    second: TX Props_64
+  - first:
+      213: 5851847653963098509
+    second: TX Props_65
+  - first:
+      213: 2361333284655601034
+    second: TX Props_66
+  - first:
+      213: 2796236808059330163
+    second: TX Props_67
+  - first:
+      213: 6957440769938768277
+    second: TX Props_68
+  - first:
+      213: 1187204108510758951
+    second: TX Props_69
+  - first:
+      213: 8609920644942728680
+    second: TX Props_70
+  - first:
+      213: 1661205105606363190
+    second: TX Props_71
+  - first:
+      213: 84232494524324216
+    second: TX Props_72
+  - first:
+      213: 5239412637729653683
+    second: TX Props_73
+  - first:
+      213: 7921986988954694479
+    second: TX Props_74
+  - first:
+      213: 8216281755123783435
+    second: TX Props_75
+  - first:
+      213: 4878332926051204676
+    second: TX Props_76
+  - first:
+      213: 2902839634657501884
+    second: TX Props_77
+  - first:
+      213: 1782476007716259793
+    second: TX Props_78
+  - first:
+      213: 5259413251337054878
+    second: TX Props_79
+  - first:
+      213: 4999971408313538036
+    second: TX Props_80
+  - first:
+      213: 4581634304214025787
+    second: TX Props_81
+  - first:
+      213: 5153587975582525601
+    second: TX Props_82
+  - first:
+      213: 781812764428976947
+    second: TX Props_83
+  - first:
+      213: 4332350354380241582
+    second: TX Props_84
+  - first:
+      213: 3678513725321013505
+    second: TX Props_85
+  - first:
+      213: 2916292928611312763
+    second: TX Props_86
+  - first:
+      213: 476626676661651690
+    second: TX Props_87
+  - first:
+      213: 7315569656466509174
+    second: TX Props_88
+  - first:
+      213: 3515806114309966632
+    second: TX Props_89
+  - first:
+      213: 7481321566158659000
+    second: TX Props_90
+  - first:
+      213: 4582565968269747263
+    second: TX Props_91
+  - first:
+      213: 2874643375763134220
+    second: TX Props_92
+  - first:
+      213: 8199292720240697041
+    second: TX Props_93
+  - first:
+      213: 5939166081043736044
+    second: TX Props_94
+  - first:
+      213: 2819232232683586473
+    second: TX Props_95
+  - first:
+      213: 4978816445865938633
+    second: TX Props_96
+  - first:
+      213: 1991874596544191996
+    second: TX Props_97
+  - first:
+      213: 427988730876543453
+    second: TX Props_98
+  - first:
+      213: 1067660790721909992
+    second: TX Props_99
+  - first:
+      213: 2189313549687391975
+    second: TX Props_100
+  - first:
+      213: 7174173949376130612
+    second: TX Props_101
+  - first:
+      213: 2057012998519540864
+    second: TX Props_102
+  - first:
+      213: 5871198755218783195
+    second: TX Props_103
+  - first:
+      213: 6445374114898029084
+    second: TX Props_104
+  - first:
+      213: 2045437600365083525
+    second: TX Props_105
+  - first:
+      213: 3616646178295438270
+    second: TX Props_106
+  - first:
+      213: 4738973781149092148
+    second: TX Props_107
+  - first:
+      213: 8078364737357424237
+    second: TX Props_108
+  - first:
+      213: 4631856595117518649
+    second: TX Props_109
+  - first:
+      213: 5515583785626064808
+    second: TX Props_110
+  - first:
+      213: 2224060076408844787
+    second: TX Props_111
+  - first:
+      213: 7784118910105750330
+    second: TX Props_112
+  - first:
+      213: 6012969415064037676
+    second: TX Props_113
+  - first:
+      213: 1012056428631149628
+    second: TX Props_114
+  - first:
+      213: 9107600296209516682
+    second: TX Props_115
+  - first:
+      213: 1144124572475161724
+    second: TX Props_116
+  - first:
+      213: 7012124905926404593
+    second: TX Props_117
+  - first:
+      213: 262737182226870538
+    second: TX Props_118
+  - first:
+      213: 5791896366248639331
+    second: TX Props_119
+  - first:
+      213: 807643659768200734
+    second: TX Props_120
+  - first:
+      213: 2777484160067800050
+    second: TX Props_121
+  - first:
+      213: 5971908554069049997
+    second: TX Props_122
+  - first:
+      213: 9147969224844650470
+    second: TX Props_123
+  - first:
+      213: 7140409172597206556
+    second: TX Props_124
+  - first:
+      213: 5894803614273585599
+    second: TX Props_125
+  - first:
+      213: 1806854697038457866
+    second: TX Props_126
+  - first:
+      213: 7166496248271264658
+    second: TX Props_127
+  - first:
+      213: 5659037649634055414
+    second: TX Props_128
+  - first:
+      213: 5007339729264693494
+    second: TX Props_129
+  - first:
+      213: 8821841717425030189
+    second: TX Props_130
+  - first:
+      213: 4061249916638038251
+    second: TX Props_131
+  - first:
+      213: 558840609611221836
+    second: TX Props_132
+  - first:
+      213: 1764395366292366269
+    second: TX Props_133
+  - first:
+      213: 2760113975507140726
+    second: TX Props_134
+  - first:
+      213: 7745179405371211050
+    second: TX Props_135
+  - first:
+      213: 5221215636665322632
+    second: TX Props_136
+  - first:
+      213: 296146469781936913
+    second: TX Props_137
+  - first:
+      213: 7657312002232722934
+    second: TX Props_138
+  - first:
+      213: 5901543134023688719
+    second: TX Props_139
+  - first:
+      213: 2541393829864827635
+    second: TX Props_140
+  - first:
+      213: 4989142716817965876
+    second: TX Props_141
+  - first:
+      213: 5387219154603900227
+    second: TX Props_142
+  - first:
+      213: 3366999485824291275
+    second: TX Props_143
+  - first:
+      213: 4437961037893688200
+    second: TX Props_144
+  - first:
+      213: 6898108937472019161
+    second: TX Props_145
+  - first:
+      213: 2499399308385939027
+    second: TX Props_146
+  - first:
+      213: 2902674299808795716
+    second: TX Props_147
+  - first:
+      213: 2687880440574208578
+    second: TX Props_148
+  - first:
+      213: 3566532754329608966
+    second: TX Props_149
+  - first:
+      213: 3098996258672093983
+    second: TX Props_150
+  - first:
+      213: 6833976136000701482
+    second: TX Props_151
+  - first:
+      213: 2721075909177710666
+    second: TX Props_152
+  - first:
+      213: 3214333636989022620
+    second: TX Props_153
+  - first:
+      213: 2163134315392942118
+    second: TX Props_154
+  - first:
+      213: 6155224390517435347
+    second: TX Props_155
+  - first:
+      213: 8338776547161849822
+    second: TX Props_156
+  - first:
+      213: 3078423693296510349
+    second: TX Props_157
+  - first:
+      213: 2562740089609205703
+    second: TX Props_158
+  - first:
+      213: 2180312475088913528
+    second: TX Props_159
+  - first:
+      213: 8738475485297594300
+    second: TX Props_160
+  - first:
+      213: 588983699328047818
+    second: TX Props_161
+  - first:
+      213: 496043578786008544
+    second: TX Props_162
+  - first:
+      213: 8535574032279912608
+    second: TX Props_163
+  - first:
+      213: 7952063947278784792
+    second: TX Props_164
+  - first:
+      213: 8300607188745496727
+    second: TX Props_165
+  - first:
+      213: 3883638844650046091
+    second: TX Props_166
+  - first:
+      213: 1751632445059334558
+    second: TX Props_167
+  - first:
+      213: 7783206011736106385
+    second: TX Props_168
+  - first:
+      213: 4526120413670829029
+    second: TX Props_169
+  - first:
+      213: 4996822441010449194
+    second: TX Props_170
+  - first:
+      213: 2361711820103027348
+    second: TX Props_171
+  - first:
+      213: 5242202736504928328
+    second: TX Props_172
+  - first:
+      213: 1279801504874924661
+    second: TX Props_173
+  - first:
+      213: 151628513483193733
+    second: TX Props_174
+  - first:
+      213: 6967876953017908124
+    second: TX Props_175
+  - first:
+      213: 2175183616787252384
+    second: TX Props_176
+  - first:
+      213: 4200790365390549326
+    second: TX Props_177
+  - first:
+      213: 3808993235374347468
+    second: TX Props_178
+  - first:
+      213: 8210983995780766422
+    second: TX Props_179
+  - first:
+      213: 1455303594203823459
+    second: TX Props_180
+  - first:
+      213: 7008867967908262196
+    second: TX Props_181
+  - first:
+      213: 187614623761020141
+    second: TX Props_182
+  - first:
+      213: 6358494735517716895
+    second: TX Props_183
+  - first:
+      213: 1239963311614962720
+    second: TX Props_184
+  - first:
+      213: 6746439485426277970
+    second: TX Props_185
+  - first:
+      213: 8070240006281044358
+    second: TX Props_186
+  - first:
+      213: 6360660616631901453
+    second: TX Props_187
+  - first:
+      213: 48336829711957682
+    second: TX Props_188
+  - first:
+      213: 5977910937389607711
+    second: TX Props_189
+  - first:
+      213: 7777325748108256935
+    second: TX Props_190
+  - first:
+      213: 9065096899292376437
+    second: TX Props_191
+  - first:
+      213: 6696923349839697670
+    second: TX Props_192
+  - first:
+      213: 7861161103918489430
+    second: TX Props_193
+  - first:
+      213: 5823549585054325563
+    second: TX Props_194
+  - first:
+      213: 928529362652867198
+    second: TX Props_195
+  - first:
+      213: 9088270612815689183
+    second: TX Props_196
+  - first:
+      213: 4380311329664222847
+    second: TX Props_197
+  - first:
+      213: 4942478811690782376
+    second: TX Props_198
+  - first:
+      213: 7507677299906576062
+    second: TX Props_199
+  - first:
+      213: 975336613916979255
+    second: TX Props_200
+  - first:
+      213: 6494459499338925089
+    second: TX Props_201
+  - first:
+      213: 7797068101856264416
+    second: TX Props_202
+  - first:
+      213: 4236286048703044600
+    second: TX Props_203
+  - first:
+      213: 1453846638690872189
+    second: TX Props_204
+  - first:
+      213: 500267530435230400
+    second: TX Props_205
+  - first:
+      213: 4867644735966656016
+    second: TX Props_206
+  - first:
+      213: 3865785139455038446
+    second: TX Props_207
+  - first:
+      213: 3765678548020747556
+    second: TX Props_208
+  - first:
+      213: 6542873972271268947
+    second: TX Props_209
+  - first:
+      213: 7110473798516244177
+    second: TX Props_210
+  - first:
+      213: 7636393958830284905
+    second: TX Props_211
+  - first:
+      213: 2152571449538403499
+    second: TX Props_212
+  - first:
+      213: 4352432679959224363
+    second: TX Props_213
+  - first:
+      213: 3762512988164943151
+    second: TX Props_214
+  - first:
+      213: 7957741888198363318
+    second: TX Props_215
+  - first:
+      213: 4455199916698750481
+    second: TX Props_216
+  - first:
+      213: 7464947242125880842
+    second: TX Props_217
+  - first:
+      213: 7189194769445473472
+    second: TX Props_218
+  - first:
+      213: 2621116536225713314
+    second: TX Props_219
+  - first:
+      213: 7523236928866610033
+    second: TX Props_220
+  - first:
+      213: 7122250982435877633
+    second: TX Props_221
+  - first:
+      213: 1981782133977758145
+    second: TX Props_222
+  - first:
+      213: 8298909355620765686
+    second: TX Props_223
+  - first:
+      213: 1800588686292315276
+    second: TX Props_224
+  - first:
+      213: 2951347550308066340
+    second: TX Props_225
+  - first:
+      213: 8132217605117116920
+    second: TX Props_226
+  - first:
+      213: 6774089722507410549
+    second: TX Props_227
+  - first:
+      213: 8215016125674884156
+    second: TX Props_228
+  - first:
+      213: 111548959026995195
+    second: TX Props_229
+  - first:
+      213: 6035785899606339366
+    second: TX Props_230
+  - first:
+      213: 3181659417870363716
+    second: TX Props_231
+  - first:
+      213: 4238914852110138212
+    second: TX Props_232
+  - first:
+      213: 8640760997050719955
+    second: TX Props_233
+  - first:
+      213: 3061754223391367224
+    second: TX Props_234
+  - first:
+      213: 1922681787684055556
+    second: TX Props_235
+  - first:
+      213: 3247324501263460859
+    second: TX Props_236
+  - first:
+      213: 7501326390630606589
+    second: TX Props_237
+  - first:
+      213: 5864473429025932011
+    second: TX Props_238
+  - first:
+      213: 7186534107007315979
+    second: TX Props_239
+  - first:
+      213: 339512399685893878
+    second: TX Props_240
+  - first:
+      213: 7217750091217910561
+    second: TX Props_241
+  - first:
+      213: 3760931254171091585
+    second: TX Props_242
+  - first:
+      213: 6597728575256706575
+    second: TX Props_243
+  - first:
+      213: 9051306161993719646
+    second: TX Props_244
+  - first:
+      213: 4064599688893877763
+    second: TX Props_245
+  - first:
+      213: 8531223368188908196
+    second: TX Props_246
+  - first:
+      213: 4396696513825529460
+    second: TX Props_247
+  - first:
+      213: 1756795532260623094
+    second: TX Props_248
+  - first:
+      213: 1137489546744694900
+    second: TX Props_249
+  - first:
+      213: 1402014318773503297
+    second: TX Props_250
+  - first:
+      213: 8371269261915651818
+    second: TX Props_251
+  - first:
+      213: 7161188187250497485
+    second: TX Props_252
+  - first:
+      213: 4805239390525039441
+    second: TX Props_253
+  - first:
+      213: 4370264045022126422
+    second: TX Props_254
+  - first:
+      213: 8953739556864966404
+    second: TX Props_255
+  - first:
+      213: 362219091511126687
+    second: TX Props_256
+  - first:
+      213: 5266106088215406358
+    second: TX Props_257
+  - first:
+      213: 4160112926424811690
+    second: TX Props_258
+  - first:
+      213: 8891371707155966822
+    second: TX Props_259
+  - first:
+      213: 3042768220417149353
+    second: TX Props_260
+  - first:
+      213: 9019101926828229478
+    second: TX Props_261
+  - first:
+      213: 4123240852471655573
+    second: TX Props_262
+  - first:
+      213: 406967727247572917
+    second: TX Props_263
+  - first:
+      213: 422710697198104856
+    second: TX Props_264
+  - first:
+      213: 7175133552929507759
+    second: TX Props_265
+  - first:
+      213: 5214857700752337380
+    second: TX Props_266
+  - first:
+      213: 7404497835967555121
+    second: TX Props_267
+  - first:
+      213: 5566299228604689499
+    second: TX Props_268
+  - first:
+      213: 3435241394556372039
+    second: TX Props_269
+  - first:
+      213: 7984341873726616780
+    second: TX Props_270
+  - first:
+      213: 4468399099172287499
+    second: TX Props_271
+  - first:
+      213: 6892341192554960498
+    second: TX Props_272
+  - first:
+      213: 7347243069853458203
+    second: TX Props_273
+  - first:
+      213: 5577153191987842302
+    second: TX Props_274
+  - first:
+      213: 6032604946295967417
+    second: TX Props_275
+  - first:
+      213: 973638487101317775
+    second: TX Props_276
+  - first:
+      213: 3978607577193892784
+    second: TX Props_277
+  - first:
+      213: 5777259439300726920
+    second: TX Props_278
+  - first:
+      213: 4094868405519192179
+    second: TX Props_279
+  - first:
+      213: 634429138017718167
+    second: TX Props_280
+  - first:
+      213: 1817369249641743966
+    second: TX Props_281
+  - first:
+      213: 1679885518227350796
+    second: TX Props_282
+  - first:
+      213: 4991066476919561673
+    second: TX Props_283
+  - first:
+      213: 4309353622092229350
+    second: TX Props_284
+  - first:
+      213: 1299813225057005023
+    second: TX Props_285
+  - first:
+      213: 5400263625581260730
+    second: TX Props_286
+  - first:
+      213: 6493072220814319575
+    second: TX Props_287
+  - first:
+      213: 7728540200051482166
+    second: TX Props_288
+  - first:
+      213: 2047688004311840231
+    second: TX Props_289
+  - first:
+      213: 5215879034520113020
+    second: TX Props_290
+  - first:
+      213: 7544573117369489216
+    second: TX Props_291
+  - first:
+      213: 712877387217882344
+    second: TX Props_292
+  - first:
+      213: 8297022202487066848
+    second: TX Props_293
+  - first:
+      213: 8123729609655053032
+    second: TX Props_294
+  - first:
+      213: 142075340923560782
+    second: TX Props_295
+  - first:
+      213: 6904243287748955863
+    second: TX Props_296
+  - first:
+      213: 3694122679003820039
+    second: TX Props_297
+  - first:
+      213: 3560987710825642148
+    second: TX Props_298
+  - first:
+      213: 1973291884217114686
+    second: TX Props_299
+  - first:
+      213: 2428478081374522290
+    second: TX Props_300
+  - first:
+      213: 8741515977244866661
+    second: TX Props_301
+  - first:
+      213: 8619742322190344638
+    second: TX Props_302
+  - first:
+      213: 4391538931771862452
+    second: TX Props_303
+  - first:
+      213: 9139776215635371497
+    second: TX Props_304
+  - first:
+      213: 4893880425587340147
+    second: TX Props_305
+  - first:
+      213: 3939492705842982574
+    second: TX Props_306
+  - first:
+      213: 1252434947088691422
+    second: TX Props_307
+  - first:
+      213: 2468464395687757179
+    second: TX Props_308
+  - first:
+      213: 4886832764565448062
+    second: TX Props_309
+  - first:
+      213: 9222017398305451598
+    second: TX Props_310
+  - first:
+      213: 2284419858851841481
+    second: TX Props_311
+  - first:
+      213: 3287541523321442733
+    second: TX Props_312
+  - first:
+      213: 336032028965627391
+    second: TX Props_313
+  - first:
+      213: 6762985241365714594
+    second: TX Props_314
+  - first:
+      213: 1546062644523906771
+    second: TX Props_315
+  - first:
+      213: 4473026887772959090
+    second: TX Props_316
+  - first:
+      213: 6180955914026027643
+    second: TX Props_317
+  - first:
+      213: 1666046711069766844
+    second: TX Props_318
+  - first:
+      213: 8680804670876857945
+    second: TX Props_319
+  - first:
+      213: 1748191940325763468
+    second: TX Props_320
+  - first:
+      213: 7865423658847572730
+    second: TX Props_321
+  - first:
+      213: 6096121483600699901
+    second: TX Props_322
+  - first:
+      213: 4555349884749323602
+    second: TX Props_323
+  - first:
+      213: 8379520568860358699
+    second: TX Props_324
+  - first:
+      213: 5620993059352467422
+    second: TX Props_325
+  - first:
+      213: 3636782802050114450
+    second: TX Props_326
+  - first:
+      213: 1359839066158868696
+    second: TX Props_327
+  - first:
+      213: 2429485158435360569
+    second: TX Props_328
+  - first:
+      213: 3160680421854351185
+    second: TX Props_329
+  - first:
+      213: 2224677993952018092
+    second: TX Props_330
+  - first:
+      213: 6523905639372403190
+    second: TX Props_331
+  - first:
+      213: 8160528962185918548
+    second: TX Props_332
+  - first:
+      213: 3696258991456310048
+    second: TX Props_333
+  - first:
+      213: 6569780973193860825
+    second: TX Props_334
+  - first:
+      213: 5493885192969186677
+    second: TX Props_335
+  - first:
+      213: 2860420769526620227
+    second: TX Props_336
+  - first:
+      213: 4341508425709283283
+    second: TX Props_337
+  - first:
+      213: 5650148379148089986
+    second: TX Props_338
+  - first:
+      213: 3410936958575320926
+    second: TX Props_339
+  - first:
+      213: 6909813012097715605
+    second: TX Props_340
+  - first:
+      213: 6844146443425602566
+    second: TX Props_341
+  - first:
+      213: 5077868899251126949
+    second: TX Props_342
+  - first:
+      213: 7664047575357805381
+    second: TX Props_343
+  - first:
+      213: 7897304027964266517
+    second: TX Props_344
+  - first:
+      213: 7423395218835853427
+    second: TX Props_345
+  - first:
+      213: 7109053303709489620
+    second: TX Props_346
+  - first:
+      213: 4277084909054864759
+    second: TX Props_347
+  - first:
+      213: 2442038072189592945
+    second: TX Props_348
+  - first:
+      213: 4707855831014982606
+    second: TX Props_349
+  - first:
+      213: 997171690419351933
+    second: TX Props_350
+  - first:
+      213: 644554257691190502
+    second: TX Props_351
+  - first:
+      213: 3419884980558909582
+    second: TX Props_352
+  - first:
+      213: 7372614848968183903
+    second: TX Props_353
+  - first:
+      213: 9021254210645248942
+    second: TX Props_354
+  - first:
+      213: 6164635157296935917
+    second: TX Props_355
+  - first:
+      213: 339294483898505287
+    second: TX Props_356
+  - first:
+      213: 5486726569292506367
+    second: TX Props_357
+  - first:
+      213: 5645015873321520449
+    second: TX Props_358
+  - first:
+      213: 5403611074805868936
+    second: TX Props_359
+  - first:
+      213: 8043203056867609800
+    second: TX Props_360
+  - first:
+      213: 8482305516069031816
+    second: TX Props_361
+  - first:
+      213: 4875214129616828840
+    second: TX Props_362
+  - first:
+      213: 9152577241310907144
+    second: TX Props_363
+  - first:
+      213: 8990945818881066139
+    second: TX Props_364
+  - first:
+      213: 722188582074078142
+    second: TX Props_365
+  - first:
+      213: 6061819094631031115
+    second: TX Props_366
+  - first:
+      213: 4426673963350081441
+    second: TX Props_367
+  - first:
+      213: 3563897644878068339
+    second: TX Props_368
+  - first:
+      213: 669704499056554320
+    second: TX Props_369
+  - first:
+      213: 426418602002557926
+    second: TX Props_370
+  - first:
+      213: 6946478898028796102
+    second: TX Props_371
+  - first:
+      213: 5098744438567526898
+    second: TX Props_372
+  - first:
+      213: 6001999701173015557
+    second: TX Props_373
+  - first:
+      213: 2694148237462302185
+    second: TX Props_374
+  - first:
+      213: 1766351273385642369
+    second: TX Props_375
+  - first:
+      213: 5078602632118647049
+    second: TX Props_376
+  - first:
+      213: 549751570445466673
+    second: TX Props_377
+  - first:
+      213: 7701436451552106130
+    second: TX Props_378
+  - first:
+      213: 7314545753963583085
+    second: TX Props_379
+  - first:
+      213: 352034903559394214
+    second: TX Props_380
+  - first:
+      213: 3117846962144670828
+    second: TX Props_381
+  - first:
+      213: 7162692874221385074
+    second: TX Props_382
+  - first:
+      213: 7763914392579148874
+    second: TX Props_383
+  - first:
+      213: 5589705928676401604
+    second: TX Props_384
+  - first:
+      213: 2795953379326783425
+    second: TX Props_385
+  - first:
+      213: 5387131993820683904
+    second: TX Props_386
+  - first:
+      213: 1188736435133422314
+    second: TX Props_387
+  - first:
+      213: 3649002343503879225
+    second: TX Props_388
+  - first:
+      213: 1013464548093459659
+    second: TX Props_389
+  - first:
+      213: 6996366931500311499
+    second: TX Props_390
+  - first:
+      213: 1801191876668202544
+    second: TX Props_391
+  - first:
+      213: 3285519926780709615
+    second: TX Props_392
+  - first:
+      213: 1450194605781434510
+    second: TX Props_393
+  - first:
+      213: 7671363500699075137
+    second: TX Props_394
+  - first:
+      213: 8271584740345551269
+    second: TX Props_395
+  - first:
+      213: 725803501717846848
+    second: TX Props_396
+  - first:
+      213: 286071644514672568
+    second: TX Props_397
+  - first:
+      213: 2103116402506425363
+    second: TX Props_398
+  - first:
+      213: 1148124973095283523
+    second: TX Props_399
+  - first:
+      213: 6056656123295225523
+    second: TX Props_400
+  - first:
+      213: 728949482805170158
+    second: TX Props_401
+  - first:
+      213: 5268361034216427051
+    second: TX Props_402
+  - first:
+      213: 2543179036089903388
+    second: TX Props_403
+  - first:
+      213: 2684152422008562788
+    second: TX Props_404
+  - first:
+      213: 3781873305961191931
+    second: TX Props_405
+  - first:
+      213: 771829041226777015
+    second: TX Props_406
+  - first:
+      213: 2300483516366824121
+    second: TX Props_407
+  - first:
+      213: 1787127385617278038
+    second: TX Props_408
+  - first:
+      213: 506668713033994703
+    second: TX Props_409
+  - first:
+      213: 5017870860039957069
+    second: TX Props_410
+  - first:
+      213: 5095315327067125129
+    second: TX Props_411
+  - first:
+      213: 1744179528545214123
+    second: TX Props_412
+  - first:
+      213: 2600978951584610268
+    second: TX Props_413
+  - first:
+      213: 8057162657574007269
+    second: TX Props_414
+  - first:
+      213: 3279614168115204876
+    second: TX Props_415
+  - first:
+      213: 2724680571893909635
+    second: TX Props_416
+  - first:
+      213: 4518682552001418208
+    second: TX Props_417
+  - first:
+      213: 6413422803910957506
+    second: TX Props_418
+  - first:
+      213: 4564867554528958642
+    second: TX Props_419
+  - first:
+      213: 3426500190688445763
+    second: TX Props_420
+  - first:
+      213: 2053846179240030890
+    second: TX Props_421
+  - first:
+      213: 529984947736964616
+    second: TX Props_422
+  - first:
+      213: 7690704977839214577
+    second: TX Props_423
+  - first:
+      213: 4494656500238008272
+    second: TX Props_424
+  - first:
+      213: 1820767231555309741
+    second: TX Props_425
+  - first:
+      213: 5007685132541549874
+    second: TX Props_426
+  - first:
+      213: 6556789009991084313
+    second: TX Props_427
+  - first:
+      213: 7350397930747468099
+    second: TX Props_428
+  - first:
+      213: 5830743019243926242
+    second: TX Props_429
+  - first:
+      213: 3976055603185327802
+    second: TX Props_430
+  - first:
+      213: 4173221059873471117
+    second: TX Props_431
+  - first:
+      213: 3645731838456148528
+    second: TX Props_432
+  - first:
+      213: 4739130210772143742
+    second: TX Props_433
+  - first:
+      213: 509574609975029906
+    second: TX Props_434
+  - first:
+      213: 5913107618379887880
+    second: TX Props_435
+  - first:
+      213: 6730653060325146306
+    second: TX Props_436
+  - first:
+      213: 3721833988124134821
+    second: TX Props_437
+  - first:
+      213: 3487990365538200451
+    second: TX Props_438
+  - first:
+      213: 8822608868639005484
+    second: TX Props_439
+  - first:
+      213: 2753820629202435063
+    second: TX Props_440
+  - first:
+      213: 8399405244286234228
+    second: TX Props_441
+  - first:
+      213: 6812537814684689021
+    second: TX Props_442
+  - first:
+      213: 8182112768135918332
+    second: TX Props_443
+  - first:
+      213: 7617639937942298540
+    second: TX Props_444
+  - first:
+      213: 5627459546069331478
+    second: TX Props_445
+  - first:
+      213: 4922163114591333262
+    second: TX Props_446
+  - first:
+      213: 4501759339498523244
+    second: TX Props_447
+  - first:
+      213: 7018379001852363657
+    second: TX Props_448
+  - first:
+      213: 2176848662844834152
+    second: TX Props_449
+  - first:
+      213: 6963429449149395782
+    second: TX Props_450
+  - first:
+      213: 961431393752001080
+    second: TX Props_451
+  - first:
+      213: 4353227345264781971
+    second: TX Props_452
+  - first:
+      213: 3887086889411726406
+    second: TX Props_453
+  - first:
+      213: 1890190017345321452
+    second: TX Props_454
+  - first:
+      213: 6776639887964561270
+    second: TX Props_455
+  - first:
+      213: 4266111955370142016
+    second: TX Props_456
+  - first:
+      213: 202007187546996588
+    second: TX Props_457
+  - first:
+      213: 3526760190813673471
+    second: TX Props_458
+  - first:
+      213: 9197767396318244203
+    second: TX Props_459
+  - first:
+      213: 4705213065392045565
+    second: TX Props_460
+  - first:
+      213: 2856002264670750953
+    second: TX Props_461
+  - first:
+      213: 1886849805475949158
+    second: TX Props_462
+  - first:
+      213: 4205296984317942861
+    second: TX Props_463
+  - first:
+      213: 2145258418619322790
+    second: TX Props_464
+  - first:
+      213: 8043369838134716241
+    second: TX Props_465
+  - first:
+      213: 8021209122820093643
+    second: TX Props_466
+  - first:
+      213: 8382487342429866262
+    second: TX Props_467
+  - first:
+      213: 4460949640971730983
+    second: TX Props_468
+  - first:
+      213: 4391984600060927399
+    second: TX Props_469
+  - first:
+      213: 4936335167867369619
+    second: TX Props_470
+  - first:
+      213: 5057430639461419692
+    second: TX Props_471
+  - first:
+      213: 4499016745125423949
+    second: TX Props_472
+  - first:
+      213: 3506220533660844516
+    second: TX Props_473
+  - first:
+      213: 1162741844308623467
+    second: TX Props_474
+  - first:
+      213: 7330637793051113813
+    second: TX Props_475
+  - first:
+      213: 2081156230984556301
+    second: TX Props_476
+  - first:
+      213: 4342823710342990106
+    second: TX Props_477
+  - first:
+      213: 7568188572649311019
+    second: TX Props_478
+  - first:
+      213: 8516197304484529770
+    second: TX Props_479
+  - first:
+      213: 3841466794929512918
+    second: TX Props_480
+  - first:
+      213: 2493570658211428905
+    second: TX Props_481
+  - first:
+      213: 1615904543015628063
+    second: TX Props_482
+  - first:
+      213: 1341043084310931855
+    second: TX Props_483
+  - first:
+      213: 2059178672834648569
+    second: TX Props_484
+  - first:
+      213: 6501864275145743561
+    second: TX Props_485
+  - first:
+      213: 5946326709350452297
+    second: TX Props_486
+  - first:
+      213: 2848637798131838322
+    second: TX Props_487
+  - first:
+      213: 3154772934318800817
+    second: TX Props_488
+  - first:
+      213: 3014127582862935757
+    second: TX Props_489
+  - first:
+      213: 5043900733507024739
+    second: TX Props_490
+  - first:
+      213: 8776523134276768537
+    second: TX Props_491
+  - first:
+      213: 4711638249147820391
+    second: TX Props_492
+  - first:
+      213: 2979177644671023086
+    second: TX Props_493
+  - first:
+      213: 7827116802410220199
+    second: TX Props_494
+  - first:
+      213: 2099399727044620718
+    second: TX Props_495
+  - first:
+      213: 6596429401045950935
+    second: TX Props_496
+  - first:
+      213: 1457466252615190582
+    second: TX Props_497
+  - first:
+      213: 311076361905614644
+    second: TX Props_498
+  - first:
+      213: 3360010030651614136
+    second: TX Props_499
+  - first:
+      213: 2633858278975263357
+    second: TX Props_500
+  - first:
+      213: 7900353013834094914
+    second: TX Props_501
+  - first:
+      213: 2834704013135659967
+    second: TX Props_502
+  - first:
+      213: 5163775676137827030
+    second: TX Props_503
+  - first:
+      213: 8861612067963113582
+    second: TX Props_504
+  - first:
+      213: 6806340099794726040
+    second: TX Props_505
+  - first:
+      213: 1116186337518504470
+    second: TX Props_506
+  - first:
+      213: 3767768877047274528
+    second: TX Props_507
+  - first:
+      213: 6801850384325279719
+    second: TX Props_508
+  - first:
+      213: 2306330604364880445
+    second: TX Props_509
+  - first:
+      213: 8831111229007849071
+    second: TX Props_510
+  - first:
+      213: 311016766205306196
+    second: TX Props_511
+  - first:
+      213: 2372718172441598766
+    second: TX Props_512
+  - first:
+      213: 4374495769249970931
+    second: TX Props_513
+  - first:
+      213: 1121913962821420376
+    second: TX Props_514
+  - first:
+      213: 7514685624796783106
+    second: TX Props_515
+  - first:
+      213: 396470343285385995
+    second: TX Props_516
+  - first:
+      213: 8741474539353446422
+    second: TX Props_517
+  - first:
+      213: 5905543488793554528
+    second: TX Props_518
+  - first:
+      213: 8790221185625066633
+    second: TX Props_519
+  - first:
+      213: 6695863982924948141
+    second: TX Props_520
+  - first:
+      213: 8395112905648730574
+    second: TX Props_521
+  - first:
+      213: 5821332182596720207
+    second: TX Props_522
+  - first:
+      213: 5898280286998540986
+    second: TX Props_523
+  - first:
+      213: 7128129038850212855
+    second: TX Props_524
+  - first:
+      213: 8055997696896714461
+    second: TX Props_525
+  - first:
+      213: 6607262712666384259
+    second: TX Props_526
+  - first:
+      213: 2937917191867603260
+    second: TX Props_527
+  - first:
+      213: 2453526153742245159
+    second: TX Props_528
+  - first:
+      213: 3648205991629629550
+    second: TX Props_529
+  - first:
+      213: 8498978370052101836
+    second: TX Props_530
+  - first:
+      213: 4003207554808259740
+    second: TX Props_531
+  - first:
+      213: 786768467452908675
+    second: TX Props_532
+  - first:
+      213: 3840413643031003189
+    second: TX Props_533
+  - first:
+      213: 5471249021043987399
+    second: TX Props_534
+  - first:
+      213: 3413551198911618410
+    second: TX Props_535
+  - first:
+      213: 1006294247339523137
+    second: TX Props_536
+  - first:
+      213: 4794191034493411914
+    second: TX Props_537
+  - first:
+      213: 4728397021758092829
+    second: TX Props_538
+  - first:
+      213: 6846539892194293058
+    second: TX Props_539
+  - first:
+      213: 8282662824697522928
+    second: TX Props_540
+  - first:
+      213: 4525059682243556742
+    second: TX Props_541
+  - first:
+      213: 7369218319707515786
+    second: TX Props_542
+  - first:
+      213: 7800994800213785580
+    second: TX Props_543
+  - first:
+      213: 288212800998267472
+    second: TX Props_544
+  - first:
+      213: 3434023786496210650
+    second: TX Props_545
+  - first:
+      213: 8337520146382187510
+    second: TX Props_546
+  - first:
+      213: 995049161351126275
+    second: TX Props_547
+  - first:
+      213: 2344113933670548516
+    second: TX Props_548
+  - first:
+      213: 2668451802723831260
+    second: TX Props_549
+  - first:
+      213: 7534360728149570268
+    second: TX Props_550
+  - first:
+      213: 4131511839591565678
+    second: TX Props_551
+  - first:
+      213: 595352972103294523
+    second: TX Props_552
+  - first:
+      213: 5129670660817779789
+    second: TX Props_553
+  - first:
+      213: 550017616004607904
+    second: TX Props_554
+  - first:
+      213: 2078274545190805531
+    second: TX Props_555
+  - first:
+      213: 1931164145757039841
+    second: TX Props_556
+  - first:
+      213: 3685532203003106396
+    second: TX Props_557
+  - first:
+      213: 3401361626022543478
+    second: TX Props_558
+  - first:
+      213: 244026899023392068
+    second: TX Props_559
+  - first:
+      213: 6479109129429693106
+    second: TX Props_560
+  - first:
+      213: 2827047757011649414
+    second: TX Props_561
+  - first:
+      213: 1159819746330264235
+    second: TX Props_562
+  - first:
+      213: 1804099956389553199
+    second: TX Props_563
+  - first:
+      213: 781396859888792931
+    second: TX Props_564
+  - first:
+      213: 501547768635464572
+    second: TX Props_565
+  - first:
+      213: 768336539792846371
+    second: TX Props_566
+  - first:
+      213: 643794984880327519
+    second: TX Props_567
+  - first:
+      213: 5352374446587103951
+    second: TX Props_568
+  - first:
+      213: 8884197139263094206
+    second: TX Props_569
+  - first:
+      213: 308331724089737030
+    second: TX Props_570
+  - first:
+      213: 5702825805756390335
+    second: TX Props_571
+  - first:
+      213: 39583199554487697
+    second: TX Props_572
+  - first:
+      213: 4340052312252223318
+    second: TX Props_573
+  - first:
+      213: 5216008004138341431
+    second: TX Props_574
+  - first:
+      213: 6663640498242779613
+    second: TX Props_575
+  - first:
+      213: 6846711963575544649
+    second: TX Props_576
+  - first:
+      213: 4255801681418452316
+    second: TX Props_577
+  - first:
+      213: 942040930014704088
+    second: TX Props_578
+  - first:
+      213: 4860002408030535892
+    second: TX Props_579
+  - first:
+      213: 4641806453626122634
+    second: TX Props_580
+  - first:
+      213: 3843569228208020157
+    second: TX Props_581
+  - first:
+      213: 3597488164858583917
+    second: TX Props_582
+  - first:
+      213: 7994470420292107860
+    second: TX Props_583
+  - first:
+      213: 5116533814924284600
+    second: TX Props_584
+  - first:
+      213: 2121973378234664143
+    second: TX Props_585
+  - first:
+      213: 5091534773211383472
+    second: TX Props_586
+  - first:
+      213: 2240238150273542161
+    second: TX Props_587
+  - first:
+      213: 2187826321471625998
+    second: TX Props_588
+  - first:
+      213: 5136349806694418897
+    second: TX Props_589
+  - first:
+      213: 2895539690382060370
+    second: TX Props_590
+  - first:
+      213: 8532061698657873041
+    second: TX Props_591
+  - first:
+      213: 7075264662590524920
+    second: TX Props_592
+  - first:
+      213: 8295130701415878382
+    second: TX Props_593
+  - first:
+      213: 2812444670576563775
+    second: TX Props_594
+  - first:
+      213: 6056608765227617427
+    second: TX Props_595
+  - first:
+      213: 3696046621591523501
+    second: TX Props_596
+  - first:
+      213: 7349378202988713998
+    second: TX Props_597
+  - first:
+      213: 4301401113011745642
+    second: TX Props_598
+  - first:
+      213: 583892549670191329
+    second: TX Props_599
+  - first:
+      213: 8508576707821119289
+    second: TX Props_600
+  - first:
+      213: 3947519504488996107
+    second: TX Props_601
+  - first:
+      213: 8719449516892872056
+    second: TX Props_602
+  - first:
+      213: 8322551524156486065
+    second: TX Props_603
+  - first:
+      213: 180965132565415082
+    second: TX Props_604
+  - first:
+      213: 4318620899822058420
+    second: TX Props_605
+  - first:
+      213: 1243354472022894274
+    second: TX Props_606
+  - first:
+      213: 3983849539245427482
+    second: TX Props_607
+  - first:
+      213: 797597076617834131
+    second: TX Props_608
+  - first:
+      213: 7002411600527433176
+    second: TX Props_609
+  - first:
+      213: 1869991604740736868
+    second: TX Props_610
+  - first:
+      213: 5498013567795824719
+    second: TX Props_611
+  - first:
+      213: 4568183938781646394
+    second: TX Props_612
+  - first:
+      213: 5478094294099278124
+    second: TX Props_613
+  - first:
+      213: 752444550363757381
+    second: TX Props_614
+  - first:
+      213: 5815177947901926936
+    second: TX Props_615
+  - first:
+      213: 2266820493717864397
+    second: TX Props_616
+  - first:
+      213: 8541742765705210346
+    second: TX Props_617
+  - first:
+      213: 6968481933017146383
+    second: TX Props_618
+  - first:
+      213: 4591639425165837726
+    second: TX Props_619
+  - first:
+      213: 7263940177986091574
+    second: TX Props_620
+  - first:
+      213: 9086470268183513982
+    second: TX Props_621
+  - first:
+      213: 2434625263789506647
+    second: TX Props_622
+  - first:
+      213: 8905660139257342547
+    second: TX Props_623
+  - first:
+      213: 3414677555024942233
+    second: TX Props_624
+  - first:
+      213: 299960009964907078
+    second: TX Props_625
+  - first:
+      213: 6991824154742175371
+    second: TX Props_626
+  - first:
+      213: 1583449971931390173
+    second: TX Props_627
+  - first:
+      213: 1178213587283989049
+    second: TX Props_628
+  - first:
+      213: 1173834246864515197
+    second: TX Props_629
+  - first:
+      213: 7625018604477211397
+    second: TX Props_630
+  - first:
+      213: 7331814260158041374
+    second: TX Props_631
+  - first:
+      213: 2147519451778271114
+    second: TX Props_632
+  - first:
+      213: 6983442340067836879
+    second: TX Props_633
+  - first:
+      213: 5002857116327268483
+    second: TX Props_634
+  - first:
+      213: 1385706113939233140
+    second: TX Props_635
+  - first:
+      213: 9030942200744172517
+    second: TX Props_636
+  - first:
+      213: 1892233410909210933
+    second: TX Props_637
+  - first:
+      213: 4998779153157294761
+    second: TX Props_638
+  - first:
+      213: 6625542730038360951
+    second: TX Props_639
+  - first:
+      213: 3677117912016768383
+    second: TX Props_640
+  - first:
+      213: 7982106462084936591
+    second: TX Props_641
+  - first:
+      213: 4223692689172620487
+    second: TX Props_642
+  - first:
+      213: 6099364503842752910
+    second: TX Props_643
+  - first:
+      213: 7759693762566168281
+    second: TX Props_644
+  - first:
+      213: 9022800767739243345
+    second: TX Props_645
+  - first:
+      213: 3773765841397928515
+    second: TX Props_646
+  - first:
+      213: 3311042304888074067
+    second: TX Props_647
+  - first:
+      213: 9041699257881672297
+    second: TX Props_648
+  - first:
+      213: 5069571415818470956
+    second: TX Props_649
+  - first:
+      213: 6813547135806303418
+    second: TX Props_650
+  - first:
+      213: 4307925670716559429
+    second: TX Props_651
+  - first:
+      213: 1179813279033293393
+    second: TX Props_652
+  - first:
+      213: 2977026792194230517
+    second: TX Props_653
+  - first:
+      213: 373715089614557850
+    second: TX Props_654
+  - first:
+      213: 8591243200739963919
+    second: TX Props_655
+  - first:
+      213: 7537187390017203208
+    second: TX Props_656
+  - first:
+      213: 1754573835830934649
+    second: TX Props_657
+  - first:
+      213: 6006420883257131305
+    second: TX Props_658
+  - first:
+      213: 4044709172111398294
+    second: TX Props_659
+  - first:
+      213: 2405729443158644598
+    second: TX Props_660
+  - first:
+      213: 6979614977451061788
+    second: TX Props_661
+  - first:
+      213: 5044779054681624452
+    second: TX Props_662
+  - first:
+      213: 749027468381719857
+    second: TX Props_663
+  - first:
+      213: 6137065870504432613
+    second: TX Props_664
+  - first:
+      213: 2501847673512361782
+    second: TX Props_665
+  - first:
+      213: 3995866736960709525
+    second: TX Props_666
+  - first:
+      213: 4162073843064690320
+    second: TX Props_667
+  - first:
+      213: 1346361735966691887
+    second: TX Props_668
+  - first:
+      213: 7477521175457518205
+    second: TX Props_669
+  - first:
+      213: 3472148093421984535
+    second: TX Props_670
+  - first:
+      213: 4616979563368803087
+    second: TX Props_671
+  - first:
+      213: 143252060976932794
+    second: TX Props_672
+  - first:
+      213: 3108373379739677773
+    second: TX Props_673
+  - first:
+      213: 7771017884194649717
+    second: TX Props_674
+  - first:
+      213: 6717856526920059380
+    second: TX Props_675
+  - first:
+      213: 8575992753984601059
+    second: TX Props_676
+  - first:
+      213: 2228765254450115329
+    second: TX Props_677
+  - first:
+      213: 8727060219869536929
+    second: TX Props_678
+  - first:
+      213: 3297762077003730827
+    second: TX Props_679
+  - first:
+      213: 7914063556319643688
+    second: TX Props_680
+  - first:
+      213: 4838790525288572691
+    second: TX Props_681
+  - first:
+      213: 6202483616907643124
+    second: TX Props_682
+  - first:
+      213: 7074397299626133991
+    second: TX Props_683
+  - first:
+      213: 3444645372710198887
+    second: TX Props_684
+  - first:
+      213: 8774534508920995045
+    second: TX Props_685
+  - first:
+      213: 7083801076747905408
+    second: TX Props_686
+  - first:
+      213: 4277885578925748616
+    second: TX Props_687
+  - first:
+      213: 5571833000221748252
+    second: TX Props_688
+  - first:
+      213: 5405567651029994270
+    second: TX Props_689
+  - first:
+      213: 8854595750061556317
+    second: TX Props_690
+  - first:
+      213: 5096479292332566871
+    second: TX Props_691
+  - first:
+      213: 1978519027325503855
+    second: TX Props_692
+  - first:
+      213: 8416244304504640297
+    second: TX Props_693
+  - first:
+      213: 1498457675083725011
+    second: TX Props_694
+  - first:
+      213: 2828477337147809195
+    second: TX Props_695
+  - first:
+      213: 3772875483737459038
+    second: TX Props_696
+  - first:
+      213: 5225422988131057983
+    second: TX Props_697
+  - first:
+      213: 2081039377913749274
+    second: TX Props_698
+  - first:
+      213: 7927545682329707383
+    second: TX Props_699
+  - first:
+      213: 1976558771485802714
+    second: TX Props_700
+  - first:
+      213: 1366268155309772787
+    second: TX Props_701
+  - first:
+      213: 6410219002882324784
+    second: TX Props_702
+  - first:
+      213: 3257011760301666875
+    second: TX Props_703
+  - first:
+      213: 9157232139667361699
+    second: TX Props_704
+  - first:
+      213: 1782853532009660666
+    second: TX Props_705
+  - first:
+      213: 7818752048150674614
+    second: TX Props_706
+  - first:
+      213: 798528781334364193
+    second: TX Props_707
+  - first:
+      213: 1834423979179726540
+    second: TX Props_708
+  - first:
+      213: 8449828691027961333
+    second: TX Props_709
+  - first:
+      213: 6813528086913831395
+    second: TX Props_710
+  - first:
+      213: 9180237940368876186
+    second: TX Props_711
+  - first:
+      213: 8950904485318404445
+    second: TX Props_712
+  - first:
+      213: 1643898170016806234
+    second: TX Props_713
+  - first:
+      213: 3721683916997862649
+    second: TX Props_714
+  - first:
+      213: 8942128953056509706
+    second: TX Props_715
+  - first:
+      213: 5339187369937227154
+    second: TX Props_716
+  - first:
+      213: 6972889636580977658
+    second: TX Props_717
+  - first:
+      213: 6706127662092878744
+    second: TX Props_718
+  - first:
+      213: 3076984582855237769
+    second: TX Props_719
+  - first:
+      213: 8641031094790359333
+    second: TX Props_720
+  - first:
+      213: 2726593805943060842
+    second: TX Props_721
+  - first:
+      213: 8776997951469391577
+    second: TX Props_722
+  - first:
+      213: 8220372517808130151
+    second: TX Props_723
+  - first:
+      213: 1375136056600501539
+    second: TX Props_724
+  - first:
+      213: 1291952348458510032
+    second: TX Props_725
+  - first:
+      213: 7818862825183220718
+    second: TX Props_726
+  - first:
+      213: 7504528905733216541
+    second: TX Props_727
+  - first:
+      213: 6972131994145840583
+    second: TX Props_728
+  - first:
+      213: 631987156119956054
+    second: TX Props_729
+  - first:
+      213: 8235643143978655853
+    second: TX Props_730
+  - first:
+      213: 5988802144728889000
+    second: TX Props_731
+  - first:
+      213: 2035671547381913460
+    second: TX Props_732
+  - first:
+      213: 4866818044795201690
+    second: TX Props_733
+  - first:
+      213: 4738747248549268780
+    second: TX Props_734
+  - first:
+      213: 8983358042030005366
+    second: TX Props_735
+  - first:
+      213: 823097874200750648
+    second: TX Props_736
+  - first:
+      213: 7140277909718672372
+    second: TX Props_737
+  - first:
+      213: 882886604574731212
+    second: TX Props_738
+  - first:
+      213: 7002369487232962483
+    second: TX Props_739
+  - first:
+      213: 949819074175388773
+    second: TX Props_740
+  - first:
+      213: 6550376555562026480
+    second: TX Props_741
+  - first:
+      213: 4773604218360202472
+    second: TX Props_742
+  - first:
+      213: 7635965631914474475
+    second: TX Props_743
+  - first:
+      213: 3760673448404823469
+    second: TX Props_744
+  - first:
+      213: 5686040065602259060
+    second: TX Props_745
+  - first:
+      213: 3389452157835214882
+    second: TX Props_746
+  - first:
+      213: 125028256540691736
+    second: TX Props_747
+  - first:
+      213: 5328491867617747078
+    second: TX Props_748
+  - first:
+      213: 738400588239116317
+    second: TX Props_749
+  - first:
+      213: 2156793168270651267
+    second: TX Props_750
+  - first:
+      213: 5992201222027757020
+    second: TX Props_751
+  - first:
+      213: 6261675058509517587
+    second: TX Props_752
+  - first:
+      213: 2954690760859986180
+    second: TX Props_753
+  - first:
+      213: 2516376607381139030
+    second: TX Props_754
+  - first:
+      213: 1147071312763112672
+    second: TX Props_755
+  - first:
+      213: 2582559356537207546
+    second: TX Props_756
+  - first:
+      213: 6705522940626216933
+    second: TX Props_757
+  - first:
+      213: 4148823615618136794
+    second: TX Props_758
+  - first:
+      213: 2898020746123202682
+    second: TX Props_759
+  - first:
+      213: 5749413886499416791
+    second: TX Props_760
+  - first:
+      213: 7147359418031585359
+    second: TX Props_761
+  - first:
+      213: 4852856443616437215
+    second: TX Props_762
+  - first:
+      213: 5916250278555879043
+    second: TX Props_763
+  - first:
+      213: 2935416599608929404
+    second: TX Props_764
+  - first:
+      213: 6819488643517039782
+    second: TX Props_765
+  - first:
+      213: 4188749900553121148
+    second: TX Props_766
+  - first:
+      213: 5611824595480189803
+    second: TX Props_767
+  - first:
+      213: 55330780243763027
+    second: TX Props_768
+  - first:
+      213: 2723696816422207070
+    second: TX Props_769
+  - first:
+      213: 522344011085442166
+    second: TX Props_770
+  - first:
+      213: 1736524419455113611
+    second: TX Props_771
+  - first:
+      213: 6285552299454280430
+    second: TX Props_772
+  - first:
+      213: 3951486640769653171
+    second: TX Props_773
+  - first:
+      213: 8734761852094205985
+    second: TX Props_774
+  - first:
+      213: 4319856614247605386
+    second: TX Props_775
+  - first:
+      213: 6981290874218224896
+    second: TX Props_776
+  - first:
+      213: 605420129706722233
+    second: TX Props_777
+  - first:
+      213: 4043316000250493650
+    second: TX Props_778
+  - first:
+      213: 6207102078649555965
+    second: TX Props_779
+  - first:
+      213: 7080864592907955787
+    second: TX Props_780
+  - first:
+      213: 1064793311567023417
+    second: TX Props_781
+  - first:
+      213: 6815234348530250647
+    second: TX Props_782
+  - first:
+      213: 4840924967476143345
+    second: TX Props_783
+  - first:
+      213: 464951493001905922
+    second: TX Props_784
+  - first:
+      213: 8657336976146382207
+    second: TX Props_785
+  - first:
+      213: 2844676688976254448
+    second: TX Props_786
+  - first:
+      213: 5983036512636949236
+    second: TX Props_787
+  - first:
+      213: 3776051219727832192
+    second: TX Props_788
+  - first:
+      213: 482826342846491547
+    second: TX Props_789
+  - first:
+      213: 7462097346385008032
+    second: TX Props_790
+  - first:
+      213: 2781629780709277617
+    second: TX Props_791
+  - first:
+      213: 7212046386013263951
+    second: TX Props_792
+  - first:
+      213: 2424430250325494689
+    second: TX Props_793
+  - first:
+      213: 1585534953181356546
+    second: TX Props_794
+  - first:
+      213: 8115011927247128688
+    second: TX Props_795
+  - first:
+      213: 5214757175812932419
+    second: TX Props_796
+  - first:
+      213: 8175397101497536707
+    second: TX Props_797
+  - first:
+      213: 6392855202568307064
+    second: TX Props_798
+  - first:
+      213: 4210071721795466822
+    second: TX Props_799
+  - first:
+      213: 1223134618411983151
+    second: TX Props_800
+  - first:
+      213: 1219904023566816511
+    second: TX Props_801
+  - first:
+      213: 9128232701684350876
+    second: TX Props_802
+  - first:
+      213: 8464145426863601060
+    second: TX Props_803
+  - first:
+      213: 1588182849288223187
+    second: TX Props_804
+  - first:
+      213: 1189321183109777833
+    second: TX Props_805
+  - first:
+      213: 5967621696933832974
+    second: TX Props_806
+  - first:
+      213: 8635892406446410073
+    second: TX Props_807
+  - first:
+      213: 6455254939871709699
+    second: TX Props_808
+  - first:
+      213: 7105895716697939184
+    second: TX Props_809
+  - first:
+      213: 5968015412853148403
+    second: TX Props_810
+  - first:
+      213: 3560741119271915624
+    second: TX Props_811
+  - first:
+      213: 7197084279786504512
+    second: TX Props_812
+  - first:
+      213: 1998387026100981525
+    second: TX Props_813
+  - first:
+      213: 3356532809826916168
+    second: TX Props_814
+  - first:
+      213: 5566138840151316799
+    second: TX Props_815
+  - first:
+      213: 6960298326743852153
+    second: TX Props_816
+  - first:
+      213: 2277715812757719531
+    second: TX Props_817
+  - first:
+      213: 769885315918557644
+    second: TX Props_818
+  - first:
+      213: 3763417923481943916
+    second: TX Props_819
+  - first:
+      213: 7093984493542277479
+    second: TX Props_820
+  - first:
+      213: 347263452150860238
+    second: TX Props_821
+  - first:
+      213: 3294143796124265262
+    second: TX Props_822
+  - first:
+      213: 2137277388582438641
+    second: TX Props_823
+  - first:
+      213: 2460800949249486656
+    second: TX Props_824
+  - first:
+      213: 8834731732611833070
+    second: TX Props_825
+  - first:
+      213: 7740244591178601164
+    second: TX Props_826
+  - first:
+      213: 1235420821758591795
+    second: TX Props_827
+  - first:
+      213: 7136766195932826683
+    second: TX Props_828
+  - first:
+      213: 2738910884164770644
+    second: TX Props_829
+  - first:
+      213: 6657204324992439182
+    second: TX Props_830
+  - first:
+      213: 8592321218452714450
+    second: TX Props_831
+  - first:
+      213: 7124494735595983757
+    second: TX Props_832
+  - first:
+      213: 6638847701795032654
+    second: TX Props_833
+  - first:
+      213: 4250812270304480841
+    second: TX Props_834
+  - first:
+      213: 3099023518864497663
+    second: TX Props_835
+  - first:
+      213: 4136799401904342052
+    second: TX Props_836
+  - first:
+      213: 3370092331582117962
+    second: TX Props_837
+  - first:
+      213: 6336730614602596906
+    second: TX Props_838
+  - first:
+      213: 2633486759870442767
+    second: TX Props_839
+  - first:
+      213: 2453384936342641926
+    second: TX Props_840
+  - first:
+      213: 6806116241503487680
+    second: TX Props_841
+  - first:
+      213: 1492854153080322634
+    second: TX Props_842
+  - first:
+      213: 9207703041826534050
+    second: TX Props_843
+  - first:
+      213: 3102940573453680268
+    second: TX Props_844
+  - first:
+      213: 2925583856246799059
+    second: TX Props_845
+  - first:
+      213: 6987961864786474699
+    second: TX Props_846
+  - first:
+      213: 6726513243726872452
+    second: TX Props_847
+  - first:
+      213: 8732019680975764830
+    second: TX Props_848
+  - first:
+      213: 4510392034026136440
+    second: TX Props_849
+  - first:
+      213: 7827897347255265954
+    second: TX Props_850
+  - first:
+      213: 1822351406061261352
+    second: TX Props_851
+  - first:
+      213: 7007034971883928926
+    second: TX Props_852
+  - first:
+      213: 2748413188381338171
+    second: TX Props_853
+  - first:
+      213: 4331712363550467985
+    second: TX Props_854
+  - first:
+      213: 6616937147304596289
+    second: TX Props_855
+  - first:
+      213: 1617744766304269629
+    second: TX Props_856
+  - first:
+      213: 8901949612663143296
+    second: TX Props_857
+  - first:
+      213: 1714361333529930402
+    second: TX Props_858
+  - first:
+      213: 4147801421243094923
+    second: TX Props_859
+  - first:
+      213: 1239885123567512427
+    second: TX Props_860
+  - first:
+      213: 5875299614807936368
+    second: TX Props_861
+  - first:
+      213: 3146830872918356092
+    second: TX Props_862
+  - first:
+      213: 3210704749991867165
+    second: TX Props_863
+  - first:
+      213: 7452809947716984432
+    second: TX Props_864
+  - first:
+      213: 8374852025312366441
+    second: TX Props_865
+  - first:
+      213: 7079206475825584803
+    second: TX Props_866
+  - first:
+      213: 8542208985377906809
+    second: TX Props_867
+  - first:
+      213: 7691819679252844488
+    second: TX Props_868
+  - first:
+      213: 5162748531799025220
+    second: TX Props_869
+  - first:
+      213: 1104866869171268893
+    second: TX Props_870
+  - first:
+      213: 4250047866080451089
+    second: TX Props_871
+  - first:
+      213: 8269355344117781360
+    second: TX Props_872
+  - first:
+      213: 1239904644607913406
+    second: TX Props_873
+  - first:
+      213: 3368259738340626895
+    second: TX Props_874
+  - first:
+      213: 7467611614528167085
+    second: TX Props_875
+  - first:
+      213: 8206124997199283831
+    second: TX Props_876
+  - first:
+      213: 2958803516181016321
+    second: TX Props_877
+  - first:
+      213: 2386495002718333273
+    second: TX Props_878
+  - first:
+      213: 7843079581755857921
+    second: TX Props_879
+  - first:
+      213: 8511668373934673927
+    second: TX Props_880
+  - first:
+      213: 1900231484690037660
+    second: TX Props_881
+  - first:
+      213: 7223909962638069213
+    second: TX Props_882
+  - first:
+      213: 4115055370255734342
+    second: TX Props_883
+  - first:
+      213: 7552685062045984423
+    second: TX Props_884
+  - first:
+      213: 8219385570909166829
+    second: TX Props_885
+  - first:
+      213: 6336841932569750420
+    second: TX Props_886
+  - first:
+      213: 2152780977861754470
+    second: TX Props_887
+  - first:
+      213: 3653523078108271101
+    second: TX Props_888
+  - first:
+      213: 2934788599938288479
+    second: TX Props_889
+  - first:
+      213: 5039628911333347460
+    second: TX Props_890
+  - first:
+      213: 5846010795901402390
+    second: TX Props_891
+  - first:
+      213: 657762390344603243
+    second: TX Props_892
+  - first:
+      213: 1409168981524083287
+    second: TX Props_893
+  - first:
+      213: 2271950819144201911
+    second: TX Props_894
+  - first:
+      213: 6635509330402528888
+    second: TX Props_895
+  - first:
+      213: 5917902253688221042
+    second: TX Props_896
+  - first:
+      213: 640985603944956697
+    second: TX Props_897
+  - first:
+      213: 8231681705735036648
+    second: TX Props_898
+  - first:
+      213: 8519648612334151456
+    second: TX Props_899
+  - first:
+      213: 7170455667618936043
+    second: TX Props_900
+  - first:
+      213: 7758695521347779962
+    second: TX Props_901
+  - first:
+      213: 3339036636746198634
+    second: TX Props_902
+  - first:
+      213: 1892736832137586904
+    second: TX Props_903
+  - first:
+      213: 2652940488381319749
+    second: TX Props_904
+  - first:
+      213: 7913674645295553667
+    second: TX Props_905
+  - first:
+      213: 8449901755969043588
+    second: TX Props_906
+  - first:
+      213: 5715126191650852299
+    second: TX Props_907
+  - first:
+      213: 4652771265035314737
+    second: TX Props_908
+  - first:
+      213: 835271002145270425
+    second: TX Props_909
+  - first:
+      213: 2162279632436513428
+    second: TX Props_910
+  - first:
+      213: 3072626360371111487
+    second: TX Props_911
+  - first:
+      213: 7231770590342787411
+    second: TX Props_912
+  - first:
+      213: 722034792126744967
+    second: TX Props_913
+  - first:
+      213: 8044658370024852214
+    second: TX Props_914
+  - first:
+      213: 9036214110211113229
+    second: TX Props_915
+  - first:
+      213: 6422101244531203309
+    second: TX Props_916
+  - first:
+      213: 4381286069483207295
+    second: TX Props_917
+  - first:
+      213: 7851379154390037760
+    second: TX Props_918
+  - first:
+      213: 8299207470441893831
+    second: TX Props_919
+  - first:
+      213: 1490756429358309797
+    second: TX Props_920
+  - first:
+      213: 8008618789952505447
+    second: TX Props_921
+  - first:
+      213: 385647447708793466
+    second: TX Props_922
+  - first:
+      213: 717989176024450531
+    second: TX Props_923
+  - first:
+      213: 1131750917330073158
+    second: TX Props_924
+  - first:
+      213: 3118901256333901060
+    second: TX Props_925
+  - first:
+      213: 2546134772459371238
+    second: TX Props_926
+  - first:
+      213: 448792338141859591
+    second: TX Props_927
+  - first:
+      213: 995687291122035392
+    second: TX Props_928
+  - first:
+      213: 4763407810858905665
+    second: TX Props_929
+  - first:
+      213: 2065754991086583153
+    second: TX Props_930
+  - first:
+      213: 3917449885181406956
+    second: TX Props_931
+  - first:
+      213: 7612177181453158264
+    second: TX Props_932
+  - first:
+      213: 2328969982201938506
+    second: TX Props_933
+  - first:
+      213: 5106533210684490427
+    second: TX Props_934
+  - first:
+      213: 4254590505613181903
+    second: TX Props_935
+  - first:
+      213: 9058283854228323772
+    second: TX Props_936
+  - first:
+      213: 3120114136685185482
+    second: TX Props_937
+  - first:
+      213: 4170198719025912122
+    second: TX Props_938
+  - first:
+      213: 1423181471963779623
+    second: TX Props_939
+  - first:
+      213: 3973075980776678981
+    second: TX Props_940
+  - first:
+      213: 4805262208838974740
+    second: TX Props_941
+  - first:
+      213: 6508583762310502645
+    second: TX Props_942
+  - first:
+      213: 5559677857987315642
+    second: TX Props_943
+  - first:
+      213: 3599444568508019209
+    second: TX Props_944
+  - first:
+      213: 1942388384306492153
+    second: TX Props_945
+  - first:
+      213: 2301089660398353225
+    second: TX Props_946
+  - first:
+      213: 2275079314135498266
+    second: TX Props_947
+  - first:
+      213: 3763683347740872711
+    second: TX Props_948
+  - first:
+      213: 7533191586112747822
+    second: TX Props_949
+  - first:
+      213: 6667073913661356998
+    second: TX Props_950
+  - first:
+      213: 1372184092079103002
+    second: TX Props_951
+  - first:
+      213: 2711975911188444607
+    second: TX Props_952
+  - first:
+      213: 8805289048107823547
+    second: TX Props_953
+  - first:
+      213: 7142075775234841906
+    second: TX Props_954
+  - first:
+      213: 85184678606602892
+    second: TX Props_955
+  - first:
+      213: 6617149062749393302
+    second: TX Props_956
+  - first:
+      213: 8048187136078620886
+    second: TX Props_957
+  - first:
+      213: 1871904677354110537
+    second: TX Props_958
+  - first:
+      213: 7599498423873530958
+    second: TX Props_959
+  - first:
+      213: 4841785933608337093
+    second: TX Props_960
+  - first:
+      213: 4030333589559827258
+    second: TX Props_961
+  - first:
+      213: 1569707803891678814
+    second: TX Props_962
+  - first:
+      213: 9200260807601689285
+    second: TX Props_963
+  - first:
+      213: 3281166909730932015
+    second: TX Props_964
+  - first:
+      213: 499254058333441303
+    second: TX Props_965
+  - first:
+      213: 4153890670412118830
+    second: TX Props_966
+  - first:
+      213: 2600379498353423492
+    second: TX Props_967
+  - first:
+      213: 4454665997889829789
+    second: TX Props_968
+  - first:
+      213: 4265164017503818976
+    second: TX Props_969
+  - first:
+      213: 762559710669203399
+    second: TX Props_970
+  - first:
+      213: 8839837063656283292
+    second: TX Props_971
+  - first:
+      213: 4087722226227572222
+    second: TX Props_972
+  - first:
+      213: 5690683891902300988
+    second: TX Props_973
+  - first:
+      213: 5564127903266459241
+    second: TX Props_974
+  - first:
+      213: 523264034740159120
+    second: TX Props_975
+  - first:
+      213: 52348712606453609
+    second: TX Props_976
+  - first:
+      213: 4330165317682992208
+    second: TX Props_977
+  - first:
+      213: 5376029069022412298
+    second: TX Props_978
+  - first:
+      213: 4168775350079266913
+    second: TX Props_979
+  - first:
+      213: 713771698384609199
+    second: TX Props_980
+  - first:
+      213: 5089394066656301539
+    second: TX Props_981
+  - first:
+      213: 2173200685122987498
+    second: TX Props_982
+  - first:
+      213: 487059993380838144
+    second: TX Props_983
+  - first:
+      213: 8626214229001269195
+    second: TX Props_984
+  - first:
+      213: 8860454026772659409
+    second: TX Props_985
+  - first:
+      213: 4585833875787106397
+    second: TX Props_986
+  - first:
+      213: 5250210551911049250
+    second: TX Props_987
+  - first:
+      213: 9019416710740759189
+    second: TX Props_988
+  - first:
+      213: 8585538657680115199
+    second: TX Props_989
+  - first:
+      213: 7116411067934026963
+    second: TX Props_990
+  - first:
+      213: 8847976659517783194
+    second: TX Props_991
+  - first:
+      213: 5755484595831733665
+    second: TX Props_992
+  - first:
+      213: 8961246282183481835
+    second: TX Props_993
+  - first:
+      213: 6082886020806508205
+    second: TX Props_994
+  - first:
+      213: 2679794364442802629
+    second: TX Props_995
+  - first:
+      213: 2892219752593915045
+    second: TX Props_996
+  - first:
+      213: 2164212307355886339
+    second: TX Props_997
+  - first:
+      213: 1933992020730939224
+    second: TX Props_998
+  - first:
+      213: 8264666031830538593
+    second: TX Props_999
+  - first:
+      213: 2589653341168462458
+    second: TX Props_1000
+  - first:
+      213: 352223568848422744
+    second: TX Props_1001
+  - first:
+      213: 6871077273307759228
+    second: TX Props_1002
+  - first:
+      213: 2153257734360140245
+    second: TX Props_1003
+  - first:
+      213: 1041672897089746634
+    second: TX Props_1004
+  - first:
+      213: 975368262216254521
+    second: TX Props_1005
+  - first:
+      213: 4736835529071839287
+    second: TX Props_1006
+  - first:
+      213: 3045715996916719162
+    second: TX Props_1007
+  - first:
+      213: 2307939590589100635
+    second: TX Props_1008
+  - first:
+      213: 3459913629606851697
+    second: TX Props_1009
+  - first:
+      213: 3956900061536792108
+    second: TX Props_1010
+  - first:
+      213: 8935188485303064501
+    second: TX Props_1011
+  - first:
+      213: 3768975840869944379
+    second: TX Props_1012
+  - first:
+      213: 5033013807789717312
+    second: TX Props_1013
+  - first:
+      213: 4771040382289970706
+    second: TX Props_1014
+  - first:
+      213: 9516987165831739
+    second: TX Props_1015
+  - first:
+      213: 3410683886738476072
+    second: TX Props_1016
+  - first:
+      213: 4879819435894708846
+    second: TX Props_1017
+  - first:
+      213: 4231559430483741594
+    second: TX Props_1018
+  - first:
+      213: 1487946713545588623
+    second: TX Props_1019
+  - first:
+      213: 2998645593815938791
+    second: TX Props_1020
+  - first:
+      213: 7868387189333545501
+    second: TX Props_1021
+  - first:
+      213: 8564416411455972960
+    second: TX Props_1022
+  - first:
+      213: 5994339890317613546
+    second: TX Props_1023
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TX Props_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c731ce4277faf9791246acfe9e8fdea
+      internalID: 7516649443750546612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 451
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4df574aab9ad30895d6372c415fe5aa
+      internalID: 636022032866729940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc1b568a0643da1501553d81299a402
+      internalID: 6828190819909516868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_3
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 451
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfd415e78c3f719a10b11c04963cdc5
+      internalID: 1871179091940605355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_5
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 452
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394104c999543144af5c5d1bd8dd6215
+      internalID: 4913801687917150521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_6
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 449
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830da500470b9256a5f9cf5e2587cff1
+      internalID: 6238060833442958723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_7
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 419
+        width: 46
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffae7b23ea3ff78102c786eb44091d5c
+      internalID: 9081719848719110401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_9
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 359
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24996203cc8d4b87ab50abab2a48c714
+      internalID: 8697702347966342876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 387
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ac2b6d6b0b30461ad50d3c29c521e9
+      internalID: 5057554937558052073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 387
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fdb2d29e3b22b7ecb4f738fb1043274
+      internalID: 9091556961495669583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_12
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 355
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e5be59a92900dad640d72290fdc111
+      internalID: 2738142766109366796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 389
+        width: 64
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97333e66f4c02e318071f4f0036c57f4
+      internalID: 3543982112707064727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_15
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 353
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cae39e751ae52294507a49873ba2f34
+      internalID: 2977633970440220172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_17
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 357
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21df973c526de641a8081691d2182739
+      internalID: 4748603057080098593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_22
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 293
+        width: 9
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3aaeb5f32fc7ae6510e5ee31e666cc
+      internalID: 5852656466973017475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_23
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 293
+        width: 9
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1245b43c425b6a260243a788097327
+      internalID: 7663792019390927374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_24
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 320
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503ee29770afbc117d464868dd2c3119
+      internalID: 1278089292385762896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_25
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 323
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52f175c5eb14911473bf81758fd9180
+      internalID: 1245721790774718405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_26
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 291
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9207f973f2c2216faa2e6bc0c17f7c89
+      internalID: 8007895959025026962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_27
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 297
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601432d2f74a7b1a4b5af383757abbb0
+      internalID: 1908201295365411936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_28
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 261
+        width: 32
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee8c0a43ce90c25cc318b240f888eb4
+      internalID: 2669765125795276862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4ea5e0d04a6c24e1e40ecc5c7c7940
+      internalID: 2624554943832739455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_30
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 261
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c540adef040601cb0ac4b12c055d3a62
+      internalID: 3818764390762725179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_31
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 232
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75a6b3a19de05df6d07ea9715950a08
+      internalID: 2376249028432405833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_32
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 232
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f4960f4961450b009a59f74a3118b6
+      internalID: 812162274232300567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_33
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 261
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fea8c453070f16ecd6ca3dc871cc180
+      internalID: 7994294166186945087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_37
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 163
+        width: 94
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6bb6752aa7d29251a348b561cd743d
+      internalID: 7867041798257480849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_38
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 197
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848c6fddf87a621870f12d93b421b052
+      internalID: 1757102013913468036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_39
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 169
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56804a46763b1ae77ca4c7760e616eb2
+      internalID: 1794056122382253994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_40
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb615e780a080a05d6b5653a1001fe0
+      internalID: 6881323755128899905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_41
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 132
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c821576fbe26c6dcba1cd3b19a42f80b
+      internalID: 2538298740623072824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_42
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 104
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b1d73cfab481eacf6ae8070f17492f
+      internalID: 1548757809983147655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_43
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 38
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc7d9f91392caed9bf862063df6c564
+      internalID: 1312075726931245205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_44
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05b7fb54ad59640a41d3e699dd9dd34
+      internalID: 4654141781783305136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_45
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b89b11f929636e7c6e20291020ae88b
+      internalID: 1786074647864702581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_46
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 6
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22698a1028fd4e5f6e8ac6cfb3dea338
+      internalID: 6867704830304610594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_47
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 6
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99ee0f9956ee7a83157b00b22a7f4be
+      internalID: 6275925965296066855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_48
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 6
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e545d3879b87dd2a9682dc50e0f1a2
+      internalID: 2483845661804075583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_49
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 3
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e45ddd00c3e3acbd4d13f8e396d199
+      internalID: 5988728670991293258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_50
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 7
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4cf4c2d9069cf408e17ae36fdb7efa6
+      internalID: 4670067406562709460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_51
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 8
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7678fa94a37f2e9044e2ffa82d4dc66f
+      internalID: 8057362342763399050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_52
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 7
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f819cbee6a5a90db54baa6e89f389b
+      internalID: 8045000210501732236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ecb5754f8e0fc0c49927f8191d986f00
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      TX Props_0: 7516649443750546612
+      TX Props_1: 636022032866729940
+      TX Props_10: 5057554937558052073
+      TX Props_11: 9091556961495669583
+      TX Props_12: 2738142766109366796
+      TX Props_13: 1763991693577452659
+      TX Props_14: 3543982112707064727
+      TX Props_15: 2977633970440220172
+      TX Props_16: 2324920763351880732
+      TX Props_17: 4748603057080098593
+      TX Props_18: 3529357250035782655
+      TX Props_19: 5979993224592746748
+      TX Props_2: 6828190819909516868
+      TX Props_20: 7667970397779977218
+      TX Props_21: 8979452313800024343
+      TX Props_22: 5852656466973017475
+      TX Props_23: 7663792019390927374
+      TX Props_24: 1278089292385762896
+      TX Props_25: 1245721790774718405
+      TX Props_26: 8007895959025026962
+      TX Props_27: 1908201295365411936
+      TX Props_28: 2669765125795276862
+      TX Props_29: 2624554943832739455
+      TX Props_3: 1871179091940605355
+      TX Props_30: 3818764390762725179
+      TX Props_31: 2376249028432405833
+      TX Props_32: 812162274232300567
+      TX Props_33: 7994294166186945087
+      TX Props_34: 4168965311862439907
+      TX Props_35: 1793535148851841560
+      TX Props_36: 6733293073667901125
+      TX Props_37: 7867041798257480849
+      TX Props_38: 1757102013913468036
+      TX Props_39: 1794056122382253994
+      TX Props_4: 1457054161068303096
+      TX Props_40: 6881323755128899905
+      TX Props_41: 2538298740623072824
+      TX Props_42: 1548757809983147655
+      TX Props_43: 1312075726931245205
+      TX Props_44: 4654141781783305136
+      TX Props_45: 1786074647864702581
+      TX Props_46: 6867704830304610594
+      TX Props_47: 6275925965296066855
+      TX Props_48: 2483845661804075583
+      TX Props_49: 5988728670991293258
+      TX Props_5: 4913801687917150521
+      TX Props_50: 4670067406562709460
+      TX Props_51: 8057362342763399050
+      TX Props_52: 8045000210501732236
+      TX Props_6: 6238060833442958723
+      TX Props_7: 9081719848719110401
+      TX Props_8: 5393411102770638945
+      TX Props_9: 8697702347966342876
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

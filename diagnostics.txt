@@ -1,0 +1,6 @@
+=== RUNTIME DIAGNOSTICS (17:32:57) ===
+Is Playing: False
+
+[PLAYER]: Not found
+
+[ENEMIES COUNT]: 0
