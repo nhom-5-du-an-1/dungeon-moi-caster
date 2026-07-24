@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a13325b75679234ea70a3bbedb34df8, type: 3}
+  m_Name: Sword_Grass
+  m_EditorClassIdentifier: Assembly-CSharp::DungeonCastle.Player.WeaponData
+  weaponName: "V\u0169 kh\xED m\u1EDBi"
+  damage: 10
+  attackCooldown: 0.5
+  range: 0.22102427
+  element: 0
+  isRanged: 0
+  projectilePrefab: {fileID: 0}
+  projectileSpeed: 10
+  hitboxSize: {x: 0.2697518, y: 0.22597237}
+  hitboxOffset: {x: 0.00416163, y: -0.0011650771}
+  attackAnimationName: Attack01, Attack02
+  attackDelay: 0.1
