@@ -3,9 +3,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// Quản lý Thanh Đồ (Hotbar / Quick Slot Bar) trong Game.
-/// Phím 1 -> 5 tương ứng chọn từ Ô 1 -> Ô 5.
-/// Sử dụng vật phẩm bằng phím E, F hoặc Space.
+/// Quáº£n lÃ½ Thanh Äá»“ (Hotbar / Quick Slot Bar) trong Game.
+/// PhÃ­m 1 -> 5 tÆ°Æ¡ng á»©ng chá»n tá»« Ã” 1 -> Ã” 5.
+/// Sá»­ dá»¥ng váº­t pháº©m báº±ng phÃ­m E, F hoáº·c Space.
 /// </summary>
 public class HotbarManager : MonoBehaviour
 {
@@ -36,7 +36,7 @@ public class HotbarManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Tự động đưa khung HotbarPanel xuống chính giữa mép dưới màn hình & Xóa phông mờ trắng Panel
+    /// Tá»± Ä‘á»™ng Ä‘Æ°a khung HotbarPanel xuá»‘ng chÃ­nh giá»¯a mÃ©p dÆ°á»›i mÃ n hÃ¬nh & XÃ³a phÃ´ng má» tráº¯ng Panel
     /// </summary>
     public void PositionHotbarAtScreenBottom()
     {
@@ -70,13 +70,13 @@ public class HotbarManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Tự động tìm kiếm chuẩn 5 ô chứa đồ trong HotbarPanel
+    /// Tá»± Ä‘á»™ng tÃ¬m kiáº¿m chuáº©n 5 Ã´ chá»©a Ä‘á»“ trong HotbarPanel
     /// </summary>
     public void FindAndSetupSlots()
     {
         if (slots.Count == 0)
         {
-            // Tìm các ô con nằm trong HotbarPanel
+            // TÃ¬m cÃ¡c Ã´ con náº±m trong HotbarPanel
             GameObject panel = GameObject.Find("HotbarPanel");
             if (panel != null)
             {
@@ -87,10 +87,10 @@ public class HotbarManager : MonoBehaviour
                 }
             }
 
-            // Nếu không tìm thấy thì tìm toàn Scene
+            // Náº¿u khÃ´ng tÃ¬m tháº¥y thÃ¬ tÃ¬m toÃ n Scene
             if (slots.Count == 0)
             {
-                ItemSlot[] foundSlots = FindObjectsByType<ItemSlot>(FindObjectsSortMode.InstanceID);
+                ItemSlot[] foundSlots = FindObjectsByType<ItemSlot>();
                 if (foundSlots != null && foundSlots.Length > 0)
                 {
                     slots.AddRange(foundSlots);
@@ -98,10 +98,10 @@ public class HotbarManager : MonoBehaviour
             }
         }
 
-        // Sắp xếp theo thứ tự hiển thị từ trái sang phải trong Hierarchy
+        // Sáº¯p xáº¿p theo thá»© tá»± hiá»ƒn thá»‹ tá»« trÃ¡i sang pháº£i trong Hierarchy
         slots.Sort((a, b) => a.transform.GetSiblingIndex().CompareTo(b.transform.GetSiblingIndex()));
 
-        // Đánh số thứ tự slot từ 1 đến N
+        // ÄÃ¡nh sá»‘ thá»© tá»± slot tá»« 1 Ä‘áº¿n N
         for (int i = 0; i < slots.Count; i++)
         {
             if (slots[i] != null)
@@ -112,7 +112,7 @@ public class HotbarManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Chọn ô active hiện tại (index 0 = Slot 1, index 1 = Slot 2, ...)
+    /// Chá»n Ã´ active hiá»‡n táº¡i (index 0 = Slot 1, index 1 = Slot 2, ...)
     /// </summary>
     public void SelectSlot(int index)
     {
@@ -138,18 +138,18 @@ public class HotbarManager : MonoBehaviour
         }
         else
         {
-            // Ô đang chọn TRỐNG KHÔNG CÓ VŨ KHÍ -> Cất rìu ngay lập tức!
+            // Ã” Ä‘ang chá»n TRá»NG KHÃ”NG CÃ“ VÅ¨ KHÃ -> Cáº¥t rÃ¬u ngay láº­p tá»©c!
             if (WeaponController.Instance != null)
             {
                 WeaponController.Instance.UnequipWeapon();
             }
         }
 
-        Debug.Log($"<color=cyan>[HotbarManager] Đã chọn Ô số {currentSelectedIndex + 1}</color>");
+        Debug.Log($"<color=cyan>[HotbarManager] ÄÃ£ chá»n Ã” sá»‘ {currentSelectedIndex + 1}</color>");
     }
 
     /// <summary>
-    /// Sử dụng vật phẩm ở ô đang chọn hiện tại
+    /// Sá»­ dá»¥ng váº­t pháº©m á»Ÿ Ã´ Ä‘ang chá»n hiá»‡n táº¡i
     /// </summary>
     public void UseActiveItem()
     {
@@ -166,22 +166,22 @@ public class HotbarManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Chỉ cho phép chuyển ô bằng các phím số từ 1 đến 5 (Khóa hoàn toàn cuộn chuột hoặc click linh tinh)
+    /// Chá»‰ cho phÃ©p chuyá»ƒn Ã´ báº±ng cÃ¡c phÃ­m sá»‘ tá»« 1 Ä‘áº¿n 5 (KhÃ³a hoÃ n toÃ n cuá»™n chuá»™t hoáº·c click linh tinh)
     /// </summary>
     private void HandleKeyboardInputs()
     {
-        // Phím 1 -> chọn Ô 1 (Slot 1)
+        // PhÃ­m 1 -> chá»n Ã” 1 (Slot 1)
         if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1)) SelectSlot(0);
-        // Phím 2 -> chọn Ô 2 (Slot 2)
+        // PhÃ­m 2 -> chá»n Ã” 2 (Slot 2)
         if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2)) SelectSlot(1);
-        // Phím 3 -> chọn Ô 3 (Slot 3)
+        // PhÃ­m 3 -> chá»n Ã” 3 (Slot 3)
         if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3)) SelectSlot(2);
-        // Phím 4 -> chọn Ô 4 (Slot 4)
+        // PhÃ­m 4 -> chá»n Ã” 4 (Slot 4)
         if (Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Keypad4)) SelectSlot(3);
-        // Phím 5 -> chọn Ô 5 (Slot 5)
+        // PhÃ­m 5 -> chá»n Ã” 5 (Slot 5)
         if (Input.GetKeyDown(KeyCode.Alpha5) || Input.GetKeyDown(KeyCode.Keypad5)) SelectSlot(4);
 
-        // Bấm phím E, F hoặc Space để sử dụng vật phẩm tiêu hao trong ô đang chọn
+        // Báº¥m phÃ­m E, F hoáº·c Space Ä‘á»ƒ sá»­ dá»¥ng váº­t pháº©m tiÃªu hao trong Ã´ Ä‘ang chá»n
         if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.Space))
         {
             UseActiveItem();

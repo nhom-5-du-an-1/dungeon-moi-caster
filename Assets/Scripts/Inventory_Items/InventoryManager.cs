@@ -3,17 +3,17 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// Quản lý Bảng Túi Đồ (Inventory Window) trong Game.
-/// Điều khiển việc Mở / Đóng túi đồ khi bấm vào Túi Đồ trên Thanh Đồ hoặc bấm phím B, I, Tab.
+/// Quáº£n lÃ½ Báº£ng TÃºi Äá»“ (Inventory Window) trong Game.
+/// Äiá»u khiá»ƒn viá»‡c Má»Ÿ / ÄÃ³ng tÃºi Ä‘á»“ khi báº¥m vÃ o TÃºi Äá»“ trÃªn Thanh Äá»“ hoáº·c báº¥m phÃ­m B, I, Tab.
 /// </summary>
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance { get; private set; }
 
     [Header("=== INVENTORY UI ===")]
-    public GameObject inventoryPanel; // Khung Bảng Túi Đồ
-    public Transform gridContainer;   // Nơi chứa các ô o_chua_do
-    public KeyCode toggleKey = KeyCode.B; // Phím tắt mở túi (B / I / Tab)
+    public GameObject inventoryPanel; // Khung Báº£ng TÃºi Äá»“
+    public Transform gridContainer;   // NÆ¡i chá»©a cÃ¡c Ã´ o_chua_do
+    public KeyCode toggleKey = KeyCode.B; // PhÃ­m táº¯t má»Ÿ tÃºi (B / I / Tab)
 
     [Header("=== STATE ===")]
     public bool isOpen = false;
@@ -47,11 +47,11 @@ public class InventoryManager : MonoBehaviour
 
     void Update()
     {
-        // Đã gỡ bỏ tính năng bật/tắt Bảng Túi Đồ theo yêu cầu người dùng
+        // ÄÃ£ gá»¡ bá» tÃ­nh nÄƒng báº­t/táº¯t Báº£ng TÃºi Äá»“ theo yÃªu cáº§u ngÆ°á»i dÃ¹ng
     }
 
     /// <summary>
-    /// Chuyển đổi trạng thái Mở / Đóng Túi Đồ
+    /// Chuyá»ƒn Ä‘á»•i tráº¡ng thÃ¡i Má»Ÿ / ÄÃ³ng TÃºi Äá»“
     /// </summary>
     public void ToggleInventory()
     {
@@ -62,13 +62,13 @@ public class InventoryManager : MonoBehaviour
     public List<ItemSlot> inventorySlots = new List<ItemSlot>();
 
     /// <summary>
-    /// Đồng bộ và cài đặt khả năng click chuột kéo thả chuẩn 100% cho TẤT CẢ các ô chứa đồ trong Bảng Túi Đồ khi mở Túi Đồ
+    /// Äá»“ng bá»™ vÃ  cÃ i Ä‘áº·t kháº£ nÄƒng click chuá»™t kÃ©o tháº£ chuáº©n 100% cho Táº¤T Cáº¢ cÃ¡c Ã´ chá»©a Ä‘á»“ trong Báº£ng TÃºi Äá»“ khi má»Ÿ TÃºi Äá»“
     /// </summary>
     public void SetupInventorySlots()
     {
         inventorySlots.Clear();
 
-        // 1. Tắt raycastTarget của tất cả các tấm ảnh phông nền xung quanh (tránh cản trở click chuột vào các ô chứa đồ)
+        // 1. Táº¯t raycastTarget cá»§a táº¥t cáº£ cÃ¡c táº¥m áº£nh phÃ´ng ná»n xung quanh (trÃ¡nh cáº£n trá»Ÿ click chuá»™t vÃ o cÃ¡c Ã´ chá»©a Ä‘á»“)
         if (inventoryPanel != null)
         {
             Image[] panelImages = inventoryPanel.GetComponentsInChildren<Image>(true);
@@ -77,12 +77,12 @@ public class InventoryManager : MonoBehaviour
                 ItemSlot slot = img.GetComponent<ItemSlot>() ?? img.GetComponentInParent<ItemSlot>();
                 if (slot == null && img.gameObject != inventoryPanel)
                 {
-                    img.raycastTarget = false; // Phông nền KHÔNG cản click
+                    img.raycastTarget = false; // PhÃ´ng ná»n KHÃ”NG cáº£n click
                 }
             }
         }
 
-        // 2. Tự động kiểm tra và gắn ItemSlot cho tất cả các ô con/cháu trong Bảng Túi Đồ
+        // 2. Tá»± Ä‘á»™ng kiá»ƒm tra vÃ  gáº¯n ItemSlot cho táº¥t cáº£ cÃ¡c Ã´ con/chÃ¡u trong Báº£ng TÃºi Äá»“
         Transform targetParent = gridContainer != null ? gridContainer : (inventoryPanel != null ? inventoryPanel.transform : null);
         if (targetParent != null)
         {
@@ -104,8 +104,8 @@ public class InventoryManager : MonoBehaviour
             }
         }
 
-        // 3. Đăng ký tất cả các ô ItemSlot trong Scene (bao gồm cả ô đang ẩn)
-        ItemSlot[] allSlots = Object.FindObjectsByType<ItemSlot>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID);
+        // 3. ÄÄƒng kÃ½ táº¥t cáº£ cÃ¡c Ã´ ItemSlot trong Scene (bao gá»“m cáº£ Ã´ Ä‘ang áº©n)
+        ItemSlot[] allSlots = Object.FindObjectsByType<ItemSlot>(FindObjectsInactive.Include);
         foreach (ItemSlot slot in allSlots)
         {
             if (slot != null)
@@ -115,7 +115,7 @@ public class InventoryManager : MonoBehaviour
                 Image bgImg = slot.GetComponent<Image>();
                 if (bgImg != null)
                 {
-                    bgImg.raycastTarget = true; // Ô chứa đồ BẮT BUỘC nhận click kéo thả
+                    bgImg.raycastTarget = true; // Ã” chá»©a Ä‘á»“ Báº®T BUá»˜C nháº­n click kÃ©o tháº£
                 }
 
                 Collider2D col = slot.GetComponent<Collider2D>();
@@ -131,7 +131,7 @@ public class InventoryManager : MonoBehaviour
             }
         }
 
-        Debug.Log($"<color=green><b>[InventoryManager] Đã đồng bộ thành công {inventorySlots.Count} ô chứa đồ cho Bảng Túi Đồ!</b></color>");
+        Debug.Log($"<color=green><b>[InventoryManager] ÄÃ£ Ä‘á»“ng bá»™ thÃ nh cÃ´ng {inventorySlots.Count} Ã´ chá»©a Ä‘á»“ cho Báº£ng TÃºi Äá»“!</b></color>");
     }
 
     private void EnsureSlotComponent(Transform slotTrans, int defaultIndex)
@@ -159,7 +159,7 @@ public class InventoryManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Mở Bảng Túi Đồ
+    /// Má»Ÿ Báº£ng TÃºi Äá»“
     /// </summary>
     public void OpenInventory()
     {
@@ -168,16 +168,16 @@ public class InventoryManager : MonoBehaviour
             inventoryPanel.SetActive(true);
             isOpen = true;
             SetupInventorySlots();
-            Debug.Log("<color=green><b>[InventoryManager] Đã mở Bảng Túi Đồ & Đồng bộ các ô chứa!</b></color>");
+            Debug.Log("<color=green><b>[InventoryManager] ÄÃ£ má»Ÿ Báº£ng TÃºi Äá»“ & Äá»“ng bá»™ cÃ¡c Ã´ chá»©a!</b></color>");
         }
         else
         {
-            Debug.LogWarning("[InventoryManager] Chưa gán inventoryPanel trong Inspector!");
+            Debug.LogWarning("[InventoryManager] ChÆ°a gÃ¡n inventoryPanel trong Inspector!");
         }
     }
 
     /// <summary>
-    /// Đóng Bảng Túi Đồ
+    /// ÄÃ³ng Báº£ng TÃºi Äá»“
     /// </summary>
     public void CloseInventory()
     {
@@ -185,7 +185,7 @@ public class InventoryManager : MonoBehaviour
         {
             inventoryPanel.SetActive(false);
             isOpen = false;
-            Debug.Log("<color=yellow><b>[InventoryManager] Đã đóng Bảng Túi Đồ.</b></color>");
+            Debug.Log("<color=yellow><b>[InventoryManager] ÄÃ£ Ä‘Ã³ng Báº£ng TÃºi Äá»“.</b></color>");
         }
     }
 }
