@@ -57,8 +57,8 @@ public class EnemyAI : MonoBehaviour
     public Vector2 spriteOffset = Vector2.zero;
     [Tooltip("Lớp Layer chứa Player")]
     public LayerMask playerLayer;
-    [Tooltip("Sát thương đòn đánh của quái")]
-    public int attackDamage = 10;
+    [Tooltip("Sát thương đòn đánh của quái (Chuẩn Minecraft: 2 HP = 1 Tim đỏ, 1 HP = Nửa tim)")]
+    public int attackDamage = 2;
     [Tooltip("Hiển thị khung Hitbox màu đỏ trực quan khi quái thực hiện đòn chém")]
     public bool showHitbox = true;
 
@@ -89,6 +89,11 @@ public class EnemyAI : MonoBehaviour
         rb.gravityScale = 0f;
         rb.freezeRotation = true;
 
+        if (attackDamage <= 0)
+        {
+            attackDamage = 2;
+        }
+
         spawnPoint = transform.position;
         patrolTarget = GetRandomPatrolPoint();
 
@@ -101,15 +106,23 @@ public class EnemyAI : MonoBehaviour
 
     private void EnsureEnemyHealthComponent()
     {
-        if (GetComponent<EnemyHealth>() == null)
+        EnemyHealth health = GetComponent<EnemyHealth>();
+        if (health == null)
         {
-            EnemyHealth health = gameObject.AddComponent<EnemyHealth>();
-            health.maxHealth = 50;
-            health.alwaysShowHealthBar = true;
-            health.barHeightOffset = 0.06f;
-            health.barWidth = 0.28f;
-            health.barHeight = 0.04f;
+            health = gameObject.AddComponent<EnemyHealth>();
         }
+        
+        // Chuẩn Minecraft: Quái 10 HP = 5 trái tim
+        if (health.maxHealth <= 0 || health.maxHealth == 50)
+        {
+            health.maxHealth = 10;
+        }
+        health.useHeartDisplay = true;
+        health.heartCount = 5;
+        health.alwaysShowHealthBar = true;
+        health.barHeightOffset = 0.06f;
+        health.barWidth = 0.28f;
+        health.barHeight = 0.04f;
     }
 
     public Vector3 GetCenterPosition()
@@ -409,7 +422,7 @@ public class EnemyAI : MonoBehaviour
                 
                 if (playerStats != null)
                 {
-                    playerStats.TakeDamage(attackDamage);
+                    playerStats.TakeDamage(attackDamage, GetCenterPosition(), 4.5f);
                 }
                 break;
             }
@@ -427,7 +440,7 @@ public class EnemyAI : MonoBehaviour
                 if (playerStats == null) playerStats = FindFirstObjectByType<PlayerStats>();
                 if (playerStats != null)
                 {
-                    playerStats.TakeDamage(attackDamage);
+                    playerStats.TakeDamage(attackDamage, GetCenterPosition(), 4.5f);
                 }
             }
         }

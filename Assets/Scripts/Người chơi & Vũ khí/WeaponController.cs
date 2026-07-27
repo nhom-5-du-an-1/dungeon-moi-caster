@@ -59,10 +59,10 @@ public class WeaponController : MonoBehaviour
 
     [Header("=== TỰ ĐIỀU CHỈNH VỊ TRÍ NGHỈ (TAY PHẢI & TAY TRÁI) ===")]
     [Tooltip("Vị trí cán rìu khi quay sang PHẢI (Chỉnh thủ công từ Inspector)")]
-    public Vector3 rightHandOffset = new Vector3(0.2f, 0.05f, 0f);
+    public Vector3 rightHandOffset = new Vector3(0.25f, -0.23f, 0f);
     
     [Tooltip("Vị trí cán rìu khi quay sang TRÁI (Chỉnh thủ công từ Inspector)")]
-    public Vector3 leftHandOffset = new Vector3(-0.2f, 0.05f, 0f);
+    public Vector3 leftHandOffset = new Vector3(-0.25f, -0.23f, 0f);
 
     [Tooltip("Góc nghiêng cầm rìu nghỉ ban đầu (độ)")]
     public float idleHoldAngle = -25f;
@@ -72,7 +72,7 @@ public class WeaponController : MonoBehaviour
     public Vector3 fireAxeScale = new Vector3(1.0f, 1.0f, 1.0f);
 
     [Tooltip("Tỷ lệ độ to/nhỏ của Rìu Băng khi vung chém (Chỉnh thủ công từ Inspector)")]
-    public Vector3 iceAxeScale = new Vector3(1.2f, 1.2f, 1.0f);
+    public Vector3 iceAxeScale = new Vector3(1.0f, 1.0f, 1.0f);
 
     [Tooltip("Tỷ lệ nhân độ to khi chém (Để 1, 1, 1 để giữ NGUYÊN kích thước như khi cầm)")]
     public Vector3 chopFrameScaleMultiplier = new Vector3(1.0f, 1.0f, 1.0f);
@@ -87,17 +87,15 @@ public class WeaponController : MonoBehaviour
     [Tooltip("Thời gian 1 cú vung bổ (giây)")]
     public float swingDuration = 0.22f;
 
-    [Header("=== SÁT THƯƠNG NGẪU NHIÊN (DAMAGE RANGE) IN INSPECTOR ===")]
-    [Tooltip("Sát thương Rìu Lửa (Ngẫu nhiên từ Min đến Max)")]
-    public int minFireDamage = 11;
-    public int maxFireDamage = 22;
+    [Header("=== SÁT THƯƠNG CHUẨN MINECRAFT (2 HP = 1 TIM) ===")]
+    public int minFireDamage = 2;
+    public int maxFireDamage = 4;
 
-    [Tooltip("Sát thương Rìu Băng (Ngẫu nhiên từ Min đến Max)")]
-    public int minIceDamage = 10;
-    public int maxIceDamage = 20;
+    public int minIceDamage = 2;
+    public int maxIceDamage = 3;
 
     [Header("=== THUỘC TÍNH CHIẾN ĐẤU ===")]
-    public int axeDamage = 16;           // Sát thương trung bình
+    public int axeDamage = 3;            // Sát thương trung bình (1.5 tim)
     public float axeReach = 1.3f;        // Tầm chém
 
     public int GetRandomAxeDamage()
@@ -126,6 +124,8 @@ public class WeaponController : MonoBehaviour
             Destroy(this);
             return;
         }
+
+        SanitizeOffsets();
     }
 
     void Start()
@@ -140,8 +140,15 @@ public class WeaponController : MonoBehaviour
             #endif
         }
 
-        AutoFindComponents();
+        SanitizeOffsets();
         UnequipWeapon();
+    }
+
+    public void SanitizeOffsets()
+    {
+        AutoFindComponents();
+        // Không tự động can thiệp hay thay đổi bất kỳ chỉ số nào!
+        // Để người dùng tự do kéo thả trong Scene View và gõ tùy chỉnh 100% trong Inspector.
     }
 
     private void AutoFindComponents()
@@ -159,6 +166,13 @@ public class WeaponController : MonoBehaviour
             weaponSprite = weaponHolder.GetComponent<SpriteRenderer>();
         }
     }
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        SanitizeOffsets();
+    }
+#endif
 
     private string currentWeaponName = "";
     private float skillCooldownTimer = 0f;
@@ -221,7 +235,7 @@ public class WeaponController : MonoBehaviour
             EnemyHealth enemyHP = hit.GetComponent<EnemyHealth>() ?? hit.GetComponentInParent<EnemyHealth>();
             if (enemyHP != null)
             {
-                enemyHP.TakeDamage(65, transform.position, 6.0f);
+                enemyHP.TakeDamage(6, transform.position, 6.0f);
             }
         }
     }
@@ -241,7 +255,7 @@ public class WeaponController : MonoBehaviour
             EnemyHealth enemyHP = hit.GetComponent<EnemyHealth>() ?? hit.GetComponentInParent<EnemyHealth>();
             if (enemyHP != null)
             {
-                enemyHP.TakeDamage(80, transform.position, 4.0f);
+                enemyHP.TakeDamage(6, transform.position, 4.0f);
                 enemyHP.Freeze(3.5f); // Đóng băng toàn bộ quái vật trong 3.5s!
             }
         }
@@ -344,7 +358,7 @@ public class WeaponController : MonoBehaviour
     {
         isSwinging = true;
 
-        AutoFindComponents();
+        SanitizeOffsets();
 
         // Xuất hiện rìu khi bắt đầu chém
         if (weaponHolder != null) weaponHolder.SetActive(true);
@@ -402,23 +416,23 @@ public class WeaponController : MonoBehaviour
         Vector3 pPos = transform.position;
         Vector2 facingDir = (playerSr != null && playerSr.flipX) ? Vector2.left : Vector2.right;
 
-        // Tính toán kích thước thật (Local Unrotated Size) của Sprite rìu trong World Space
+        // Tính toán kích thước thật (Local Unrotated Size) của Sprite rìu trong World Space (Thu gọn 65% để loại bỏ viền trong suốt xung quanh ảnh PNG)
         Sprite currentSpr = weaponSprite.sprite;
         float ppu = currentSpr.pixelsPerUnit;
         Vector3 scale = weaponHolder != null ? weaponHolder.transform.lossyScale : Vector3.one;
-        Vector2 localSize = new Vector2(
-            (currentSpr.rect.width / ppu) * Mathf.Abs(scale.x),
-            (currentSpr.rect.height / ppu) * Mathf.Abs(scale.y)
+        Vector2 tightSize = new Vector2(
+            (currentSpr.rect.width / ppu) * Mathf.Abs(scale.x) * 0.65f,
+            (currentSpr.rect.height / ppu) * Mathf.Abs(scale.y) * 0.65f
         );
 
         Bounds axeBounds = weaponSprite.bounds;
         Vector2 boxCenter = axeBounds.center;
         float boxAngle = weaponHolder != null ? weaponHolder.transform.eulerAngles.z : 0f;
 
-        // Quét các Collider2D nằm trong đúng hình chữ nhật xoay của Sprite chiếc rìu
-        Collider2D[] hits = Physics2D.OverlapBoxAll(boxCenter, localSize, boxAngle);
+        // Quét các Collider2D nằm trong đúng hình chữ nhật xoay thu gọn của chiếc rìu
+        Collider2D[] hits = Physics2D.OverlapBoxAll(boxCenter, tightSize, boxAngle);
 
-        float maxAllowedReach = IsIceWeapon(currentWeaponName) ? 1.6f : 1.4f;
+        float maxAllowedReach = IsIceWeapon(currentWeaponName) ? 1.5f : 1.3f;
 
         foreach (Collider2D hit in hits)
         {
@@ -428,12 +442,16 @@ public class WeaponController : MonoBehaviour
             GameObject hitGO = hit.gameObject;
             if (hitEnemies.Contains(hitGO)) continue;
 
-            // Đảm bảo Hitbox quái vật thực sự nằm đè trùng vào Bounds thực tế của Rìu
-            if (!axeBounds.Intersects(hit.bounds)) continue;
+            // Kiểm tra điểm gần nhất của Collider quái vật có CHẠM TRỰC TIẾP vào vùng tâm của hình ảnh chiếc rìu không
+            Vector2 closestPointToAxe = hit.ClosestPoint(boxCenter);
+            float distToAxeCenter = Vector2.Distance(boxCenter, closestPointToAxe);
+            float axeTouchThreshold = Mathf.Max(tightSize.x, tightSize.y) * 0.55f;
+
+            if (distToAxeCenter > axeTouchThreshold) continue;
 
             // Đảm bảo quái vật không ở cách quá xa nhân vật (Kiểm tra khoảng cách tối đa)
-            Vector2 closestPoint = hit.ClosestPoint(pPos);
-            float distFromPlayer = Vector2.Distance(pPos, closestPoint);
+            Vector2 closestPointToPlayer = hit.ClosestPoint(pPos);
+            float distFromPlayer = Vector2.Distance(pPos, closestPointToPlayer);
             if (distFromPlayer > maxAllowedReach) continue;
 
             // Bỏ qua quái vật đứng hẳn sau lưng (Góc > 85 độ so với hướng quay mặt)
@@ -454,10 +472,10 @@ public class WeaponController : MonoBehaviour
                 {
                     if (enemyHP.isFrozen)
                     {
-                        // NỘI TẠI RÌU BĂNG - VỠ BĂNG (FROST SHATTER): Chém tiếp khi quái đang Đóng Băng -> Gây thêm +40 Sát Thương Chí Mạng!
-                        enemyHP.TakeDamage(40, transform.position, 5.0f);
-                        FloatingTextManager.SpawnWorldText("💥 VỠ BĂNG +40!", hit.transform.position + Vector3.up * 0.5f, new Color(0.3f, 0.9f, 1.0f, 1.0f));
-                        Debug.Log($"<color=cyan><b>[Nội Tại Rìu Băng] VỠ BĂNG Chí Mạng quái '{hit.name}' gây thêm +40 HP!</b></color>");
+                        // NỘI TẠI RÌU BĂNG - VỠ BĂNG (FROST SHATTER): Chém tiếp khi quái đang Đóng Băng -> Gây thêm +4 Sát Thương Chí Mạng (2 Tim)!
+                        enemyHP.TakeDamage(4, transform.position, 5.0f);
+                        FloatingTextManager.SpawnWorldText("💥 VỠ BĂNG +4!", hit.transform.position + Vector3.up * 0.5f, new Color(0.3f, 0.9f, 1.0f, 1.0f));
+                        Debug.Log($"<color=cyan><b>[Nội Tại Rìu Băng] VỠ BĂNG Chí Mạng quái '{hit.name}' gây thêm +4 HP!</b></color>");
                     }
                     else
                     {
@@ -468,8 +486,8 @@ public class WeaponController : MonoBehaviour
                 }
                 else
                 {
-                    // NỘI TẠI RÌU LỬA: Đốt cháy trừ máu liên tục (-25 HP / 2.5s)
-                    enemyHP.ApplyBurn(25, 2.5f);
+                    // NỘI TẠI RÌU LỬA: Đốt cháy trừ máu liên tục (-2 HP / 2.5s)
+                    enemyHP.ApplyBurn(2, 2.5f);
                     Debug.Log($"<color=orange><b>[Nội Tại Rìu Lửa] Kích hoạt Hỏa Thiêu đốt cháy quái '{hit.name}'!</b></color>");
                 }
             }

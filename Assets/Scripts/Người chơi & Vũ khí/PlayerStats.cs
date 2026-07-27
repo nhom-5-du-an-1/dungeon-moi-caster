@@ -26,6 +26,7 @@ public class PlayerStats : MonoBehaviour
 
     // Events for UI update
     public event Action<int, int> OnHealthChanged;
+    public static event Action<int, int> OnAnyPlayerHealthChanged;
     public event Action<float, float> OnManaChanged;
     public event Action OnPlayerDeath;
     public event Action OnPlayerRespawn;
@@ -36,7 +37,16 @@ public class PlayerStats : MonoBehaviour
 
     void Awake()
     {
-        if (maxHealth <= 0 || maxHealth == 1000 || maxHealth == 2000)
+        // Tự động dọn dẹp các component PlayerStats bị trùng lặp trên cùng GameObject nếu có
+        PlayerStats[] duplicates = GetComponents<PlayerStats>();
+        if (duplicates.Length > 1 && duplicates[0] != this)
+        {
+            Destroy(this);
+            return;
+        }
+
+        // Nếu người dùng chưa cấu hình maxHealth (<= 0), mặc định đặt là 20 HP (10 tim)
+        if (maxHealth <= 0)
             maxHealth = 20;
 
         currentHealth = maxHealth;
@@ -50,6 +60,7 @@ public class PlayerStats : MonoBehaviour
 
         // Sync initial UI
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        OnAnyPlayerHealthChanged?.Invoke(currentHealth, maxHealth);
         OnManaChanged?.Invoke(currentMana, maxMana);
     }
 
@@ -90,20 +101,34 @@ public class PlayerStats : MonoBehaviour
     }
 
     /// <summary>
-    /// Apply damage to the player
+    /// Apply damage & knockback to the player
     /// </summary>
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, Vector2 attackerPos = default, float knockbackForce = 4.0f)
     {
         if (isDead) return;
 
         currentHealth -= damage;
         currentHealth = Mathf.Max(0, currentHealth);
 
+        // Kích hoạt hiệu ứng Bật Lùi (Knockback) nếu có vị trí kẻ tấn công
+        if (attackerPos != default)
+        {
+            Vector2 knockbackDir = ((Vector2)transform.position - attackerPos).normalized;
+            if (knockbackDir.sqrMagnitude < 0.001f) knockbackDir = Vector2.up;
+
+            PlayerMovement pm = GetComponent<PlayerMovement>();
+            if (pm != null)
+            {
+                pm.ApplyKnockback(knockbackDir, knockbackForce);
+            }
+        }
+
         // Hiển thị số sát thương nhảy lên trên đầu Player
         FloatingTextManager.SpawnWorldText($"-{damage}", transform.position + Vector3.up * 0.45f, new Color(1.0f, 0.2f, 0.2f, 1.0f));
 
         Debug.Log($"<color=red>[Player Stats]</color> Player nhận <color=red>-{damage} HP</color>! Máu hiện tại: {currentHealth}/{maxHealth}");
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        OnAnyPlayerHealthChanged?.Invoke(currentHealth, maxHealth);
 
         if (currentHealth <= 0)
         {
@@ -130,6 +155,7 @@ public class PlayerStats : MonoBehaviour
 
         Debug.Log($"<color=green>[Player Stats]</color> Player hồi <color=green>+{amount} HP</color>! Máu hiện tại: {currentHealth}/{maxHealth}");
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        OnAnyPlayerHealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
     /// <summary>
@@ -308,6 +334,7 @@ public class PlayerStats : MonoBehaviour
 
         // Notify UI of full health/mana recovery
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        OnAnyPlayerHealthChanged?.Invoke(currentHealth, maxHealth);
         OnManaChanged?.Invoke(currentMana, maxMana);
 
         OnPlayerRespawn?.Invoke();

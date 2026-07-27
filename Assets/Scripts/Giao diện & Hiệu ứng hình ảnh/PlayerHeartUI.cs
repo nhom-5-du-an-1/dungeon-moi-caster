@@ -69,19 +69,43 @@ public class PlayerHeartUI : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         ApplySavedPosition();
     }
 
+    private void OnEnable()
+    {
+        if (Application.isPlaying)
+        {
+            PlayerStats.OnAnyPlayerHealthChanged -= UpdateHeartsUI;
+            PlayerStats.OnAnyPlayerHealthChanged += UpdateHeartsUI;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (Application.isPlaying)
+        {
+            PlayerStats.OnAnyPlayerHealthChanged -= UpdateHeartsUI;
+        }
+    }
+
     private void Start()
     {
         LoadSpritesIfNull();
-        if (playerStats == null)
-        {
-            playerStats = FindObjectOfType<PlayerStats>();
-        }
 
         if (Application.isPlaying)
         {
+            PlayerStats.OnAnyPlayerHealthChanged -= UpdateHeartsUI;
+            PlayerStats.OnAnyPlayerHealthChanged += UpdateHeartsUI;
+
+            PlayerStats sceneStats = FindFirstObjectByType<PlayerStats>();
+            if (sceneStats != null)
+            {
+                playerStats = sceneStats;
+            }
+
             if (playerStats != null)
             {
+                playerStats.OnHealthChanged -= UpdateHeartsUI;
                 playerStats.OnHealthChanged += UpdateHeartsUI;
+                SetupHeartGrid();
                 UpdateHeartsUI(playerStats.currentHealth, playerStats.maxHealth);
             }
             else
@@ -99,27 +123,20 @@ public class PlayerHeartUI : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
     private void OnDestroy()
     {
-        if (playerStats != null && Application.isPlaying)
+        if (Application.isPlaying)
         {
-            playerStats.OnHealthChanged -= UpdateHeartsUI;
+            PlayerStats.OnAnyPlayerHealthChanged -= UpdateHeartsUI;
+            if (playerStats != null)
+            {
+                playerStats.OnHealthChanged -= UpdateHeartsUI;
+            }
         }
     }
 
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        if (myRectTransform == null) myRectTransform = GetComponent<RectTransform>();
-        if (myRectTransform != null && !Application.isPlaying)
-        {
-            // Lưu lại vị trí khi người dùng di chuyển trong Editor Scene
-            savedAnchoredPosition = myRectTransform.anchoredPosition;
-        }
-
         LoadSpritesIfNull();
-        SetupHeartGrid();
-        int cur = playerStats != null ? playerStats.currentHealth : maxHearts * 2;
-        int max = playerStats != null ? playerStats.maxHealth : maxHearts * 2;
-        UpdateHeartsUI(cur, max);
     }
 #endif
 
@@ -128,15 +145,12 @@ public class PlayerHeartUI : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         if (myRectTransform == null) myRectTransform = GetComponent<RectTransform>();
         if (myRectTransform == null) return;
 
+        // Chỉ áp dụng vị trí từ PlayerPrefs nếu người dùng bật lưu vị trí kéo thả trong khi chơi game
         if (Application.isPlaying && savePositionAcrossSessions && PlayerPrefs.HasKey(PREF_KEY_SAVED))
         {
-            float posX = PlayerPrefs.GetFloat(PREF_KEY_POS_X, savedAnchoredPosition.x);
-            float posY = PlayerPrefs.GetFloat(PREF_KEY_POS_Y, savedAnchoredPosition.y);
+            float posX = PlayerPrefs.GetFloat(PREF_KEY_POS_X, myRectTransform.anchoredPosition.x);
+            float posY = PlayerPrefs.GetFloat(PREF_KEY_POS_Y, myRectTransform.anchoredPosition.y);
             myRectTransform.anchoredPosition = new Vector2(posX, posY);
-        }
-        else if (savedAnchoredPosition != Vector2.zero)
-        {
-            myRectTransform.anchoredPosition = savedAnchoredPosition;
         }
     }
 
@@ -205,45 +219,58 @@ public class PlayerHeartUI : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         layout.childForceExpandHeight = false;
         layout.spacing = heartSpacing;
 
-        // Dọn dẹp danh sách tim cũ
-        List<GameObject> childrenToDestroy = new List<GameObject>();
+        // Dọn dẹp TOÀN BỘ tất cả các child cũ/thừa đang có dưới heartsContainer để loại bỏ sạch 100% tim đen trùng lặp từ Prefab
+        List<GameObject> toDestroy = new List<GameObject>();
         foreach (Transform child in heartsContainer)
         {
-            childrenToDestroy.Add(child.gameObject);
+            toDestroy.Add(child.gameObject);
         }
 
-        for (int i = childrenToDestroy.Count - 1; i >= 0; i--)
+        for (int i = toDestroy.Count - 1; i >= 0; i--)
         {
-            if (Application.isPlaying) Destroy(childrenToDestroy[i]);
-            else DestroyImmediate(childrenToDestroy[i]);
+            if (Application.isPlaying) Destroy(toDestroy[i]);
+            else DestroyImmediate(toDestroy[i]);
         }
 
         heartImages.Clear();
 
-        // Tạo các ô tim mới
+        // Tạo mới chuẩn xác maxHearts (10) ô tim
         for (int i = 0; i < maxHearts; i++)
         {
             GameObject heartObj = new GameObject($"Heart_{i}", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
             heartObj.transform.SetParent(heartsContainer, false);
 
             RectTransform rect = heartObj.GetComponent<RectTransform>();
-            rect.sizeDelta = heartSize;
+            if (rect != null) rect.sizeDelta = heartSize;
 
             Image img = heartObj.GetComponent<Image>();
-            img.sprite = fullHeartSprite;
-            img.preserveAspect = true;
-            img.raycastTarget = true; // Cho phép nhấp chuột kéo thả
-
-            heartImages.Add(img);
+            if (img != null)
+            {
+                img.sprite = fullHeartSprite;
+                img.preserveAspect = true;
+                img.raycastTarget = false;
+                heartImages.Add(img);
+            }
         }
     }
 
     public void UpdateHeartsUI(int currentHealth, int maxHealth)
     {
-        float healthRatio = maxHealth > 0 ? Mathf.Clamp01((float)currentHealth / maxHealth) : 1f;
-        int scaledHealth = Mathf.RoundToInt(healthRatio * (maxHearts * 2));
+        LoadSpritesIfNull();
 
-        if (heartImages.Count != maxHearts)
+        // Theo hệ thống Tim Minecraft: 1 Tim = 2 HP, 10 Tim = 20 HP.
+        int scaledHealth;
+        if (maxHealth == maxHearts * 2)
+        {
+            scaledHealth = Mathf.Clamp(currentHealth, 0, maxHearts * 2);
+        }
+        else
+        {
+            float healthRatio = maxHealth > 0 ? Mathf.Clamp01((float)currentHealth / maxHealth) : 1f;
+            scaledHealth = Mathf.RoundToInt(healthRatio * (maxHearts * 2));
+        }
+
+        if (heartImages.Count != maxHearts || heartImages.Exists(img => img == null))
         {
             SetupHeartGrid();
         }
@@ -276,6 +303,8 @@ public class PlayerHeartUI : MonoBehaviour, IPointerDownHandler, IDragHandler, I
                 rect.sizeDelta = heartSize;
             }
         }
+
+        Debug.Log($"<color=cyan>[PlayerHeartUI]</color> Cập nhật thanh tim UI chuẩn Minecraft! Máu hiện tại: {currentHealth}/{maxHealth} HP (Tương ứng: {scaledHealth/2f}/{maxHearts} tim)");
 
         if (Application.isPlaying && lastHealth >= 0 && currentHealth < lastHealth)
         {

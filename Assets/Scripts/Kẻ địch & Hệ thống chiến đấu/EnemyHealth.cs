@@ -12,10 +12,10 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [Header("=== THÔNG SỐ MÁU ===")]
-    [Tooltip("Máu tối đa của quái vật")]
-    public int maxHealth = 50;
+    [Tooltip("Máu tối đa của quái vật (Chuẩn Minecraft: 10 HP = 5 Trái tim)")]
+    public int maxHealth = 10;
 
-    [SerializeField] private int _currentHealth = 50;
+    [SerializeField] private int _currentHealth = 10;
     public int currentHealth
     {
         get
@@ -112,7 +112,7 @@ public class EnemyHealth : MonoBehaviour
     void OnEnable()
     {
         if (sr == null) sr = GetComponent<SpriteRenderer>();
-        if (maxHealth <= 0) maxHealth = 50;
+        if (maxHealth <= 0) maxHealth = 10;
 
         catchUpFillRatio = maxHealth > 0 ? (float)currentHealth / maxHealth : 1f;
         CreateSpriteHealthBar();
@@ -122,7 +122,7 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         if (sr == null) sr = GetComponent<SpriteRenderer>();
-        if (maxHealth <= 0) maxHealth = 50;
+        if (maxHealth <= 0) maxHealth = 10;
 
         catchUpFillRatio = maxHealth > 0 ? (float)currentHealth / maxHealth : 1f;
         CreateSpriteHealthBar();
@@ -310,39 +310,45 @@ public class EnemyHealth : MonoBehaviour
 
         if (healthBarParent == null) return;
 
-        // Xóa TẤT CẢ các HeartsContainer cũ trùng lặp
-        List<GameObject> oldContainers = new List<GameObject>();
-        foreach (Transform child in healthBarParent.transform)
+        Transform existingContainerTrans = healthBarParent.transform.Find("HeartsContainer");
+        GameObject heartsContainerObj;
+        if (existingContainerTrans != null)
         {
-            if (child != null && child.name.StartsWith("HeartsContainer"))
-            {
-                oldContainers.Add(child.gameObject);
-            }
+            heartsContainerObj = existingContainerTrans.gameObject;
         }
-
-        for (int i = oldContainers.Count - 1; i >= 0; i--)
+        else
         {
-            if (oldContainers[i] != null)
-            {
-                if (Application.isPlaying) Destroy(oldContainers[i]);
-                else DestroyImmediate(oldContainers[i]);
-            }
+            heartsContainerObj = new GameObject("HeartsContainer");
+            heartsContainerObj.transform.SetParent(healthBarParent.transform, false);
+            heartsContainerObj.transform.localPosition = Vector3.zero;
         }
-
-        GameObject heartsContainerObj = new GameObject("HeartsContainer");
-        heartsContainerObj.transform.SetParent(healthBarParent.transform, false);
 
         float startX = -((heartCount - 1) * heartSpacing * 0.5f);
 
         for (int i = 0; i < heartCount; i++)
         {
-            GameObject hObj = new GameObject($"Heart_{i}");
-            hObj.transform.SetParent(heartsContainerObj.transform, false);
+            Transform existingHeartTrans = heartsContainerObj.transform.Find($"Heart_{i}");
+            GameObject hObj;
+            if (existingHeartTrans != null)
+            {
+                hObj = existingHeartTrans.gameObject;
+            }
+            else
+            {
+                hObj = new GameObject($"Heart_{i}");
+                hObj.transform.SetParent(heartsContainerObj.transform, false);
+            }
+
             hObj.transform.localPosition = new Vector3(startX + (i * heartSpacing), 0f, 0f);
             hObj.transform.localScale = new Vector3(heartScale, heartScale, 1f);
 
-            SpriteRenderer hSr = hObj.AddComponent<SpriteRenderer>();
-            hSr.sprite = enemyHeartFull;
+            SpriteRenderer hSr = hObj.GetComponent<SpriteRenderer>();
+            if (hSr == null) hSr = hObj.AddComponent<SpriteRenderer>();
+
+            if (hSr.sprite == null && enemyHeartFull != null)
+            {
+                hSr.sprite = enemyHeartFull;
+            }
             hSr.sortingOrder = 1000;
             heartRenderers.Add(hSr);
         }
@@ -351,6 +357,19 @@ public class EnemyHealth : MonoBehaviour
 #if UNITY_EDITOR
     private void OnValidate()
     {
+        if (healthBarParent != null)
+        {
+            Transform container = healthBarParent.transform.Find("HeartsContainer");
+            if (container != null && container.childCount > 0)
+            {
+                Transform firstHeart = container.GetChild(0);
+                if (firstHeart != null && firstHeart.localScale.x > 0.01f)
+                {
+                    heartScale = firstHeart.localScale.x;
+                }
+            }
+        }
+
         if (useHeartDisplay)
         {
             CreateHeartHealthBar();

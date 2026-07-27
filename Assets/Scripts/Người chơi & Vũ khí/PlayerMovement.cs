@@ -41,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 velocityWorkspace = Vector2.zero;
     private Vector2 lastMoveDirection = new Vector2(1f, 0f);
     private bool isAttacking = false;
+    private bool isKnockedBack = false;
     private float nextAttackTime = 0f;
     private PlayerStats playerStats;
 
@@ -125,18 +126,41 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (playerStats != null && playerStats.IsDead)
-        {
-            return;
-        }
-
-        if (isAttacking)
+        if (isKnockedBack || isAttacking || (playerStats != null && playerStats.IsDead))
         {
             return;
         }
 
         smoothMovement = Vector2.SmoothDamp(smoothMovement, movementInput, ref velocityWorkspace, movementSmoothing);
         rb.MovePosition(rb.position + smoothMovement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    /// <summary>
+    /// Tác động lực bật lùi (Knockback) lên Player khi bị quái đánh
+    /// </summary>
+    public void ApplyKnockback(Vector2 direction, float force, float duration = 0.18f)
+    {
+        if (gameObject.activeInHierarchy)
+        {
+            StartCoroutine(KnockbackRoutine(direction, force, duration));
+        }
+    }
+
+    private IEnumerator KnockbackRoutine(Vector2 direction, float force, float duration)
+    {
+        isKnockedBack = true;
+        if (rb != null)
+        {
+            rb.linearVelocity = direction.normalized * force;
+        }
+
+        yield return new WaitForSeconds(duration);
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+        isKnockedBack = false;
     }
 
     /// <summary>
