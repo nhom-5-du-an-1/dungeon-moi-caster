@@ -40,7 +40,8 @@ public static class MapAutoGenerator
         }
 
         // Auto-slice tilesets if not already sliced
-        object[] grassAssets = AssetDatabase.LoadAllAssetsAtPath("Assets/map/TX Tileset Grass.png");
+        string grassPath = TilesetSlicer.FindAssetPath("TX Tileset Grass.png") ?? "Assets/tainguyen/map/TX Tileset Grass.png";
+        object[] grassAssets = AssetDatabase.LoadAllAssetsAtPath(grassPath);
         int spriteCount = 0;
         foreach (object asset in grassAssets)
         {

@@ -8,8 +8,50 @@ public static class TilesetSlicer
     [MenuItem("Tools/Slice Tilesets")]
     public static void SliceTilesets()
     {
-        SliceTexture("Assets/map/TX Tileset Grass.png", 32, 32);
-        SliceTexture("Assets/map/TX Tileset Stone Ground.png", 32, 32);
+        string grassPath = FindAssetPath("TX Tileset Grass.png");
+        if (!string.IsNullOrEmpty(grassPath))
+        {
+            SliceTexture(grassPath, 32, 32);
+        }
+        else
+        {
+            Debug.LogError("Could not find asset: TX Tileset Grass.png in project!");
+        }
+
+        string stonePath = FindAssetPath("TX Tileset Stone Ground.png");
+        if (!string.IsNullOrEmpty(stonePath))
+        {
+            SliceTexture(stonePath, 32, 32);
+        }
+        else
+        {
+            Debug.LogError("Could not find asset: TX Tileset Stone Ground.png in project!");
+        }
+    }
+
+    public static string FindAssetPath(string filename)
+    {
+        string nameWithoutExt = System.IO.Path.GetFileNameWithoutExtension(filename);
+        string[] guids = AssetDatabase.FindAssets($"{nameWithoutExt} t:Texture2D");
+        foreach (string guid in guids)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            if (path.EndsWith(filename, System.StringComparison.OrdinalIgnoreCase))
+            {
+                return path;
+            }
+        }
+
+        string[] fallbackPaths = new string[]
+        {
+            "Assets/tainguyen/map/" + filename,
+            "Assets/map/" + filename
+        };
+        foreach (string p in fallbackPaths)
+        {
+            if (AssetImporter.GetAtPath(p) != null) return p;
+        }
+        return null;
     }
 
     private static void SliceTexture(string assetPath, int tileWidth, int tileHeight)

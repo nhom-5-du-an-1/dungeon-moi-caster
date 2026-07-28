@@ -24,6 +24,8 @@ public class PlayerStats : MonoBehaviour
     public bool isDead = false;
     public bool IsDead => isDead;
 
+    public static PlayerStats Instance { get; private set; }
+
     // Events for UI update
     public event Action<int, int> OnHealthChanged;
     public static event Action<int, int> OnAnyPlayerHealthChanged;
@@ -37,6 +39,26 @@ public class PlayerStats : MonoBehaviour
 
     void Awake()
     {
+        // Singleton & Giữ Player không bị xóa khi đổi Scene
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (Instance != this)
+        {
+            if (Instance.gameObject != gameObject)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            else
+            {
+                Destroy(this);
+                return;
+            }
+        }
+
         // Tự động dọn dẹp các component PlayerStats bị trùng lặp trên cùng GameObject nếu có
         PlayerStats[] duplicates = GetComponents<PlayerStats>();
         if (duplicates.Length > 1 && duplicates[0] != this)
@@ -51,6 +73,52 @@ public class PlayerStats : MonoBehaviour
 
         currentHealth = maxHealth;
         currentMana = maxMana;
+
+        // Camera tách biệt khỏi Player - CameraFollow tự tìm Player
+    }
+
+
+
+    private void OnEnable()
+    {
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
+    {
+        if (Instance == this)
+        {
+            // Camera tự tìm Player qua CameraFollow.FindPlayerTarget()
+
+            // Tìm điểm SpawnPoint ở bản đồ mới
+            GameObject spawnPoint = GameObject.FindWithTag("SpawnPoint") ?? GameObject.Find("SpawnPoint") ?? GameObject.Find("PlayerSpawn");
+            if (spawnPoint != null)
+            {
+                transform.position = spawnPoint.transform.position;
+            }
+            else
+            {
+                // KHÔNG tự động đưa Player về Vector3.zero nữa vì sẽ đè lên vị trí người dùng kéo thả thủ công trong scene!
+                Debug.Log("<color=yellow>[PlayerStats]</color> Không tìm thấy SpawnPoint trong Scene. Giữ nguyên vị trí hiện tại của Player.");
+            }
+
+            // Dừng vận tốc di chuyển
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector2.zero;
+            }
+
+            // Cập nhật lại UI cho Scene mới ngay sau khi load
+            OnHealthChanged?.Invoke(currentHealth, maxHealth);
+            OnAnyPlayerHealthChanged?.Invoke(currentHealth, maxHealth);
+            OnManaChanged?.Invoke(currentMana, maxMana);
+        }
     }
 
     void Start()

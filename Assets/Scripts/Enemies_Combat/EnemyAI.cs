@@ -305,10 +305,19 @@ public class EnemyAI : MonoBehaviour
                 sr.flipX = (lastFacingDirection.x < -0.01f);
             }
         }
-        else if (smoothMovement.sqrMagnitude > 0.001f)
+        if (smoothMovement.sqrMagnitude > 0.001f)
         {
             lastFacingDirection = smoothMovement.normalized;
             sr.flipX = (lastFacingDirection.x < -0.01f);
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (sr == null) sr = GetComponent<SpriteRenderer>();
+        if (sr != null)
+        {
+            sr.sortingOrder = 10000 - Mathf.RoundToInt((transform.position.y + spriteOffset.y) * 100);
         }
     }
 
