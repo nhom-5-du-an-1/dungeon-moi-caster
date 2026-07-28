@@ -398,7 +398,7 @@ public class MapGenerator : MonoBehaviour
 #if UNITY_EDITOR
         if (grassSprites.Count == 0)
         {
-            object[] grassAssets = AssetDatabase.LoadAllAssetsAtPath("Assets/map/TX Tileset Grass.png");
+            object[] grassAssets = LoadAssetsByName("TX Tileset Grass.png");
             foreach (object asset in grassAssets)
             {
                 if (asset is Sprite sprite) grassSprites.Add(sprite);
@@ -408,7 +408,7 @@ public class MapGenerator : MonoBehaviour
 
         if (stoneSprites.Count == 0)
         {
-            object[] stoneAssets = AssetDatabase.LoadAllAssetsAtPath("Assets/map/TX Tileset Stone Ground.png");
+            object[] stoneAssets = LoadAssetsByName("TX Tileset Stone Ground.png");
             foreach (object asset in stoneAssets)
             {
                 if (asset is Sprite sprite) stoneSprites.Add(sprite);
@@ -418,7 +418,7 @@ public class MapGenerator : MonoBehaviour
 
         if (treeSprites.Count == 0)
         {
-            object[] treeAssets = AssetDatabase.LoadAllAssetsAtPath("Assets/map/TX Plant.png");
+            object[] treeAssets = LoadAssetsByName("TX Plant.png");
             foreach (object asset in treeAssets)
             {
                 if (asset is Sprite sprite) treeSprites.Add(sprite);
@@ -428,7 +428,7 @@ public class MapGenerator : MonoBehaviour
 
         if (shadowSprites.Count == 0)
         {
-            object[] shadowAssets = AssetDatabase.LoadAllAssetsAtPath("Assets/map/TX Shadow Plant.png");
+            object[] shadowAssets = LoadAssetsByName("TX Shadow Plant.png");
             foreach (object asset in shadowAssets)
             {
                 if (asset is Sprite sprite) shadowSprites.Add(sprite);
@@ -438,7 +438,7 @@ public class MapGenerator : MonoBehaviour
 
         if (wallSprites.Count == 0)
         {
-            object[] wallAssets = AssetDatabase.LoadAllAssetsAtPath("Assets/map/TX Tileset Wall.png");
+            object[] wallAssets = LoadAssetsByName("TX Tileset Wall.png");
             foreach (object asset in wallAssets)
             {
                 if (asset is Sprite sprite) wallSprites.Add(sprite);
@@ -448,7 +448,7 @@ public class MapGenerator : MonoBehaviour
 
         if (propsSprites.Count == 0)
         {
-            object[] propsAssets = AssetDatabase.LoadAllAssetsAtPath("Assets/map/TX Props.png");
+            object[] propsAssets = LoadAssetsByName("TX Props.png");
             foreach (object asset in propsAssets)
             {
                 if (asset is Sprite sprite) propsSprites.Add(sprite);
@@ -458,7 +458,7 @@ public class MapGenerator : MonoBehaviour
 
         if (structSprites.Count == 0)
         {
-            object[] structAssets = AssetDatabase.LoadAllAssetsAtPath("Assets/map/TX Struct.png");
+            object[] structAssets = LoadAssetsByName("TX Struct.png");
             foreach (object asset in structAssets)
             {
                 if (asset is Sprite sprite) structSprites.Add(sprite);
@@ -467,6 +467,23 @@ public class MapGenerator : MonoBehaviour
         }
 #endif
     }
+
+#if UNITY_EDITOR
+    private object[] LoadAssetsByName(string filename)
+    {
+        string nameWithoutExt = System.IO.Path.GetFileNameWithoutExtension(filename);
+        string[] guids = AssetDatabase.FindAssets($"{nameWithoutExt} t:Texture2D");
+        foreach (string guid in guids)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            if (path.EndsWith(filename, System.StringComparison.OrdinalIgnoreCase))
+            {
+                return AssetDatabase.LoadAllAssetsAtPath(path);
+            }
+        }
+        return AssetDatabase.LoadAllAssetsAtPath("Assets/tainguyen/map/" + filename);
+    }
+#endif
 
     private int NaturalCompare(string x, string y)
     {

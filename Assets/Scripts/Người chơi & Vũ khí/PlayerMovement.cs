@@ -135,6 +135,18 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + smoothMovement * moveSpeed * Time.fixedDeltaTime);
     }
 
+    void LateUpdate()
+    {
+        if (sr == null) sr = GetComponent<SpriteRenderer>();
+        if (sr != null)
+        {
+            // Tự động sắp xếp lớp hiển thị (Sorting Order) cho game 2D Top-Down
+            // Đảm bảo Player luôn hiển thị trên mặt đất và đúng độ sâu với Cây/Tường
+            sr.enabled = true;
+            sr.sortingOrder = 10000 - Mathf.RoundToInt((transform.position.y + spriteOffset.y) * 100);
+        }
+    }
+
     /// <summary>
     /// Tác động lực bật lùi (Knockback) lên Player khi bị quái đánh
     /// </summary>
