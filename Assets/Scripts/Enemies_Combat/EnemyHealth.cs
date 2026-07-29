@@ -76,6 +76,7 @@ public class EnemyHealth : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
     private EnemyAI enemyAI;
+    private BossOrcAI bossAI;
     private Collider2D col;
     private Rigidbody2D rb;
 
@@ -102,6 +103,7 @@ public class EnemyHealth : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         enemyAI = GetComponent<EnemyAI>();
+        bossAI = GetComponent<BossOrcAI>();
         col = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
 
@@ -645,6 +647,7 @@ public class EnemyHealth : MonoBehaviour
     {
         isFrozen = true;
         if (enemyAI != null) enemyAI.enabled = false;
+        if (bossAI != null) bossAI.enabled = false;
         if (sr != null) sr.color = new Color(0.3f, 0.75f, 1.0f, 1.0f); // Màu xanh băng tuyết
 
         if (rb != null) rb.linearVelocity = Vector2.zero;
@@ -658,6 +661,7 @@ public class EnemyHealth : MonoBehaviour
         if (!isDead)
         {
             if (enemyAI != null) enemyAI.enabled = true;
+            if (bossAI != null) bossAI.enabled = true;
             if (sr != null) sr.color = Color.white;
         }
     }
@@ -681,6 +685,7 @@ public class EnemyHealth : MonoBehaviour
         TriggerAnim("Die");
 
         if (enemyAI != null) enemyAI.enabled = false;
+        if (bossAI != null) bossAI.enabled = false;
         if (col != null) col.enabled = false;
         if (rb != null)
         {

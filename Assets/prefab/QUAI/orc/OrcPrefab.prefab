@@ -213,7 +213,7 @@ Transform:
   m_GameObject: {fileID: 3362608654971263875}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.31, y: 71.79, z: 0}
+  m_LocalPosition: {x: -3.8, y: -0.15, z: 0}
   m_LocalScale: {x: 1, y: 1.074, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -389,9 +389,9 @@ MonoBehaviour:
   attackDelay: 0.12
   lungeForce: 1
   useCircleHitbox: 1
-  attackRadius: 0.7
+  attackRadius: 0.70000005
   attackBoxSize: {x: 0.4, y: 0.3}
-  attackOffset: 0.7
+  attackOffset: 0.95258784
   spriteOffset: {x: 0.044999998, y: 0.49}
   playerLayer:
     serializedVersion: 2
@@ -451,7 +451,7 @@ Transform:
   m_GameObject: {fileID: 5347635206008623092}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.28125, y: 0.61173683, z: 0}
+  m_LocalPosition: {x: 0.28125, y: 0.61173195, z: 0}
   m_LocalScale: {x: 1, y: 0.9310987, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
