@@ -127,16 +127,14 @@ public class EnemyAI : MonoBehaviour
 
     public Vector3 GetCenterPosition()
     {
-        if (sr == null) sr = GetComponent<SpriteRenderer>();
-        if (sr != null && sr.sprite != null)
-        {
-            return sr.bounds.center;
-        }
-        CapsuleCollider2D col = GetComponent<CapsuleCollider2D>();
+        // Sử dụng Collider để lấy tâm cố định của quái vật (không bị thay đổi bởi animation)
+        Collider2D col = GetComponent<Collider2D>();
         if (col != null)
         {
             return transform.position + (Vector3)col.offset;
         }
+        
+        // Nếu không có collider, sử dụng transform.position cộng với offset tĩnh
         return transform.position + (Vector3)spriteOffset;
     }
 
