@@ -77,6 +77,9 @@ public class EnemyHealth : MonoBehaviour
     private Animator anim;
     private EnemyAI enemyAI;
     private BossOrcAI bossAI;
+    private OrcWarriorAI orcWarriorAI;
+    private OrcShamanAI orcShamanAI;
+    private OrcBerserkerAI orcBerserkerAI;
     private Collider2D col;
     private Rigidbody2D rb;
 
@@ -104,6 +107,9 @@ public class EnemyHealth : MonoBehaviour
         anim = GetComponent<Animator>();
         enemyAI = GetComponent<EnemyAI>();
         bossAI = GetComponent<BossOrcAI>();
+        orcWarriorAI = GetComponent<OrcWarriorAI>();
+        orcShamanAI = GetComponent<OrcShamanAI>();
+        orcBerserkerAI = GetComponent<OrcBerserkerAI>();
         col = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
 
@@ -648,6 +654,9 @@ public class EnemyHealth : MonoBehaviour
         isFrozen = true;
         if (enemyAI != null) enemyAI.enabled = false;
         if (bossAI != null) bossAI.enabled = false;
+        if (orcWarriorAI != null) orcWarriorAI.enabled = false;
+        if (orcShamanAI != null) orcShamanAI.enabled = false;
+        if (orcBerserkerAI != null) orcBerserkerAI.enabled = false;
         if (sr != null) sr.color = new Color(0.3f, 0.75f, 1.0f, 1.0f); // Màu xanh băng tuyết
 
         if (rb != null) rb.linearVelocity = Vector2.zero;
@@ -662,6 +671,9 @@ public class EnemyHealth : MonoBehaviour
         {
             if (enemyAI != null) enemyAI.enabled = true;
             if (bossAI != null) bossAI.enabled = true;
+            if (orcWarriorAI != null) orcWarriorAI.enabled = true;
+            if (orcShamanAI != null) orcShamanAI.enabled = true;
+            if (orcBerserkerAI != null) orcBerserkerAI.enabled = true;
             if (sr != null) sr.color = Color.white;
         }
     }
@@ -686,6 +698,9 @@ public class EnemyHealth : MonoBehaviour
 
         if (enemyAI != null) enemyAI.enabled = false;
         if (bossAI != null) bossAI.enabled = false;
+        if (orcWarriorAI != null) orcWarriorAI.enabled = false;
+        if (orcShamanAI != null) orcShamanAI.enabled = false;
+        if (orcBerserkerAI != null) orcBerserkerAI.enabled = false;
         if (col != null) col.enabled = false;
         if (rb != null)
         {
