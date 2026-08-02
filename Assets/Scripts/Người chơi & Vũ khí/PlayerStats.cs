@@ -24,6 +24,12 @@ public class PlayerStats : MonoBehaviour
     public bool isDead = false;
     public bool IsDead => isDead;
 
+    [Header("=== XP SYSTEM ===")]
+    public int xpLevel = 0;
+    public int currentXp = 0;
+    public int xpToNextLevel = 35;
+    public event Action<int, int, int> OnXpChanged; // currentXp, xpToNextLevel, xpLevel
+
     public static PlayerStats Instance { get; private set; }
 
     // Events for UI update
@@ -73,6 +79,7 @@ public class PlayerStats : MonoBehaviour
 
         currentHealth = maxHealth;
         currentMana = maxMana;
+        xpToNextLevel = CalculateXpToNextLevel(xpLevel);
 
         // Camera tách biệt khỏi Player - CameraFollow tự tìm Player
     }
@@ -420,5 +427,46 @@ public class PlayerStats : MonoBehaviour
         {
             anim.SetTrigger("Hit");
         }
+    }
+
+    public void AddXp(int amount)
+    {
+        if (isDead) return;
+
+        currentXp += amount;
+        
+        while (currentXp >= xpToNextLevel)
+        {
+            currentXp -= xpToNextLevel;
+            xpLevel++;
+            xpToNextLevel = CalculateXpToNextLevel(xpLevel);
+            OnLevelUp();
+        }
+
+        OnXpChanged?.Invoke(currentXp, xpToNextLevel, xpLevel);
+    }
+
+    private int CalculateXpToNextLevel(int level)
+    {
+        // Công thức Minecraft-like nhân với hệ số 5 cho cân bằng game RPG
+        if (level < 16)
+            return (2 * level + 7) * 5;
+        else if (level < 31)
+            return (5 * level - 38) * 5;
+        else
+            return (9 * level - 158) * 5;
+    }
+
+    private void OnLevelUp()
+    {
+        FloatingTextManager.SpawnWorldText($"⭐ LEVEL UP: {xpLevel}!", transform.position + Vector3.up * 0.6f, Color.green);
+        Debug.Log($"<color=lime>[XP System]</color> Player đã lên cấp {xpLevel}!");
+        
+        // Hồi full máu mana khi lên cấp làm phần thưởng
+        currentHealth = maxHealth;
+        currentMana = maxMana;
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        OnAnyPlayerHealthChanged?.Invoke(currentHealth, maxHealth);
+        OnManaChanged?.Invoke(currentMana, maxMana);
     }
 }
