@@ -22,6 +22,12 @@ public class EnemyHealth : MonoBehaviour
         set => _currentHealth = Mathf.Clamp(value, 0, maxHealth);
     }
 
+    [Header("=== KINH NGHIỆM (XP) ===")]
+    [Tooltip("Lượng kinh nghiệm quái vật rơi ra khi chết")]
+    public int xpValue = 15;
+    [Tooltip("Sprite hạt kinh nghiệm (Nếu trống, tự động tìm xp_orb.png)")]
+    public Sprite xpOrbSprite;
+
     [Header("=== HỒI SINH (RESPAWN) ===")]
     [Tooltip("Tự động hồi sinh tại vị trí ban đầu sau khi chết")]
     public bool autoRespawn = true;
@@ -716,6 +722,9 @@ public class EnemyHealth : MonoBehaviour
         TriggerAnim("Death");
         TriggerAnim("Die");
 
+        // Rơi hạt kinh nghiệm XP Orbs
+        SpawnXpOrbs();
+
         if (enemyAI != null) enemyAI.enabled = false;
         if (bossAI != null) bossAI.enabled = false;
         if (orcWarriorAI != null) orcWarriorAI.enabled = false;
@@ -817,6 +826,61 @@ public class EnemyHealth : MonoBehaviour
                     anim.SetTrigger(paramName);
                     break;
                 }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Rơi các hạt kinh nghiệm xung quanh vị trí quái bị tiêu diệt.
+    /// </summary>
+    private void SpawnXpOrbs()
+    {
+        if (xpValue <= 0) return;
+
+        int remainingXp = xpValue;
+        Sprite xpSprite = xpOrbSprite;
+        if (xpSprite == null)
+        {
+            xpSprite = Resources.Load<Sprite>("xp_orb");
+#if UNITY_EDITOR
+            if (xpSprite == null)
+            {
+                xpSprite = UnityEditor.AssetDatabase.LoadAssetAtPath<Sprite>("Assets/tainguyen/item/xp_orb.png");
+            }
+#endif
+        }
+
+        while (remainingXp > 0)
+        {
+            int orbValue = Random.Range(2, 6); // Mỗi hạt từ 2 -> 5 XP
+            if (orbValue > remainingXp) orbValue = remainingXp;
+            remainingXp -= orbValue;
+
+            GameObject orbObj = new GameObject($"XpOrb_{orbValue}Xp", typeof(SpriteRenderer), typeof(CircleCollider2D), typeof(XpOrb));
+            
+            // Độ lệch nhỏ
+            Vector3 offset = new Vector3(Random.Range(-0.25f, 0.25f), Random.Range(-0.1f, 0.25f), 0f);
+            orbObj.transform.position = transform.position + offset;
+
+            SpriteRenderer orbSr = orbObj.GetComponent<SpriteRenderer>();
+            if (orbSr != null)
+            {
+                orbSr.sprite = xpSprite;
+                if (sr != null)
+                {
+                    orbSr.sortingOrder = sr.sortingOrder + 1;
+                }
+                else
+                {
+                    orbSr.sortingOrder = 10;
+                }
+            }
+
+            XpOrb orbScript = orbObj.GetComponent<XpOrb>();
+            if (orbScript != null)
+            {
+                orbScript.xpValue = orbValue;
+                orbScript.magnetRange = 3.5f + Random.Range(0f, 1f);
             }
         }
     }

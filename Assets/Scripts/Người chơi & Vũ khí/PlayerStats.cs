@@ -24,12 +24,18 @@ public class PlayerStats : MonoBehaviour
     public bool isDead = false;
     public bool IsDead => isDead;
 
+    [Header("=== XP & LEVEL STATS ===")]
+    public int level = 1;
+    public int currentXp = 0;
+    public int xpToNextLevel = 100;
+
     public static PlayerStats Instance { get; private set; }
 
     // Events for UI update
     public event Action<int, int> OnHealthChanged;
     public static event Action<int, int> OnAnyPlayerHealthChanged;
     public event Action<float, float> OnManaChanged;
+    public event Action<int, int, int> OnXpChanged; // currentXp, xpToNextLevel, level
     public event Action OnPlayerDeath;
     public event Action OnPlayerRespawn;
 
@@ -132,6 +138,7 @@ public class PlayerStats : MonoBehaviour
             OnHealthChanged?.Invoke(currentHealth, maxHealth);
             OnAnyPlayerHealthChanged?.Invoke(currentHealth, maxHealth);
             OnManaChanged?.Invoke(currentMana, maxMana);
+            OnXpChanged?.Invoke(currentXp, xpToNextLevel, level);
         }
     }
 
@@ -144,6 +151,7 @@ public class PlayerStats : MonoBehaviour
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
         OnAnyPlayerHealthChanged?.Invoke(currentHealth, maxHealth);
         OnManaChanged?.Invoke(currentMana, maxMana);
+        OnXpChanged?.Invoke(currentXp, xpToNextLevel, level);
     }
 
     void Update()
@@ -418,6 +426,7 @@ public class PlayerStats : MonoBehaviour
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
         OnAnyPlayerHealthChanged?.Invoke(currentHealth, maxHealth);
         OnManaChanged?.Invoke(currentMana, maxMana);
+        OnXpChanged?.Invoke(currentXp, xpToNextLevel, level);
 
         OnPlayerRespawn?.Invoke();
 
@@ -434,5 +443,45 @@ public class PlayerStats : MonoBehaviour
         {
             anim.SetTrigger("Hit");
         }
+    }
+
+    /// <summary>
+    /// Cộng thêm kinh nghiệm cho Player và xử lý lên cấp nếu đủ.
+    /// </summary>
+    public void AddXp(int amount)
+    {
+        if (isDead) return;
+
+        currentXp += amount;
+        
+        // Hiển thị số XP nhận được trên đầu Player
+        FloatingTextManager.SpawnWorldText($"+{amount} XP", transform.position + Vector3.up * 0.7f, new Color(0.36f, 0.96f, 0.12f, 1.0f));
+
+        // Xử lý Level Up đệ quy
+        while (currentXp >= xpToNextLevel)
+        {
+            currentXp -= xpToNextLevel;
+            level++;
+            
+            // Công thức tăng giới hạn kinh nghiệm cho cấp tiếp theo
+            xpToNextLevel = 100 + (level - 1) * 50;
+
+            // Hồi đầy máu và mana khi lên cấp
+            currentHealth = maxHealth;
+            currentMana = maxMana;
+
+            // Hiển thị chữ LEVEL UP! màu vàng/cam rực rỡ nhảy lên trên đầu
+            FloatingTextManager.SpawnWorldText("⚡ LEVEL UP! ⚡", transform.position + Vector3.up * 1.0f, new Color(1.0f, 0.84f, 0.0f, 1.0f), 18f);
+
+            Debug.Log($"<color=gold><b>[Level Up] Player lên cấp {level}! Hồi đầy HP/MP. XP tiếp theo: {xpToNextLevel}</b></color>");
+
+            // Trigger events
+            OnHealthChanged?.Invoke(currentHealth, maxHealth);
+            OnAnyPlayerHealthChanged?.Invoke(currentHealth, maxHealth);
+            OnManaChanged?.Invoke(currentMana, maxMana);
+        }
+
+        OnXpChanged?.Invoke(currentXp, xpToNextLevel, level);
+        Debug.Log($"<color=green>[Player Stats]</color> Nhận <color=green>+{amount} XP</color>! Tiến trình: {currentXp}/{xpToNextLevel} (Cấp {level})");
     }
 }

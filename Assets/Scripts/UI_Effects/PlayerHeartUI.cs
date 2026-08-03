@@ -40,6 +40,10 @@ public class PlayerHeartUI : MonoBehaviour, IPointerDownHandler, IDragHandler, I
     [SerializeField, HideInInspector]
     public Vector2 savedAnchoredPosition = new Vector2(20f, -20f);
 
+    [Range(0.2f, 3.0f)]
+    [Tooltip("Tỷ lệ thu phóng giao diện (Scale)")]
+    public float uiScale = 1.0f;
+
     private const string PREF_KEY_POS_X = "PlayerHeartUI_PosX";
     private const string PREF_KEY_POS_Y = "PlayerHeartUI_PosY";
     private const string PREF_KEY_SAVED = "PlayerHeartUI_HasSavedPos";
@@ -54,6 +58,7 @@ public class PlayerHeartUI : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
     private RectTransform myRectTransform;
     private Canvas rootCanvas;
+    private float lastScale = 1.0f;
 
     private void Awake()
     {
@@ -65,8 +70,67 @@ public class PlayerHeartUI : MonoBehaviour, IPointerDownHandler, IDragHandler, I
             heartsContainer = transform;
         }
 
-        // Tải vị trí đã lưu
+        // Tải vị trí & kích thước đã lưu
+        uiScale = PlayerPrefs.GetFloat("PlayerHeartUI_Scale", 1.0f);
+        transform.localScale = new Vector3(uiScale, uiScale, 1.0f);
+        lastScale = uiScale;
+        
         ApplySavedPosition();
+
+        // Đảm bảo có Image trong suốt trên chính nó để hứng sự kiện Click/Drag chuột
+        Image myImage = GetComponent<Image>();
+        if (myImage == null)
+        {
+            myImage = gameObject.AddComponent<Image>();
+            myImage.color = new Color(0f, 0f, 0f, 0f); // trong suốt hoàn toàn
+            myImage.raycastTarget = true;
+        }
+        else
+        {
+            myImage.color = new Color(0f, 0f, 0f, 0f);
+            myImage.raycastTarget = true;
+        }
+    }
+
+    private void Update()
+    {
+        if (!Application.isPlaying)
+        {
+            // Tự động đồng bộ vị trí khi bạn kéo thả trong Editor Scene View
+            if (myRectTransform == null) myRectTransform = GetComponent<RectTransform>();
+            if (myRectTransform != null && myRectTransform.anchoredPosition != savedAnchoredPosition)
+            {
+                savedAnchoredPosition = myRectTransform.anchoredPosition;
+                PlayerPrefs.SetFloat(PREF_KEY_POS_X, savedAnchoredPosition.x);
+                PlayerPrefs.SetFloat(PREF_KEY_POS_Y, savedAnchoredPosition.y);
+                PlayerPrefs.SetInt(PREF_KEY_SAVED, 1);
+                PlayerPrefs.Save();
+            }
+
+            // Tự động đồng bộ tỷ lệ Scale trong Editor (Hai chiều)
+            if (transform.localScale.x != lastScale)
+            {
+                uiScale = transform.localScale.x;
+                lastScale = uiScale;
+                PlayerPrefs.SetFloat("PlayerHeartUI_Scale", uiScale);
+                PlayerPrefs.Save();
+            }
+            else if (uiScale != lastScale)
+            {
+                transform.localScale = new Vector3(uiScale, uiScale, 1.0f);
+                lastScale = uiScale;
+                PlayerPrefs.SetFloat("PlayerHeartUI_Scale", uiScale);
+                PlayerPrefs.Save();
+            }
+        }
+        else
+        {
+            // Trong game, áp dụng scale nếu thay đổi
+            if (transform.localScale.x != uiScale)
+            {
+                transform.localScale = new Vector3(uiScale, uiScale, 1.0f);
+            }
+        }
     }
 
     private void OnEnable()
@@ -163,6 +227,7 @@ public class PlayerHeartUI : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         PlayerPrefs.SetFloat(PREF_KEY_POS_X, savedAnchoredPosition.x);
         PlayerPrefs.SetFloat(PREF_KEY_POS_Y, savedAnchoredPosition.y);
         PlayerPrefs.SetInt(PREF_KEY_SAVED, 1);
+        PlayerPrefs.SetFloat("PlayerHeartUI_Scale", uiScale);
         PlayerPrefs.Save();
     }
 

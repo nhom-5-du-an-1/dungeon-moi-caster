@@ -24,8 +24,20 @@ public class MinecraftHeartSetupWizard
     public static void SetupPlayerHeartUI()
     {
         HeartSpriteGenerator.GenerateAllHeartSprites();
+        AssetDatabase.Refresh();
 
-        Canvas canvas = Object.FindObjectOfType<Canvas>();
+        // Cấu hình lại các file hình ảnh XP thành Single Sprite và Point filter (không bị mờ/sắt nét)
+        ConfigureXpSpriteImporter("Assets/tainguyen/item/xp_bar_empty.png");
+        ConfigureXpSpriteImporter("Assets/tainguyen/item/xp_bar_full.png");
+        ConfigureXpSpriteImporter("Assets/tainguyen/item/xp_orb.png");
+        ConfigureXpSpriteImporter("Assets/tainguyen/item/xp_orb_hd.png");
+        for (int i = 0; i <= 9; i++)
+        {
+            ConfigureXpSpriteImporter($"Assets/tainguyen/item/num_{i}.png");
+        }
+        AssetDatabase.Refresh();
+
+        Canvas canvas = Object.FindAnyObjectByType<Canvas>();
         if (canvas == null)
         {
             GameObject canvasObj = new GameObject("Canvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
@@ -73,8 +85,56 @@ public class MinecraftHeartSetupWizard
         heartUI.SaveCurrentPosition();
         heartUI.UpdateHeartsUI(stats != null ? stats.currentHealth : 20, stats != null ? stats.maxHealth : 20);
 
+        // Cấu hình thêm thanh kinh nghiệm XP UI độc lập dưới Canvas (cùng cấp với PlayerHeartsUI)
+        Transform canvasTransform = heartUIObj.transform.parent;
+        Transform xpUITransform = canvasTransform.Find("PlayerXpUI");
+        GameObject xpUIObj;
+        if (xpUITransform == null)
+        {
+            xpUIObj = new GameObject("PlayerXpUI", typeof(RectTransform));
+            xpUIObj.transform.SetParent(canvasTransform, false);
+        }
+        else
+        {
+            xpUIObj = xpUITransform.gameObject;
+        }
+
+        PlayerXpUI xpUI = xpUIObj.GetComponent<PlayerXpUI>();
+        if (xpUI == null)
+        {
+            xpUI = xpUIObj.AddComponent<PlayerXpUI>();
+        }
+
+        // Tự động gán các sprite kinh nghiệm
+        xpUI.emptyBarSprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/tainguyen/item/xp_bar_empty.png");
+        xpUI.fillBarSprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/tainguyen/item/xp_bar_full.png");
+        
+        // Tự động gán các sprite chữ số pixel art 0-9
+        xpUI.digitSprites = new Sprite[10];
+        for (int i = 0; i <= 9; i++)
+        {
+            xpUI.digitSprites[i] = AssetDatabase.LoadAssetAtPath<Sprite>($"Assets/tainguyen/item/num_{i}.png");
+        }
+        
+        if (stats != null)
+        {
+            xpUI.playerStats = stats;
+        }
+
+        xpUI.savedAnchoredPosition = new Vector2(20f, -70f); // Default position
+        xpUI.CreateUIElements();
+        if (stats != null)
+        {
+            xpUI.UpdateXpUI(stats.currentXp, stats.xpToNextLevel, stats.level);
+        }
+        else
+        {
+            xpUI.UpdateXpUI(0, 100, 1);
+        }
+
+        EditorUtility.SetDirty(xpUIObj);
         EditorUtility.SetDirty(heartUIObj);
-        Debug.Log("<color=green>[PlayerHeartUI]</color> Đã setup thành công UI 10 trái tim Minecraft cho Player trên Canvas!");
+        Debug.Log("<color=green>[PlayerHeartUI & PlayerXpUI]</color> Đã setup thành công UI 10 trái tim và thanh kinh nghiệm XP!");
     }
 
     [MenuItem("Tools/Minecraft Heart System/Setup Enemy Hearts Only")]
@@ -118,5 +178,19 @@ public class MinecraftHeartSetupWizard
         }
         Debug.Log($"<color=green>[EnemyHealth]</color> Đã dọn dẹp các ô tim trùng lặp cho {count} quái vật trong Scene!");
         EditorUtility.DisplayDialog("Hoàn tất!", $"Đã tự động xóa sạch các ô tim trùng lặp của {count} quái vật trong Scene!", "OK");
+    }
+
+    private static void ConfigureXpSpriteImporter(string assetPath)
+    {
+        TextureImporter importer = AssetImporter.GetAtPath(assetPath) as TextureImporter;
+        if (importer != null)
+        {
+            importer.textureType = TextureImporterType.Sprite;
+            importer.spriteImportMode = SpriteImportMode.Single;
+            importer.filterMode = FilterMode.Point;
+            importer.textureCompression = TextureImporterCompression.Uncompressed;
+            importer.alphaIsTransparency = true;
+            importer.SaveAndReimport();
+        }
     }
 }
