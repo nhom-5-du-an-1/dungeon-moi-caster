@@ -95,8 +95,22 @@ public class PlayerStats : MonoBehaviour
         {
             // Camera tự tìm Player qua CameraFollow.FindPlayerTarget()
 
-            // Tìm điểm SpawnPoint ở bản đồ mới
-            GameObject spawnPoint = GameObject.FindWithTag("SpawnPoint") ?? GameObject.Find("SpawnPoint") ?? GameObject.Find("PlayerSpawn");
+            // Tìm điểm SpawnPoint ở bản đồ mới (bọc try-catch phòng trường hợp tag SpawnPoint chưa được định nghĩa trong ProjectSettings)
+            GameObject spawnPoint = null;
+            try
+            {
+                spawnPoint = GameObject.FindWithTag("SpawnPoint");
+            }
+            catch (System.Exception)
+            {
+                // Tag chưa được định nghĩa, sẽ tìm theo Tên của GameObject ở dưới
+            }
+
+            if (spawnPoint == null)
+            {
+                spawnPoint = GameObject.Find("SpawnPoint") ?? GameObject.Find("PlayerSpawn");
+            }
+
             if (spawnPoint != null)
             {
                 transform.position = spawnPoint.transform.position;

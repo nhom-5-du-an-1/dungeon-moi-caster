@@ -18,13 +18,18 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private int _currentHealth = 10;
     public int currentHealth
     {
-        get
-        {
-            if (_currentHealth <= 0 && !isDead && maxHealth > 0) _currentHealth = maxHealth;
-            return _currentHealth;
-        }
+        get => _currentHealth;
         set => _currentHealth = Mathf.Clamp(value, 0, maxHealth);
     }
+
+    [Header("=== HỒI SINH (RESPAWN) ===")]
+    [Tooltip("Tự động hồi sinh tại vị trí ban đầu sau khi chết")]
+    public bool autoRespawn = true;
+
+    [Tooltip("Thời gian chờ hồi sinh sau khi hoạt ảnh chết kết thúc (giây)")]
+    public float respawnDelay = 5.0f;
+
+    private Vector3 spawnPoint;
 
     [Header("=== THANH MÁU TRỰC QUAN (WORLD SPRITE) ===")]
     [Tooltip("Luôn hiển thị thanh máu trên đầu quái")]
@@ -122,6 +127,11 @@ public class EnemyHealth : MonoBehaviour
         if (sr == null) sr = GetComponent<SpriteRenderer>();
         if (maxHealth <= 0) maxHealth = 10;
 
+        if (_currentHealth <= 0 && !isDead)
+        {
+            _currentHealth = maxHealth;
+        }
+
         catchUpFillRatio = maxHealth > 0 ? (float)currentHealth / maxHealth : 1f;
         CreateSpriteHealthBar();
         UpdateHealthBarUI(true);
@@ -131,6 +141,16 @@ public class EnemyHealth : MonoBehaviour
     {
         if (sr == null) sr = GetComponent<SpriteRenderer>();
         if (maxHealth <= 0) maxHealth = 10;
+
+        if (Application.isPlaying)
+        {
+            spawnPoint = transform.position;
+        }
+
+        if (_currentHealth <= 0 && !isDead)
+        {
+            _currentHealth = maxHealth;
+        }
 
         catchUpFillRatio = maxHealth > 0 ? (float)currentHealth / maxHealth : 1f;
         CreateSpriteHealthBar();
@@ -713,7 +733,77 @@ public class EnemyHealth : MonoBehaviour
             Destroy(healthBarParent);
         }
 
-        Destroy(gameObject, 1.5f);
+        if (autoRespawn)
+        {
+            StartCoroutine(RespawnRoutine());
+        }
+        else
+        {
+            Destroy(gameObject, 1.5f);
+        }
+    }
+
+    private IEnumerator RespawnRoutine()
+    {
+        // 1. Chờ xem xong hoạt ảnh chết
+        yield return new WaitForSeconds(1.5f);
+
+        // 2. Ẩn hình ảnh và tắt va chạm hoàn toàn
+        if (sr != null) sr.enabled = false;
+
+        // 3. Đợi thời gian hồi sinh
+        yield return new WaitForSeconds(respawnDelay);
+
+        // 4. Đưa quái về vị trí xuất phát ban đầu
+        transform.position = spawnPoint;
+
+        // 5. Reset lại máu
+        _currentHealth = maxHealth;
+        isDead = false;
+
+        // 6. Kích hoạt lại hiển thị, va chạm và vật lý
+        if (sr != null)
+        {
+            sr.enabled = true;
+            sr.color = Color.white; // Reset màu nếu bị nhuộm đỏ/đóng băng
+        }
+        if (col != null) col.enabled = true;
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        // 7. Tạo lại thanh máu
+        CreateSpriteHealthBar();
+        UpdateHealthBarUI(true);
+
+        // 8. Bật lại các Script AI để quái hoạt động tiếp
+        if (enemyAI != null) enemyAI.enabled = true;
+        if (bossAI != null) bossAI.enabled = true;
+
+        if (orcWarriorAI != null)
+        {
+            orcWarriorAI.enabled = true;
+            orcWarriorAI.ResetState();
+        }
+        if (orcShamanAI != null)
+        {
+            orcShamanAI.enabled = true;
+            orcShamanAI.ResetState();
+        }
+        if (orcBerserkerAI != null)
+        {
+            orcBerserkerAI.enabled = true;
+            orcBerserkerAI.ResetState();
+        }
+
+        // Kích hoạt lại trạng thái Idle
+        TriggerAnim("Idle");
+        if (anim != null)
+        {
+            anim.Play("Idle"); // Phát trực tiếp clip Idle phòng khi trôi trigger
+        }
     }
 
     private void TriggerAnim(string paramName)

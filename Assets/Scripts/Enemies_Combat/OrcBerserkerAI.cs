@@ -32,7 +32,7 @@ public class OrcBerserkerAI : MonoBehaviour
     [Tooltip("Bán kính tối đa trước khi bỏ đuổi")]
     public float loseSightRadius = 10.0f;
     [Tooltip("Khoảng cách tầm đánh cận chiến")]
-    public float attackRange = 0.4f;
+    public float attackRange = 0.48f;
 
     [Header("=== DI CHUYỂN ===")]
     [Tooltip("Tốc độ di chuyển cơ bản khi đuổi theo")]
@@ -49,7 +49,7 @@ public class OrcBerserkerAI : MonoBehaviour
     [Tooltip("Thời gian thực hiện đòn chém")]
     public float slashDuration = 0.4f;
     [Tooltip("Thời gian trễ trước khi gây sát thương")]
-    public float slashDelay = 0.1f;
+    public float slashDelay = 0.25f;
     [Tooltip("Lực lao tới khi chém")]
     public float slashLungeForce = 2.0f;
     [Tooltip("Bán kính hitbox chém")]
@@ -199,8 +199,7 @@ public class OrcBerserkerAI : MonoBehaviour
         Vector3 playerPos = GetPlayerCenterPosition();
         float dist = Vector2.Distance(myPos, playerPos);
 
-        float effectiveReach = attackOffset + (slashRadius * 0.7f);
-        return dist <= effectiveReach;
+        return dist <= attackRange;
     }
 
     /// <summary>
@@ -815,5 +814,23 @@ public class OrcBerserkerAI : MonoBehaviour
             Gizmos.color = new Color(1f, 0f, 0f, 0.5f);
             Gizmos.DrawWireSphere(basePosition, chargeHitRadius);
         }
+
+        // Bán kính tầm đánh cận chiến thực tế (đỏ nhạt)
+        Gizmos.color = new Color(1f, 0f, 0f, 0.22f);
+        Gizmos.DrawWireSphere(basePosition, attackRange);
+    }
+
+    public void ResetState()
+    {
+        currentState = BerserkerState.Idle;
+        stateTimer = 0f;
+        isAttacking = false;
+        nextSlashTime = 0f;
+        nextChargeTime = 0f;
+        lastFacingDirection = new Vector2(1f, 0f);
+        smoothMovement = Vector2.zero;
+        velocityWorkspace = Vector2.zero;
+        patrolTarget = GetRandomPatrolPoint();
+        currentRageMultiplier = 1.0f;
     }
 }

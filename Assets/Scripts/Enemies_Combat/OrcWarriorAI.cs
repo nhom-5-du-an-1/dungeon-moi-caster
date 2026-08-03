@@ -30,7 +30,7 @@ public class OrcWarriorAI : MonoBehaviour
     [Tooltip("Bán kính tối đa trước khi bỏ đuổi")]
     public float loseSightRadius = 9.0f;
     [Tooltip("Khoảng cách tầm đánh")]
-    public float attackRange = 0.4f;
+    public float attackRange = 0.45f;
 
     [Header("=== DI CHUYỂN ===")]
     [Tooltip("Tốc độ di chuyển khi đuổi theo")]
@@ -47,7 +47,7 @@ public class OrcWarriorAI : MonoBehaviour
     [Tooltip("Thời gian thực hiện đòn chém")]
     public float slashDuration = 0.45f;
     [Tooltip("Thời gian trễ trước khi gây sát thương")]
-    public float slashDelay = 0.12f;
+    public float slashDelay = 0.28f;
     [Tooltip("Lực lao tới khi chém")]
     public float slashLungeForce = 1.5f;
     [Tooltip("Bán kính hitbox chém")]
@@ -183,8 +183,7 @@ public class OrcWarriorAI : MonoBehaviour
         Vector3 playerPos = GetPlayerCenterPosition();
         float dist = Vector2.Distance(myPos, playerPos);
 
-        float effectiveReach = attackOffset + (slashRadius * 0.7f);
-        return dist <= effectiveReach;
+        return dist <= attackRange;
     }
 
     void Update()
@@ -713,5 +712,22 @@ public class OrcWarriorAI : MonoBehaviour
         // Hitbox húc khiên (cam)
         Gizmos.color = new Color(1f, 0.6f, 0f, 0.4f);
         Gizmos.DrawWireSphere(attackPoint, bashRadius);
+
+        // Bán kính tầm đánh cận chiến thực tế (đỏ nhạt)
+        Gizmos.color = new Color(1f, 0f, 0f, 0.22f);
+        Gizmos.DrawWireSphere(basePosition, attackRange);
+    }
+
+    public void ResetState()
+    {
+        currentState = OrcState.Idle;
+        stateTimer = 0f;
+        isAttacking = false;
+        nextSlashTime = 0f;
+        nextBashTime = 0f;
+        lastFacingDirection = new Vector2(1f, 0f);
+        smoothMovement = Vector2.zero;
+        velocityWorkspace = Vector2.zero;
+        patrolTarget = GetRandomPatrolPoint();
     }
 }

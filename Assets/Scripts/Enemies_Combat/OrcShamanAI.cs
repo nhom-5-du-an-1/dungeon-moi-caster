@@ -58,9 +58,9 @@ public class OrcShamanAI : MonoBehaviour
     [Tooltip("Thời gian hồi chiêu giữa các phát bắn")]
     public float shootCooldown = 2.0f;
     [Tooltip("Thời gian thực hiện phép bắn")]
-    public float shootDuration = 0.7f;
+    public float shootDuration = 0.85f;
     [Tooltip("Thời gian trễ trước khi đạn bay ra")]
-    public float shootDelay = 0.3f;
+    public float shootDelay = 0.45f;
     [Tooltip("Số lượng đạn bắn liên tiếp mỗi lần (Burst)")]
     public int burstCount = 2;
     [Tooltip("Khoảng cách giữa mỗi viên đạn trong burst (giây)")]
@@ -634,5 +634,18 @@ public class OrcShamanAI : MonoBehaviour
         // Bán kính hồi máu đồng đội (xanh lá)
         Gizmos.color = new Color(0.2f, 0.9f, 0.3f, 0.2f);
         Gizmos.DrawWireSphere(basePosition, healRadius);
+    }
+
+    public void ResetState()
+    {
+        currentState = ShamanState.Idle;
+        stateTimer = 0f;
+        isAttacking = false;
+        nextShootTime = 0f;
+        nextHealTime = 0f;
+        lastFacingDirection = new Vector2(1f, 0f);
+        smoothMovement = Vector2.zero;
+        velocityWorkspace = Vector2.zero;
+        patrolTarget = GetRandomPatrolPoint();
     }
 }

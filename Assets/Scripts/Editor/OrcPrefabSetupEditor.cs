@@ -24,6 +24,30 @@ public class OrcPrefabSetupEditor : EditorWindow
     private const string ORC2_ASEPRITE = SPRITE_BASE_PATH + "/quái quỷ 2.aseprite";
     private const string ORC3_ASEPRITE = SPRITE_BASE_PATH + "/quái quỷ 3.aseprite";
 
+    // Tầm đánh tùy chỉnh
+    private static float warriorAttackRange = 0.45f;
+    private static float shamanShootRange = 5.0f;
+    private static float berserkerAttackRange = 0.48f;
+
+    private static void LoadSettings()
+    {
+        warriorAttackRange = EditorPrefs.GetFloat("OrcSetup_WarriorRange", 0.45f);
+        shamanShootRange = EditorPrefs.GetFloat("OrcSetup_ShamanRange", 5.0f);
+        berserkerAttackRange = EditorPrefs.GetFloat("OrcSetup_BerserkerRange", 0.48f);
+    }
+
+    private static void SaveSettings()
+    {
+        EditorPrefs.SetFloat("OrcSetup_WarriorRange", warriorAttackRange);
+        EditorPrefs.SetFloat("OrcSetup_ShamanRange", shamanShootRange);
+        EditorPrefs.SetFloat("OrcSetup_BerserkerRange", berserkerAttackRange);
+    }
+
+    private void OnEnable()
+    {
+        LoadSettings();
+    }
+
     [MenuItem("Dungeon Tools/Setup Orc Prefabs (Quái Quỷ 1-2-3)")]
     public static void ShowWindow()
     {
@@ -60,6 +84,25 @@ public class OrcPrefabSetupEditor : EditorWindow
         DrawAsepriteStatus("Quái Quỷ 1", ORC1_ASEPRITE);
         DrawAsepriteStatus("Quái Quỷ 2", ORC2_ASEPRITE);
         DrawAsepriteStatus("Quái Quỷ 3", ORC3_ASEPRITE);
+
+        GUILayout.Space(4);
+        EditorGUILayout.LabelField("🔧 CẤU HÌNH TẦM ĐÁNH (ATTACK RANGE)", EditorStyles.boldLabel);
+        EditorGUI.BeginChangeCheck();
+        warriorAttackRange = EditorGUILayout.FloatField("  🗡️ Tầm đánh Chiến Binh (Warrior)", warriorAttackRange);
+        shamanShootRange = EditorGUILayout.FloatField("  🔮 Tầm bắn Pháp Sư (Shaman)", shamanShootRange);
+        berserkerAttackRange = EditorGUILayout.FloatField("  🔥 Tầm đánh Cuồng Nộ (Berserker)", berserkerAttackRange);
+        if (EditorGUI.EndChangeCheck())
+        {
+            SaveSettings();
+        }
+
+        GUILayout.Space(8);
+        GUI.backgroundColor = new Color(0.2f, 0.6f, 1.0f);
+        if (GUILayout.Button("💾 APPLY TẦM ĐÁNH LÊN PREFABS", GUILayout.Height(30)))
+        {
+            ApplyRangesToPrefabs();
+        }
+        GUI.backgroundColor = Color.white;
 
         GUILayout.Space(12);
 
@@ -195,6 +238,7 @@ public class OrcPrefabSetupEditor : EditorWindow
         LoadHeartSprites(health);
 
         // OrcWarriorAI
+        LoadSettings();
         OrcWarriorAI ai = EnsureComponent<OrcWarriorAI>(root);
         ai.detectionRadius = 5.5f;
         ai.loseSightRadius = 9.0f;
@@ -202,6 +246,9 @@ public class OrcPrefabSetupEditor : EditorWindow
         ai.patrolSpeed = 1.2f;
         ai.slashDamage = 3;
         ai.slashCooldown = 1.2f;
+        ai.slashDelay = 0.28f;
+        ai.slashDuration = 0.45f;
+        ai.attackRange = warriorAttackRange;
         ai.bashDamage = 2;
         ai.bashCooldown = 5.0f;
         ai.bashKnockback = 7.0f;
@@ -261,18 +308,21 @@ public class OrcPrefabSetupEditor : EditorWindow
         health.barHeight = 0.04f;
         LoadHeartSprites(health);
 
+        LoadSettings();
         OrcShamanAI ai = EnsureComponent<OrcShamanAI>(root);
         ai.detectionRadius = 7.0f;
         ai.loseSightRadius = 10.0f;
         ai.moveSpeed = 2.0f;
         ai.patrolSpeed = 0.9f;
         ai.retreatSpeed = 2.5f;
-        ai.shootRange = 5.0f;
+        ai.shootRange = shamanShootRange;
         ai.safeDistance = 2.5f;
         ai.elementType = MonsterProjectile.ElementType.Fire;
         ai.projectileDamage = 3;
         ai.projectileSpeed = 5.5f;
         ai.shootCooldown = 2.0f;
+        ai.shootDuration = 0.85f;
+        ai.shootDelay = 0.45f;
         ai.burstCount = 2;
         ai.healRadius = 3.5f;
         ai.healAmount = 4;
@@ -343,6 +393,7 @@ public class OrcPrefabSetupEditor : EditorWindow
         health.barHeight = 0.04f;
         LoadHeartSprites(health);
 
+        LoadSettings();
         OrcBerserkerAI ai = EnsureComponent<OrcBerserkerAI>(root);
         ai.detectionRadius = 6.0f;
         ai.loseSightRadius = 10.0f;
@@ -350,6 +401,9 @@ public class OrcPrefabSetupEditor : EditorWindow
         ai.patrolSpeed = 1.3f;
         ai.slashDamage = 3;
         ai.slashCooldown = 0.9f;
+        ai.slashDelay = 0.25f;
+        ai.slashDuration = 0.40f;
+        ai.attackRange = berserkerAttackRange;
         ai.chargeDamage = 5;
         ai.chargeSpeed = 10.0f;
         ai.chargeCooldown = 6.0f;
@@ -853,5 +907,82 @@ public class OrcPrefabSetupEditor : EditorWindow
             }
         }
         Debug.Log($"<color=cyan>[Orc Setup Debug] {label} summary: {spriteCount} Sprites, {clipCount} AnimationClips</color>");
+    }
+
+    private static void ApplyRangesToPrefabs()
+    {
+        LoadSettings();
+        
+        // 1. Quái 1 (Warrior)
+        string path1 = PREFAB_BASE_PATH + "/OrcWarrior.prefab";
+        GameObject root1 = AssetDatabase.LoadAssetAtPath<GameObject>(path1);
+        if (root1 != null)
+        {
+            GameObject instance = PrefabUtility.InstantiatePrefab(root1) as GameObject;
+            if (instance != null)
+            {
+                OrcWarriorAI ai = instance.GetComponent<OrcWarriorAI>();
+                if (ai != null)
+                {
+                    ai.attackRange = warriorAttackRange;
+                    PrefabUtility.SaveAsPrefabAsset(instance, path1);
+                    Debug.Log($"<color=green>[Orc Setup]</color> Đã áp dụng tầm đánh {warriorAttackRange} lên {path1}");
+                }
+                DestroyImmediate(instance);
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"[Orc Setup] Không tìm thấy Prefab tại {path1} để apply.");
+        }
+
+        // 2. Quái 2 (Shaman)
+        string path2 = PREFAB_BASE_PATH + "/OrcShaman.prefab";
+        GameObject root2 = AssetDatabase.LoadAssetAtPath<GameObject>(path2);
+        if (root2 != null)
+        {
+            GameObject instance = PrefabUtility.InstantiatePrefab(root2) as GameObject;
+            if (instance != null)
+            {
+                OrcShamanAI ai = instance.GetComponent<OrcShamanAI>();
+                if (ai != null)
+                {
+                    ai.shootRange = shamanShootRange;
+                    PrefabUtility.SaveAsPrefabAsset(instance, path2);
+                    Debug.Log($"<color=green>[Orc Setup]</color> Đã áp dụng tầm bắn {shamanShootRange} lên {path2}");
+                }
+                DestroyImmediate(instance);
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"[Orc Setup] Không tìm thấy Prefab tại {path2} để apply.");
+        }
+
+        // 3. Quái 3 (Berserker)
+        string path3 = PREFAB_BASE_PATH + "/OrcBerserker.prefab";
+        GameObject root3 = AssetDatabase.LoadAssetAtPath<GameObject>(path3);
+        if (root3 != null)
+        {
+            GameObject instance = PrefabUtility.InstantiatePrefab(root3) as GameObject;
+            if (instance != null)
+            {
+                OrcBerserkerAI ai = instance.GetComponent<OrcBerserkerAI>();
+                if (ai != null)
+                {
+                    ai.attackRange = berserkerAttackRange;
+                    PrefabUtility.SaveAsPrefabAsset(instance, path3);
+                    Debug.Log($"<color=green>[Orc Setup]</color> Đã áp dụng tầm đánh {berserkerAttackRange} lên {path3}");
+                }
+                DestroyImmediate(instance);
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"[Orc Setup] Không tìm thấy Prefab tại {path3} để apply.");
+        }
+        
+        AssetDatabase.SaveAssets();
+        EditorUtility.DisplayDialog("Thành công!", "Đã áp dụng (Apply) các thông số tầm đánh mới trực tiếp vào Prefabs!", "OK");
     }
 }
