@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7277116558206153136}
   - component: {fileID: 9104876649302643365}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5564654246432729552}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HeartsContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1437182827706723187}
   - component: {fileID: 7910336141311428759}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5791140248860706010}
   - component: {fileID: 454957442566110820}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6229800368018864636}
   - component: {fileID: 5218455320705595582}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,9 +417,9 @@ GameObject:
   - component: {fileID: 598292215068284354}
   - component: {fileID: 8159094971153779292}
   - component: {fileID: 2312989882324098319}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OrcWarrior
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -433,7 +433,7 @@ Transform:
   m_GameObject: {fileID: 3432917609820975764}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.394351, y: -1.3555, z: 0}
+  m_LocalPosition: {x: 5.2309017, y: -0.5045116, z: 0}
   m_LocalScale: {x: 0.64645, y: 0.64645, z: 0.64645}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -662,7 +662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8654062892206844464}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HealthBar_Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ Transform:
   m_GameObject: {fileID: 4031158512238948103}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.74812925, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7481292, z: 0}
   m_LocalScale: {x: 1.54691, y: 1.54691, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -698,7 +698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3753064798627966008}
   - component: {fileID: 7389343903639882463}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -789,7 +789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6308650982924597042}
   - component: {fileID: 2906971456886784236}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -880,7 +880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3013786732560437616}
   - component: {fileID: 1249745728328465933}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -971,7 +971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2394626671124624091}
   - component: {fileID: 6134413052962221685}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1062,7 +1062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7654342582006898522}
   - component: {fileID: 1024308054126982627}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CatchUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1153,7 +1153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8163745145448811566}
   - component: {fileID: 1400028546995190560}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

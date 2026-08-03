@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2348318006497933133}
   - component: {fileID: 5270626072035903974}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 780900517754280152}
   - component: {fileID: 1961914320194659572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3719571989107901309}
   - component: {fileID: 2546309557448796228}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6159208745004872777}
   - component: {fileID: 2109559499499606454}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7888626858906534546}
   - component: {fileID: 1516074309243832673}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6742637739354169205}
   - component: {fileID: 6702629685798909114}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,7 +556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4516764735681959286}
   - component: {fileID: 3510508824653459924}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CatchUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7212490556827624000}
   - component: {fileID: 1474118338748427289}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -737,7 +737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2122892526765711496}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HeartsContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -779,7 +779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1080942679689002365}
   - component: {fileID: 5357447585568476829}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,7 +870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1924700423713295116}
   - component: {fileID: 5773852655104480359}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -960,7 +960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5717941222500004524}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HealthBar_Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -976,7 +976,7 @@ Transform:
   m_GameObject: {fileID: 8657088186209384521}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.90012974, z: 0}
+  m_LocalPosition: {x: 0, y: 0.90012985, z: 0}
   m_LocalScale: {x: 2.0323322, y: 2.0323322, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -996,7 +996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9005802730852163268}
   - component: {fileID: 6927492367411252897}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,9 +1092,9 @@ GameObject:
   - component: {fileID: 7050085654946958930}
   - component: {fileID: 4797890920131244538}
   - component: {fileID: 5405048900939518522}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OrcBerserker
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1108,7 +1108,7 @@ Transform:
   m_GameObject: {fileID: 8841948907285380348}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0828416, y: -2.1031132, z: 0}
+  m_LocalPosition: {x: -3.68, y: 0.95, z: 0}
   m_LocalScale: {x: 0.49204555, y: 0.49204555, z: 0.49204555}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1343,7 +1343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8717960212770262141}
   - component: {fileID: 4183941516931551569}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1434,7 +1434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4493180352083626362}
   - component: {fileID: 4385953605486662247}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

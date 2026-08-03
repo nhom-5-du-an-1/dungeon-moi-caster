@@ -34,6 +34,14 @@ public class AutoSetupPlayerPrefabWithCamera : EditorWindow
                 changed = true;
             }
 
+            // Gắn Layer "Player"
+            int playerLayer = LayerMask.NameToLayer("Player");
+            if (playerLayer >= 0 && prefabRoot.layer != playerLayer)
+            {
+                SetLayerRecursive(prefabRoot, playerLayer);
+                changed = true;
+            }
+
             // Xóa Camera con bên trong Prefab nếu có (Camera phải ở ngoài, riêng biệt)
             Transform existingCam = prefabRoot.transform.Find("Main Camera");
             if (existingCam != null)
@@ -50,6 +58,16 @@ public class AutoSetupPlayerPrefabWithCamera : EditorWindow
             }
 
             PrefabUtility.UnloadPrefabContents(prefabRoot);
+        }
+    }
+
+    private static void SetLayerRecursive(GameObject obj, int layerIndex)
+    {
+        if (obj == null) return;
+        obj.layer = layerIndex;
+        foreach (Transform child in obj.transform)
+        {
+            SetLayerRecursive(child.gameObject, layerIndex);
         }
     }
 }

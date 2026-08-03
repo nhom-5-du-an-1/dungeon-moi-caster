@@ -9,6 +9,13 @@ public class AutoFixSceneError : EditorWindow
     static AutoFixSceneError()
     {
         EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
+        EditorApplication.hierarchyChanged += OnHierarchyChanged;
+    }
+
+    private static void OnHierarchyChanged()
+    {
+        if (EditorApplication.isPlaying || EditorApplication.isCompiling) return;
+        FixCurrentSceneSilent();
     }
 
     private static void OnPlayModeStateChanged(PlayModeStateChange state)
@@ -31,11 +38,15 @@ public class AutoFixSceneError : EditorWindow
 
         int totalMissingScriptsRemoved = 0;
         int duplicateEventSystemsRemoved = 0;
+        bool sceneChanged = false;
 
-        // 0. Tự động spawn Player nếu chưa có
+        // 0. Đảm bảo các Tag và Layer cần thiết đã được đăng ký trong Project Settings
+        EnsureTagsAndLayersRegistered();
+
+        // 0.1. Tự động spawn Player nếu chưa có
         AutoSpawnPlayerIfMissing.CheckAndSpawnPlayer();
         
-        // 0.1. Tự động dọn dẹp trùng lặp component PlayerStats trên Prefab gốc
+        // 0.2. Tự động dọn dẹp trùng lặp component PlayerStats trên Prefab gốc
         CleanDuplicatePlayerStatsOnPrefab();
 
         // 1. Đảm bảo Scene có Main Camera với CameraFollow
@@ -76,10 +87,12 @@ public class AutoFixSceneError : EditorWindow
             }
         }
 
-        // 4. Kiểm tra Tag "Player"
+        // 4. Kiểm tra Tag & Layer cho Player và Enemies
         foreach (GameObject go in allObjects)
         {
             if (go == null) continue;
+
+            // Xử lý Player
             if (go.GetComponent<PlayerMovement>() != null || go.GetComponent<PlayerStats>() != null)
             {
                 if (!go.CompareTag("Player"))
@@ -87,11 +100,50 @@ public class AutoFixSceneError : EditorWindow
                     go.tag = "Player";
                     Debug.Log($"<color=yellow>[Auto Fix]</color> Đã tự động gắn Tag <b>'Player'</b> cho: {go.name}");
                     EditorUtility.SetDirty(go);
+                    sceneChanged = true;
+                }
+
+                int playerLayer = LayerMask.NameToLayer("Player");
+                if (playerLayer >= 0 && go.layer != playerLayer)
+                {
+                    SetLayerRecursive(go, playerLayer);
+                    Debug.Log($"<color=yellow>[Auto Fix]</color> Đã tự động đặt Layer <b>'Player'</b> cho: {go.name} và các con");
+                    sceneChanged = true;
+                }
+            }
+
+            // Xử lý Enemy / Quái vật
+            if (go.GetComponent<EnemyAI>() != null || 
+                go.GetComponent<EnemyHealth>() != null || 
+                go.GetComponent<OrcWarriorAI>() != null || 
+                go.GetComponent<OrcBerserkerAI>() != null || 
+                go.GetComponent<OrcShamanAI>() != null || 
+                go.GetComponent<PlantAI>() != null ||
+                go.GetComponent<BossOrcAI>() != null)
+            {
+                // Bỏ qua nếu là Player (phòng trường hợp hy hữu)
+                if (go.GetComponent<PlayerMovement>() != null || go.GetComponent<PlayerStats>() != null)
+                    continue;
+
+                if (!go.CompareTag("Enemy"))
+                {
+                    go.tag = "Enemy";
+                    Debug.Log($"<color=yellow>[Auto Fix]</color> Đã tự động gắn Tag <b>'Enemy'</b> cho: {go.name}");
+                    EditorUtility.SetDirty(go);
+                    sceneChanged = true;
+                }
+
+                int enemyLayer = LayerMask.NameToLayer("Enemy");
+                if (enemyLayer >= 0 && go.layer != enemyLayer)
+                {
+                    SetLayerRecursive(go, enemyLayer);
+                    Debug.Log($"<color=yellow>[Auto Fix]</color> Đã tự động đặt Layer <b>'Enemy'</b> cho: {go.name} và các con");
+                    sceneChanged = true;
                 }
             }
         }
 
-        if (totalMissingScriptsRemoved > 0 || duplicateEventSystemsRemoved > 0)
+        if (totalMissingScriptsRemoved > 0 || duplicateEventSystemsRemoved > 0 || sceneChanged)
         {
             var activeScene = EditorSceneManager.GetActiveScene();
             if (activeScene.IsValid())
@@ -102,6 +154,84 @@ public class AutoFixSceneError : EditorWindow
         else if (verbose)
         {
             Debug.Log("<color=green><b>[Auto Fix]</b> Scene sạch sẽ!</color>");
+        }
+    }
+
+    private static void EnsureTagsAndLayersRegistered()
+    {
+        var tagManagerAsset = AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset");
+        if (tagManagerAsset == null || tagManagerAsset.Length == 0) return;
+        
+        SerializedObject tagManager = new SerializedObject(tagManagerAsset[0]);
+        if (tagManager == null) return;
+
+        // Đảm bảo các Tag "Player" và "Enemy" tồn tại
+        SerializedProperty tagsProp = tagManager.FindProperty("tags");
+        if (tagsProp != null)
+        {
+            string[] requiredTags = { "Player", "Enemy" };
+            foreach (string tag in requiredTags)
+            {
+                bool exists = false;
+                for (int i = 0; i < tagsProp.arraySize; i++)
+                {
+                    if (tagsProp.GetArrayElementAtIndex(i).stringValue == tag)
+                    {
+                        exists = true;
+                        break;
+                    }
+                }
+                if (!exists)
+                {
+                    tagsProp.InsertArrayElementAtIndex(tagsProp.arraySize);
+                    tagsProp.GetArrayElementAtIndex(tagsProp.arraySize - 1).stringValue = tag;
+                    Debug.Log($"<color=green>[Auto Fix]</color> Đã tự động đăng ký Tag mới: <b>{tag}</b>");
+                }
+            }
+        }
+
+        // Đảm bảo các Layer "Player" và "Enemy" tồn tại
+        SerializedProperty layersProp = tagManager.FindProperty("layers");
+        if (layersProp != null)
+        {
+            string[] requiredLayers = { "Player", "Enemy" };
+            foreach (string layer in requiredLayers)
+            {
+                bool exists = false;
+                int emptyIndex = -1;
+                for (int i = 8; i < layersProp.arraySize; i++)
+                {
+                    SerializedProperty layerProp = layersProp.GetArrayElementAtIndex(i);
+                    if (layerProp.stringValue == layer)
+                    {
+                        exists = true;
+                        break;
+                    }
+                    if (emptyIndex == -1 && string.IsNullOrEmpty(layerProp.stringValue))
+                    {
+                        emptyIndex = i;
+                    }
+                }
+                if (!exists && emptyIndex != -1)
+                {
+                    SerializedProperty layerProp = layersProp.GetArrayElementAtIndex(emptyIndex);
+                    layerProp.stringValue = layer;
+                    Debug.Log($"<color=green>[Auto Fix]</color> Đã tự động đăng ký Layer mới tại index {emptyIndex}: <b>{layer}</b>");
+                }
+            }
+        }
+
+        tagManager.ApplyModifiedProperties();
+    }
+
+    private static void SetLayerRecursive(GameObject obj, int layerIndex)
+    {
+        if (obj == null) return;
+        obj.layer = layerIndex;
+        EditorUtility.SetDirty(obj);
+        foreach (Transform child in obj.transform)
+        {
+            SetLayerRecursive(child.gameObject, layerIndex);
         }
     }
 

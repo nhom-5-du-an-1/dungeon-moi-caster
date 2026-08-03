@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1122953651233050619}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: manageUIplayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 1228691624478773736}
   - component: {fileID: 6521023470253045623}
   - component: {fileID: 3733741856648491565}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerPrefab
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 6798858056222750867}
   - component: {fileID: 6512994250648154091}
   - component: {fileID: 8356284136423224299}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Slot_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 9012760709668293965}
   - component: {fileID: 4777446596674067881}
   - component: {fileID: 4884207241934210954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ItemIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 7321834811797897052}
   - component: {fileID: 704021758010278772}
   - component: {fileID: 1642700408900362571}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Slot_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 4777494192872432050}
   - component: {fileID: 3223445908053007050}
   - component: {fileID: 2613603468827196682}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,7 +664,7 @@ GameObject:
   - component: {fileID: 5140039801846337149}
   - component: {fileID: 4094458985082361188}
   - component: {fileID: 482100778803964631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ItemIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +739,7 @@ GameObject:
   - component: {fileID: 358196727623582891}
   - component: {fileID: 898404013518987672}
   - component: {fileID: 8808333259969379550}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ItemIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 8893736107946494811}
   - component: {fileID: 4993387292717388078}
   - component: {fileID: 8971393584609045430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -889,7 +889,7 @@ GameObject:
   - component: {fileID: 2698874468152340865}
   - component: {fileID: 2349533197789073978}
   - component: {fileID: 4460601127238912083}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -964,7 +964,7 @@ GameObject:
   - component: {fileID: 4523846406489555126}
   - component: {fileID: 5773636539049297217}
   - component: {fileID: 2128863207707207609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1039,7 +1039,7 @@ GameObject:
   - component: {fileID: 6954838762691307521}
   - component: {fileID: 1517728763455689057}
   - component: {fileID: 2811130725357524289}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1118,7 +1118,7 @@ GameObject:
   - component: {fileID: 1220917905305684821}
   - component: {fileID: 3490858649984782632}
   - component: {fileID: 9047243610068077222}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1193,7 +1193,7 @@ GameObject:
   - component: {fileID: 7707430901702982693}
   - component: {fileID: 7916062245121429244}
   - component: {fileID: 7217704658526639697}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ItemIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1269,7 +1269,7 @@ GameObject:
   - component: {fileID: 1674349449671121209}
   - component: {fileID: 2278340738370743553}
   - component: {fileID: 7490760867865991108}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: PlayerHUD_Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1371,7 +1371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4352924028852964998}
   - component: {fileID: 1440466005025799355}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HotbarManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1418,7 +1418,7 @@ GameObject:
   - component: {fileID: 4541914499234743836}
   - component: {fileID: 7332790890278779592}
   - component: {fileID: 4379729688127305936}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1494,7 +1494,7 @@ GameObject:
   - component: {fileID: 3928239992539558537}
   - component: {fileID: 1970406698808169375}
   - component: {fileID: 6369009731997334756}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: HotbarPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1601,7 +1601,7 @@ GameObject:
   - component: {fileID: 6437609532365463727}
   - component: {fileID: 3344354695158105882}
   - component: {fileID: 2966012619709723601}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Slot_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1698,7 +1698,7 @@ GameObject:
   - component: {fileID: 2914733677776645016}
   - component: {fileID: 7113711584179644072}
   - component: {fileID: 6372515181569649205}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ItemIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1773,7 +1773,7 @@ GameObject:
   - component: {fileID: 8364909963625087290}
   - component: {fileID: 3135966960545475554}
   - component: {fileID: 2555188109525530953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1847,7 +1847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 698049407645382718}
   - component: {fileID: 807201290141750577}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1940,7 +1940,7 @@ GameObject:
   - component: {fileID: 3105346761262459291}
   - component: {fileID: 7809981038067030300}
   - component: {fileID: 7833662877609576285}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Slot_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2038,7 +2038,7 @@ GameObject:
   - component: {fileID: 2961375052341803890}
   - component: {fileID: 5107640268484198501}
   - component: {fileID: 3268123851720624481}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Slot_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2135,7 +2135,7 @@ GameObject:
   - component: {fileID: 993878717228902393}
   - component: {fileID: 3760207235857554274}
   - component: {fileID: 2670470151182373123}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2209,7 +2209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2901276648577529194}
   - component: {fileID: 1024753370539545730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: InventoryManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2266,7 +2266,7 @@ GameObject:
   - component: {fileID: 2560761355783583708}
   - component: {fileID: 7657558319427916610}
   - component: {fileID: 4181189404153407703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerHeartsUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2363,7 +2363,7 @@ GameObject:
   - component: {fileID: 7984186347461921213}
   - component: {fileID: 7230193479935950453}
   - component: {fileID: 3322363710115277934}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2438,7 +2438,7 @@ GameObject:
   - component: {fileID: 7648753111630386089}
   - component: {fileID: 8970733903829877065}
   - component: {fileID: 2600687536786069881}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
